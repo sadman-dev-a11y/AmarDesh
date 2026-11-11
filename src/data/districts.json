@@ -1,0 +1,2500 @@
+[
+  {
+    "id": "dhaka",
+    "name": "Dhaka",
+    "bn": "ঢাকা",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Dhaka",
+    "category": "heritage",
+    "sight": {
+      "en": "Lalbagh Fort",
+      "bn": "লালবাগ কেল্লা"
+    },
+    "description": {
+      "en": "An unfinished Mughal fort preserves part of Old Dhaka’s architectural story.",
+      "bn": "পুরান ঢাকার মুঘল স্থাপত্যের স্মৃতি ধরে রেখেছে এই অসমাপ্ত দুর্গ।"
+    },
+    "history": {
+      "en": "Dhaka is one of the districts of Dhaka division.",
+      "bn": "ঢাকা ঢাকা বিভাগের একটি জেলা।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Dhaka District",
+        "url": "https://en.banglapedia.org/index.php?title=Dhaka_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://www.beautifulbangladesh.gov.bd/cat/heritage/4",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "faridpur",
+    "name": "Faridpur",
+    "bn": "ফরিদপুর",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Faridpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Mathurapur Deul",
+      "bn": "মথুরাপুর দেউল"
+    },
+    "description": {
+      "en": "Mathurapur Deul is a starting point for exploring Faridpur’s architecture and archaeological heritage.",
+      "bn": "ফরিদপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য মথুরাপুর দেউল।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1815.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1815।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Faridpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Faridpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "gazipur",
+    "name": "Gazipur",
+    "bn": "গাজীপুর",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Gazipur",
+    "category": "heritage",
+    "sight": {
+      "en": "Bhawal Rajbari",
+      "bn": "ভাওয়াল রাজবাড়ি"
+    },
+    "description": {
+      "en": "Bhawal Rajbari is a starting point for exploring Gazipur’s architecture and archaeological heritage.",
+      "bn": "গাজীপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য ভাওয়াল রাজবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Nabanna celebrations",
+      "bn": "নবান্ন উৎসব"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Gazipur District",
+        "url": "https://en.banglapedia.org/index.php?title=Gazipur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "gopalganj",
+    "name": "Gopalganj",
+    "bn": "গোপালগঞ্জ",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Gopalganj",
+    "category": "heritage",
+    "sight": {
+      "en": "Tungipara Memorial Complex",
+      "bn": "টুঙ্গিপাড়া স্মৃতিসৌধ কমপ্লেক্স"
+    },
+    "description": {
+      "en": "Tungipara Memorial Complex is a starting point for exploring Gopalganj’s architecture and archaeological heritage.",
+      "bn": "গোপালগঞ্জ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য টুঙ্গিপাড়া স্মৃতিসৌধ কমপ্লেক্স।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Gopalganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Gopalganj_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "kishoreganj",
+    "name": "Kishoreganj",
+    "bn": "কিশোরগঞ্জ",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Kishoreganj",
+    "category": "culture",
+    "sight": {
+      "en": "Sholakia Eidgah",
+      "bn": "শোলাকিয়া ঈদগাহ"
+    },
+    "description": {
+      "en": "Sholakia Eidgah is a starting point for exploring Kishoreganj’s cultural places and local memory.",
+      "bn": "কিশোরগঞ্জ জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য শোলাকিয়া ঈদগাহ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Kishoreganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Kishoreganj_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "madaripur",
+    "name": "Madaripur",
+    "bn": "মাদারীপুর",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Madaripur",
+    "category": "nature",
+    "sight": {
+      "en": "Shakuni Lake",
+      "bn": "শকুনি লেক"
+    },
+    "description": {
+      "en": "Shakuni Lake is a starting point for exploring Madaripur’s landscapes and natural places.",
+      "bn": "মাদারীপুর জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য শকুনি লেক।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Madaripur District",
+        "url": "https://en.banglapedia.org/index.php?title=Madaripur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "manikganj",
+    "name": "Manikganj",
+    "bn": "মানিকগঞ্জ",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Manikganj",
+    "category": "heritage",
+    "sight": {
+      "en": "Baliati Palace",
+      "bn": "বালিয়াটি প্রাসাদ"
+    },
+    "description": {
+      "en": "Baliati Palace is a starting point for exploring Manikganj’s architecture and archaeological heritage.",
+      "bn": "মানিকগঞ্জ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য বালিয়াটি প্রাসাদ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Manikganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Manikganj_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://archaeology.gov.bd/pages/static-pages/6922df4b933eb65569e21196",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "munshiganj",
+    "name": "Munshiganj",
+    "bn": "মুন্সীগঞ্জ",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Munshiganj",
+    "category": "heritage",
+    "sight": {
+      "en": "Idrakpur Fort",
+      "bn": "ইদ্রাকপুর দুর্গ"
+    },
+    "description": {
+      "en": "Idrakpur Fort is a starting point for exploring Munshiganj’s architecture and archaeological heritage.",
+      "bn": "মুন্সীগঞ্জ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য ইদ্রাকপুর দুর্গ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Munshiganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Munshiganj_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "narayanganj",
+    "name": "Narayanganj",
+    "bn": "নারায়ণগঞ্জ",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Narayanganj",
+    "category": "heritage",
+    "sight": {
+      "en": "Panam Nagar",
+      "bn": "পানাম নগর"
+    },
+    "description": {
+      "en": "Panam Nagar is a starting point for exploring Narayanganj’s architecture and archaeological heritage.",
+      "bn": "নারায়ণগঞ্জ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য পানাম নগর।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Jari songs",
+      "bn": "জারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Narayanganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Narayanganj_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "narsingdi",
+    "name": "Narsingdi",
+    "bn": "নরসিংদী",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Narsingdi",
+    "category": "heritage",
+    "sight": {
+      "en": "Wari-Bateshwar",
+      "bn": "উয়ারী বটেশ্বর"
+    },
+    "description": {
+      "en": "Wari and Bateshwar are villages associated with archaeological discoveries.",
+      "bn": "উয়ারী ও বটেশ্বর গ্রাম প্রত্নতাত্ত্বিক আবিষ্কারের জন্য পরিচিত।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Narsingdi District",
+        "url": "https://en.banglapedia.org/index.php?title=Narsingdi_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://www.narsingdi.gov.bd/en/site/view/tourist_spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "rajbari",
+    "name": "Rajbari",
+    "bn": "রাজবাড়ী",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Rajbari",
+    "category": "culture",
+    "sight": {
+      "en": "Mir Mosharraf Hossain's Tomb",
+      "bn": "মীর মশাররফ হোসেনের সমাধি"
+    },
+    "description": {
+      "en": "Mir Mosharraf Hossain's Tomb is a starting point for exploring Rajbari’s cultural places and local memory.",
+      "bn": "রাজবাড়ী জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য মীর মশাররফ হোসেনের সমাধি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Jari songs",
+      "bn": "জারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Rajbari District",
+        "url": "https://en.banglapedia.org/index.php?title=Rajbari_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "shariatpur",
+    "name": "Shariatpur",
+    "bn": "শরীয়তপুর",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Shariatpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Fateh Jangapur Fort",
+      "bn": "ফতেহ জঙ্গপুর দুর্গ"
+    },
+    "description": {
+      "en": "Fateh Jangapur Fort is a starting point for exploring Shariatpur’s architecture and archaeological heritage.",
+      "bn": "শরীয়তপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য ফতেহ জঙ্গপুর দুর্গ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Jari songs",
+      "bn": "জারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Shariatpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Shariatpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "tangail",
+    "name": "Tangail",
+    "bn": "টাঙ্গাইল",
+    "division": "Dhaka",
+    "divisionBn": "ঢাকা",
+    "boundaryName": "Tangail",
+    "category": "nature",
+    "sight": {
+      "en": "Madhupur National Park",
+      "bn": "মধুপুর জাতীয় উদ্যান"
+    },
+    "description": {
+      "en": "Madhupur National Park is a starting point for exploring Tangail’s landscapes and natural places.",
+      "bn": "টাঙ্গাইল জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য মধুপুর জাতীয় উদ্যান।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1969.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1969।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": {
+      "en": "Porabari Chomchom",
+      "bn": "পোড়াবাড়ির চমচম"
+    },
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Tangail District",
+        "url": "https://en.banglapedia.org/index.php?title=Tangail_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://tangail.gov.bd/pages/static-pages/6995975d35ce18e1c0786874",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "bagerhat",
+    "name": "Bagerhat",
+    "bn": "বাগেরহাট",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Bagerhat",
+    "category": "heritage",
+    "sight": {
+      "en": "Sixty Dome Mosque",
+      "bn": "ষাট গম্বুজ মসজিদ"
+    },
+    "description": {
+      "en": "The historic mosque city is inscribed on UNESCO’s World Heritage List.",
+      "bn": "ঐতিহাসিক মসজিদের এই শহর ইউনেস্কোর বিশ্ব ঐতিহ্য তালিকাভুক্ত।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Bagerhat District",
+        "url": "https://en.banglapedia.org/index.php?title=Bagerhat_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://whc.unesco.org/en/list/321/",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "chuadanga",
+    "name": "Chuadanga",
+    "bn": "চুয়াডাঙ্গা",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Chuadanga",
+    "category": "heritage",
+    "sight": {
+      "en": "Gholdari Jami Mosque",
+      "bn": "ঘোলদাড়ি জামে মসজিদ"
+    },
+    "description": {
+      "en": "Gholdari Jami Mosque is a starting point for exploring Chuadanga’s architecture and archaeological heritage.",
+      "bn": "চুয়াডাঙ্গা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য ঘোলদাড়ি জামে মসজিদ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Chuadanga District",
+        "url": "https://en.banglapedia.org/index.php?title=Chuadanga_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "jashore",
+    "name": "Jashore",
+    "bn": "যশোর",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Jessore",
+    "category": "culture",
+    "sight": {
+      "en": "Sagardari, Madhu Palli",
+      "bn": "সাগরদাঁড়ি, মধুপল্লী"
+    },
+    "description": {
+      "en": "Sagardari, Madhu Palli is a starting point for exploring Jashore’s cultural places and local memory.",
+      "bn": "যশোর জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য সাগরদাঁড়ি, মধুপল্লী।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1781.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1781।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Jessore District",
+        "url": "https://en.banglapedia.org/index.php?title=Jessore_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "jhenaidah",
+    "name": "Jhenaidah",
+    "bn": "ঝিনাইদহ",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Jhenaidah",
+    "category": "heritage",
+    "sight": {
+      "en": "Naldanga Temple",
+      "bn": "নলডাঙ্গা মন্দির"
+    },
+    "description": {
+      "en": "Naldanga Temple is a starting point for exploring Jhenaidah’s architecture and archaeological heritage.",
+      "bn": "ঝিনাইদহ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য নলডাঙ্গা মন্দির।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Jhenaidah District",
+        "url": "https://en.banglapedia.org/index.php?title=Jhenaidah_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://jhenaidah.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "khulna",
+    "name": "Khulna",
+    "bn": "খুলনা",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Khulna",
+    "category": "nature",
+    "sight": {
+      "en": "The Sundarbans",
+      "bn": "সুন্দরবন"
+    },
+    "description": {
+      "en": "Tidal creeks and mangrove islands define the Sundarbans landscape.",
+      "bn": "জোয়ারভাটার খাঁড়ি ও ম্যানগ্রোভ দ্বীপ সুন্দরবনের ভূদৃশ্য গড়ে তুলেছে।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1882.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1882।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Khulna District",
+        "url": "https://en.banglapedia.org/index.php?title=Khulna_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://whc.unesco.org/en/list/798/",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "kushtia",
+    "name": "Kushtia",
+    "bn": "কুষ্টিয়া",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Kushtia",
+    "category": "culture",
+    "sight": {
+      "en": "Shilaidaha Kuthibari",
+      "bn": "শিলাইদহ কুঠিবাড়ি"
+    },
+    "description": {
+      "en": "Shilaidaha Kuthibari is a starting point for exploring Kushtia’s cultural places and local memory.",
+      "bn": "কুষ্টিয়া জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য শিলাইদহ কুঠিবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1947.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1947।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Kushtia District",
+        "url": "https://en.banglapedia.org/index.php?title=Kushtia_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "magura",
+    "name": "Magura",
+    "bn": "মাগুরা",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Magura",
+    "category": "heritage",
+    "sight": {
+      "en": "Raja Sitaram's Palace-Fort",
+      "bn": "রাজা সীতারাম রায়ের প্রাসাদ দুর্গ"
+    },
+    "description": {
+      "en": "Raja Sitaram's Palace-Fort is a starting point for exploring Magura’s architecture and archaeological heritage.",
+      "bn": "মাগুরা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য রাজা সীতারাম রায়ের প্রাসাদ দুর্গ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Magura District",
+        "url": "https://en.banglapedia.org/index.php?title=Magura_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://parjatan.gov.bd/pages/static-pages/6922dbd3933eb65569e0ccf9",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "meherpur",
+    "name": "Meherpur",
+    "bn": "মেহেরপুর",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Meherpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Mujibnagar Memorial",
+      "bn": "মুজিবনগর স্মৃতিসৌধ"
+    },
+    "description": {
+      "en": "Mujibnagar Memorial is a starting point for exploring Meherpur’s architecture and archaeological heritage.",
+      "bn": "মেহেরপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য মুজিবনগর স্মৃতিসৌধ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Meherpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Meherpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "narail",
+    "name": "Narail",
+    "bn": "নড়াইল",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Narail",
+    "category": "heritage",
+    "sight": {
+      "en": "Goal Bathan Mosque",
+      "bn": "গোয়ালবাথান মসজিদ"
+    },
+    "description": {
+      "en": "Goal Bathan Mosque is a starting point for exploring Narail’s architecture and archaeological heritage.",
+      "bn": "নড়াইল জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য গোয়ালবাথান মসজিদ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Narail District",
+        "url": "https://en.banglapedia.org/index.php?title=Narail_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "satkhira",
+    "name": "Satkhira",
+    "bn": "সাতক্ষীরা",
+    "division": "Khulna",
+    "divisionBn": "খুলনা",
+    "boundaryName": "Satkhira",
+    "category": "heritage",
+    "sight": {
+      "en": "Sonabaria Math",
+      "bn": "সোনাবাড়িয়া মঠ"
+    },
+    "description": {
+      "en": "Sonabaria Math is a starting point for exploring Satkhira’s architecture and archaeological heritage.",
+      "bn": "সাতক্ষীরা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য সোনাবাড়িয়া মঠ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Jari songs",
+      "bn": "জারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Satkhira District",
+        "url": "https://en.banglapedia.org/index.php?title=Satkhira_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "bandarban",
+    "name": "Bandarban",
+    "bn": "বান্দরবান",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Bandarban",
+    "category": "nature",
+    "sight": {
+      "en": "Nilgiri",
+      "bn": "নীলগিরি"
+    },
+    "description": {
+      "en": "Nilgiri is a starting point for exploring Bandarban’s landscapes and natural places.",
+      "bn": "বান্দরবান জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য নীলগিরি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1981.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1981।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Bandarban District",
+        "url": "https://en.banglapedia.org/index.php?title=Bandarban_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://beautifulbangladesh.gov.bd/",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "brahmanbaria",
+    "name": "Brahmanbaria",
+    "bn": "ব্রাহ্মণবাড়িয়া",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Brahamanbaria",
+    "category": "culture",
+    "sight": {
+      "en": "Kal Bhairab Temple",
+      "bn": "কালভৈরব মন্দির"
+    },
+    "description": {
+      "en": "Kal Bhairab Temple is a starting point for exploring Brahmanbaria’s cultural places and local memory.",
+      "bn": "ব্রাহ্মণবাড়িয়া জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য কালভৈরব মন্দির।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Brahmanbaria District",
+        "url": "https://en.banglapedia.org/index.php?title=Brahmanbaria_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "chandpur",
+    "name": "Chandpur",
+    "bn": "চাঁদপুর",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Chandpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Rupsha Zamindar Bari",
+      "bn": "রূপসা জমিদার বাড়ি"
+    },
+    "description": {
+      "en": "Rupsha Zamindar Bari is a starting point for exploring Chandpur’s architecture and archaeological heritage.",
+      "bn": "চাঁদপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য রূপসা জমিদার বাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Kabi songs",
+      "bn": "কবিগান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Chandpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Chandpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "chattogram",
+    "name": "Chattogram",
+    "bn": "চট্টগ্রাম",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Chittagong",
+    "category": "coast",
+    "sight": {
+      "en": "Patenga Sea Beach",
+      "bn": "পতেঙ্গা সমুদ্রসৈকত"
+    },
+    "description": {
+      "en": "Patenga Sea Beach is a starting point for exploring Chattogram’s coastal and island landscapes.",
+      "bn": "চট্টগ্রাম জেলার উপকূল ও দ্বীপের ভূদৃশ্য আবিষ্কারের একটি গন্তব্য পতেঙ্গা সমুদ্রসৈকত।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1666.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1666।"
+    },
+    "culture": {
+      "en": "Nabanna celebrations",
+      "bn": "নবান্ন উৎসব"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Chittagong District",
+        "url": "https://en.banglapedia.org/index.php?title=Chittagong_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "cumilla",
+    "name": "Cumilla",
+    "bn": "কুমিল্লা",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Comilla",
+    "category": "heritage",
+    "sight": {
+      "en": "Shalban Vihara",
+      "bn": "শালবন বিহার"
+    },
+    "description": {
+      "en": "Shalban Vihara is a starting point for exploring Cumilla’s architecture and archaeological heritage.",
+      "bn": "কুমিল্লা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য শালবন বিহার।"
+    },
+    "history": {
+      "en": "Cumilla is one of the districts of Chattogram division.",
+      "bn": "কুমিল্লা চট্টগ্রাম বিভাগের একটি জেলা।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": {
+      "en": "Rasmalai",
+      "bn": "রসমালাই"
+    },
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Comilla District",
+        "url": "https://en.banglapedia.org/index.php?title=Comilla_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/special-report/307129",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "cox-s-bazar",
+    "name": "Cox's Bazar",
+    "bn": "কক্সবাজার",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Cox's Bazar",
+    "category": "coast",
+    "sight": {
+      "en": "Cox's Bazar Sea Beach",
+      "bn": "কক্সবাজার সমুদ্রসৈকত"
+    },
+    "description": {
+      "en": "Cox's Bazar Sea Beach is a starting point for exploring Cox's Bazar’s coastal and island landscapes.",
+      "bn": "কক্সবাজার জেলার উপকূল ও দ্বীপের ভূদৃশ্য আবিষ্কারের একটি গন্তব্য কক্সবাজার সমুদ্রসৈকত।"
+    },
+    "history": {
+      "en": "Cox's Bazar is one of the districts of Chattogram division.",
+      "bn": "কক্সবাজার চট্টগ্রাম বিভাগের একটি জেলা।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://beautifulbangladesh.gov.bd/cat/sea-beaches",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "feni",
+    "name": "Feni",
+    "bn": "ফেনী",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Feni",
+    "category": "nature",
+    "sight": {
+      "en": "Bijoy Singh Dighi",
+      "bn": "বিজয় সিংহ দীঘি"
+    },
+    "description": {
+      "en": "Bijoy Singh Dighi is a starting point for exploring Feni’s landscapes and natural places.",
+      "bn": "ফেনী জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য বিজয় সিংহ দীঘি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Feni District",
+        "url": "https://en.banglapedia.org/index.php?title=Feni_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://feni.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "khagrachhari",
+    "name": "Khagrachhari",
+    "bn": "খাগড়াছড়ি",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Khagrachhari",
+    "category": "nature",
+    "sight": {
+      "en": "Alutila",
+      "bn": "আলুটিলা"
+    },
+    "description": {
+      "en": "Alutila is a starting point for exploring Khagrachhari’s landscapes and natural places.",
+      "bn": "খাগড়াছড়ি জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য আলুটিলা।"
+    },
+    "history": {
+      "en": "Khagrachhari is one of the districts of Chattogram division.",
+      "bn": "খাগড়াছড়ি চট্টগ্রাম বিভাগের একটি জেলা।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Khagrachhari District",
+        "url": "https://en.banglapedia.org/index.php?title=Khagrachhari_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "lakshmipur",
+    "name": "Lakshmipur",
+    "bn": "লক্ষ্মীপুর",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Lakshmipur",
+    "category": "heritage",
+    "sight": {
+      "en": "Sreerampur Rajbari",
+      "bn": "শ্রীরামপুর রাজবাড়ি"
+    },
+    "description": {
+      "en": "Sreerampur Rajbari is a starting point for exploring Lakshmipur’s architecture and archaeological heritage.",
+      "bn": "লক্ষ্মীপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য শ্রীরামপুর রাজবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Sari songs",
+      "bn": "সারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Lakshmipur District",
+        "url": "https://en.banglapedia.org/index.php?title=Lakshmipur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "noakhali",
+    "name": "Noakhali",
+    "bn": "নোয়াখালী",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Noakhali",
+    "category": "coast",
+    "sight": {
+      "en": "Nijhum Dwip",
+      "bn": "নিঝুম দ্বীপ"
+    },
+    "description": {
+      "en": "Nijhum Dwip is a starting point for exploring Noakhali’s coastal and island landscapes.",
+      "bn": "নোয়াখালী জেলার উপকূল ও দ্বীপের ভূদৃশ্য আবিষ্কারের একটি গন্তব্য নিঝুম দ্বীপ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1821.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1821।"
+    },
+    "culture": {
+      "en": "Jatra theatre",
+      "bn": "যাত্রা"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Noakhali District",
+        "url": "https://en.banglapedia.org/index.php?title=Noakhali_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://noakhali.gov.bd/pages/static-pages/6990cf2635ce18e1c0719ad9",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "rangamati",
+    "name": "Rangamati",
+    "bn": "রাঙ্গামাটি",
+    "division": "Chattogram",
+    "divisionBn": "চট্টগ্রাম",
+    "boundaryName": "Rangamati",
+    "category": "nature",
+    "sight": {
+      "en": "Kaptai Lake",
+      "bn": "কাপ্তাই হ্রদ"
+    },
+    "description": {
+      "en": "Kaptai Lake is a notable water body of the district.",
+      "bn": "কাপ্তাই হ্রদ এই জেলার উল্লেখযোগ্য জলাশয়।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1983.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1983।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Rangamati District",
+        "url": "https://en.banglapedia.org/index.php?title=Rangamati_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "bogura",
+    "name": "Bogura",
+    "bn": "বগুড়া",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Bogra",
+    "category": "heritage",
+    "sight": {
+      "en": "Mahasthangarh",
+      "bn": "মহাস্থানগড়"
+    },
+    "description": {
+      "en": "Mahasthangarh is a starting point for exploring Bogura’s architecture and archaeological heritage.",
+      "bn": "বগুড়া জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য মহাস্থানগড়।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1821.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1821।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": {
+      "en": "Sweet yogurt",
+      "bn": "মিষ্টি দই"
+    },
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Bogra District",
+        "url": "https://en.banglapedia.org/index.php?title=Bogra_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/special-report/307129",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "chapai-nawabganj",
+    "name": "Chapai Nawabganj",
+    "bn": "চাঁপাইনবাবগঞ্জ",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Nawabganj",
+    "category": "heritage",
+    "sight": {
+      "en": "Chhota Sona Mosque",
+      "bn": "ছোট সোনা মসজিদ"
+    },
+    "description": {
+      "en": "Chhota Sona Mosque is a starting point for exploring Chapai Nawabganj’s architecture and archaeological heritage.",
+      "bn": "চাঁপাইনবাবগঞ্জ জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য ছোট সোনা মসজিদ।"
+    },
+    "history": {
+      "en": "Chapai Nawabganj is one of the districts of Rajshahi division.",
+      "bn": "চাঁপাইনবাবগঞ্জ রাজশাহী বিভাগের একটি জেলা।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://chapainawabganj.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "joypurhat",
+    "name": "Joypurhat",
+    "bn": "জয়পুরহাট",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Joypurhat",
+    "category": "nature",
+    "sight": {
+      "en": "Achhranga Beel",
+      "bn": "আছরাঙ্গা বিল"
+    },
+    "description": {
+      "en": "Achhranga Beel is a starting point for exploring Joypurhat’s landscapes and natural places.",
+      "bn": "জয়পুরহাট জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য আছরাঙ্গা বিল।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Joypurhat District",
+        "url": "https://en.banglapedia.org/index.php?title=Joypurhat_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "naogaon",
+    "name": "Naogaon",
+    "bn": "নওগাঁ",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Naogaon",
+    "category": "heritage",
+    "sight": {
+      "en": "Paharpur Buddhist Vihara",
+      "bn": "পাহাড়পুর বৌদ্ধবিহার"
+    },
+    "description": {
+      "en": "Somapura Mahavihara at Paharpur is a UNESCO-listed Buddhist monastic site.",
+      "bn": "পাহাড়পুরের সোমপুর মহাবিহার ইউনেস্কো তালিকাভুক্ত বৌদ্ধ প্রত্নস্থান।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Naogaon District",
+        "url": "https://en.banglapedia.org/index.php?title=Naogaon_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://whc.unesco.org/en/list/322/",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "natore",
+    "name": "Natore",
+    "bn": "নাটোর",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Natore",
+    "category": "heritage",
+    "sight": {
+      "en": "Rani Bhabani Rajbari",
+      "bn": "রানী ভবানীর রাজবাড়ি"
+    },
+    "description": {
+      "en": "Rani Bhabani Rajbari is a starting point for exploring Natore’s architecture and archaeological heritage.",
+      "bn": "নাটোর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য রানী ভবানীর রাজবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": {
+      "en": "Kanchagolla",
+      "bn": "কাঁচাগোল্লা"
+    },
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Natore District",
+        "url": "https://en.banglapedia.org/index.php?title=Natore_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/special-report/307129",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "pabna",
+    "name": "Pabna",
+    "bn": "পাবনা",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Pabna",
+    "category": "heritage",
+    "sight": {
+      "en": "Jor Bangla Temple",
+      "bn": "জোড় বাংলা মন্দির"
+    },
+    "description": {
+      "en": "Jor Bangla Temple is a starting point for exploring Pabna’s architecture and archaeological heritage.",
+      "bn": "পাবনা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য জোড় বাংলা মন্দির।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1832.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1832।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Pabna District",
+        "url": "https://en.banglapedia.org/index.php?title=Pabna_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://archaeology.portal.gov.bd/pages/static-pages/6922dea1933eb65569e1c28b",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "rajshahi",
+    "name": "Rajshahi",
+    "bn": "রাজশাহী",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Rajshahi",
+    "category": "culture",
+    "sight": {
+      "en": "Varendra Research Museum",
+      "bn": "বরেন্দ্র গবেষণা জাদুঘর"
+    },
+    "description": {
+      "en": "Varendra Research Museum is a starting point for exploring Rajshahi’s cultural places and local memory.",
+      "bn": "রাজশাহী জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য বরেন্দ্র গবেষণা জাদুঘর।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1772.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1772।"
+    },
+    "culture": {
+      "en": "Kabi songs",
+      "bn": "কবিগান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Rajshahi District",
+        "url": "https://en.banglapedia.org/index.php?title=Rajshahi_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "sirajganj",
+    "name": "Sirajganj",
+    "bn": "সিরাজগঞ্জ",
+    "division": "Rajshahi",
+    "divisionBn": "রাজশাহী",
+    "boundaryName": "Sirajganj",
+    "category": "culture",
+    "sight": {
+      "en": "Rabindra Kachharibari",
+      "bn": "রবীন্দ্র কাছারিবাড়ি"
+    },
+    "description": {
+      "en": "The Shahjadpur estate house is associated with Rabindranath Tagore.",
+      "bn": "শাহজাদপুরের কাছারিবাড়ি রবীন্দ্রনাথ ঠাকুরের স্মৃতিবিজড়িত।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Sirajganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Sirajganj_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://rkb.shahjadpur.sirajganj.gov.bd/pages/static-pages/697f6dd735ce18e1c06b1ea9",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "habiganj",
+    "name": "Habiganj",
+    "bn": "হবিগঞ্জ",
+    "division": "Sylhet",
+    "divisionBn": "সিলেট",
+    "boundaryName": "Habiganj",
+    "category": "nature",
+    "sight": {
+      "en": "Baniachong Sagardighi",
+      "bn": "বানিয়াচং সাগরদীঘি"
+    },
+    "description": {
+      "en": "Baniachong Sagardighi is a starting point for exploring Habiganj’s landscapes and natural places.",
+      "bn": "হবিগঞ্জ জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য বানিয়াচং সাগরদীঘি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Sari songs",
+      "bn": "সারি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Habiganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Habiganj_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "moulvibazar",
+    "name": "Moulvibazar",
+    "bn": "মৌলভীবাজার",
+    "division": "Sylhet",
+    "divisionBn": "সিলেট",
+    "boundaryName": "Maulvibazar",
+    "category": "nature",
+    "sight": {
+      "en": "Madhabkunda Waterfall",
+      "bn": "মাধবকুণ্ড জলপ্রপাত"
+    },
+    "description": {
+      "en": "Madhabkunda Waterfall is a starting point for exploring Moulvibazar’s landscapes and natural places.",
+      "bn": "মৌলভীবাজার জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য মাধবকুণ্ড জলপ্রপাত।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Maulvibazar District",
+        "url": "https://en.banglapedia.org/index.php?title=Maulvibazar_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "sunamganj",
+    "name": "Sunamganj",
+    "bn": "সুনামগঞ্জ",
+    "division": "Sylhet",
+    "divisionBn": "সিলেট",
+    "boundaryName": "Sunamganj",
+    "category": "nature",
+    "sight": {
+      "en": "Tanguar Haor",
+      "bn": "টাঙ্গুয়ার হাওর"
+    },
+    "description": {
+      "en": "Tanguar Haor is a wetland destination in the northeast.",
+      "bn": "উত্তর-পূর্বাঞ্চলের জলাভূমি ভ্রমণের একটি গন্তব্য টাঙ্গুয়ার হাওর।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Dhamail songs",
+      "bn": "ধামাইল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Sunamganj District",
+        "url": "https://en.banglapedia.org/index.php?title=Sunamganj_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://beautifulbangladesh.gov.bd/district-destination/sunamganj/land-of-rivers/121",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "sylhet",
+    "name": "Sylhet",
+    "bn": "সিলেট",
+    "division": "Sylhet",
+    "divisionBn": "সিলেট",
+    "boundaryName": "Sylhet",
+    "category": "culture",
+    "sight": {
+      "en": "Shah Jalal's Shrine",
+      "bn": "হযরত শাহজালালের মাজার"
+    },
+    "description": {
+      "en": "Shah Jalal's Shrine is a starting point for exploring Sylhet’s cultural places and local memory.",
+      "bn": "সিলেট জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য হযরত শাহজালালের মাজার।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1782.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1782।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Sylhet District",
+        "url": "https://en.banglapedia.org/index.php?title=Sylhet_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://beautifulbangladesh.gov.bd/cat/landmarks",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "dinajpur",
+    "name": "Dinajpur",
+    "bn": "দিনাজপুর",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Dinajpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Kantajew Temple",
+      "bn": "কান্তজিউ মন্দির"
+    },
+    "description": {
+      "en": "Kantajew Temple is a starting point for exploring Dinajpur’s architecture and archaeological heritage.",
+      "bn": "দিনাজপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য কান্তজিউ মন্দির।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1786.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1786।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Dinajpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Dinajpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "gaibandha",
+    "name": "Gaibandha",
+    "bn": "গাইবান্ধা",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Gaibandha",
+    "category": "heritage",
+    "sight": {
+      "en": "Vardhan Kuthi",
+      "bn": "বর্ধনকুঠি"
+    },
+    "description": {
+      "en": "Vardhan Kuthi is a starting point for exploring Gaibandha’s architecture and archaeological heritage.",
+      "bn": "গাইবান্ধা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য বর্ধনকুঠি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Gaibandha District",
+        "url": "https://en.banglapedia.org/index.php?title=Gaibandha_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "kurigram",
+    "name": "Kurigram",
+    "bn": "কুড়িগ্রাম",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Kurigram",
+    "category": "heritage",
+    "sight": {
+      "en": "Naodanga Zamindar Bari",
+      "bn": "নাওডাঙ্গা জমিদার বাড়ি"
+    },
+    "description": {
+      "en": "Naodanga Zamindar Bari is a starting point for exploring Kurigram’s architecture and archaeological heritage.",
+      "bn": "কুড়িগ্রাম জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য নাওডাঙ্গা জমিদার বাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Kurigram District",
+        "url": "https://en.banglapedia.org/index.php?title=Kurigram_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "lalmonirhat",
+    "name": "Lalmonirhat",
+    "bn": "লালমনিরহাট",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Lalmonirhat",
+    "category": "heritage",
+    "sight": {
+      "en": "Kakina Zamindar Bari",
+      "bn": "কাকিনা জমিদার বাড়ি"
+    },
+    "description": {
+      "en": "Kakina Zamindar Bari is a starting point for exploring Lalmonirhat’s architecture and archaeological heritage.",
+      "bn": "লালমনিরহাট জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য কাকিনা জমিদার বাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Lalmonirhat District",
+        "url": "https://en.banglapedia.org/index.php?title=Lalmonirhat_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "nilphamari",
+    "name": "Nilphamari",
+    "bn": "নীলফামারী",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Nilphamari",
+    "category": "nature",
+    "sight": {
+      "en": "Nilsagar",
+      "bn": "নীলসাগর"
+    },
+    "description": {
+      "en": "Nilsagar is a starting point for exploring Nilphamari’s landscapes and natural places.",
+      "bn": "নীলফামারী জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য নীলসাগর।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhawaiya songs",
+      "bn": "ভাওয়াইয়া গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Nilphamari District",
+        "url": "https://en.banglapedia.org/index.php?title=Nilphamari_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://nilphamari.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "panchagarh",
+    "name": "Panchagarh",
+    "bn": "পঞ্চগড়",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Panchagarh",
+    "category": "heritage",
+    "sight": {
+      "en": "Mirzapur Shahi Mosque",
+      "bn": "মির্জাপুর শাহী মসজিদ"
+    },
+    "description": {
+      "en": "Mirzapur Shahi Mosque is a starting point for exploring Panchagarh’s architecture and archaeological heritage.",
+      "bn": "পঞ্চগড় জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য মির্জাপুর শাহী মসজিদ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Panchagarh District",
+        "url": "https://en.banglapedia.org/index.php?title=Panchagarh_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "rangpur",
+    "name": "Rangpur",
+    "bn": "রংপুর",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Rangpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Tajhat Palace",
+      "bn": "তাজহাট প্রাসাদ"
+    },
+    "description": {
+      "en": "Tajhat Palace is a starting point for exploring Rangpur’s architecture and archaeological heritage.",
+      "bn": "রংপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য তাজহাট প্রাসাদ।"
+    },
+    "history": {
+      "en": "Rangpur is one of the districts of Rangpur division.",
+      "bn": "রংপুর রংপুর বিভাগের একটি জেলা।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Rangpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Rangpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "thakurgaon",
+    "name": "Thakurgaon",
+    "bn": "ঠাকুরগাঁও",
+    "division": "Rangpur",
+    "divisionBn": "রংপুর",
+    "boundaryName": "Thakurgaon",
+    "category": "heritage",
+    "sight": {
+      "en": "Raja Tonkanath's Palace",
+      "bn": "রাজা টংকনাথের রাজবাড়ি"
+    },
+    "description": {
+      "en": "Raja Tonkanath's Palace is a starting point for exploring Thakurgaon’s architecture and archaeological heritage.",
+      "bn": "ঠাকুরগাঁও জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য রাজা টংকনাথের রাজবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Jatra theatre",
+      "bn": "যাত্রা"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Thakurgaon District",
+        "url": "https://en.banglapedia.org/index.php?title=Thakurgaon_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "jamalpur",
+    "name": "Jamalpur",
+    "bn": "জামালপুর",
+    "division": "Mymensingh",
+    "divisionBn": "ময়মনসিংহ",
+    "boundaryName": "Jamalpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Narapara Fort",
+      "bn": "নারাপাড়া দুর্গ"
+    },
+    "description": {
+      "en": "Narapara Fort is a starting point for exploring Jamalpur’s architecture and archaeological heritage.",
+      "bn": "জামালপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য নারাপাড়া দুর্গ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1978.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1978।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Jamalpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Jamalpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "mymensingh",
+    "name": "Mymensingh",
+    "bn": "ময়মনসিংহ",
+    "division": "Mymensingh",
+    "divisionBn": "ময়মনসিংহ",
+    "boundaryName": "Mymensingh",
+    "category": "culture",
+    "sight": {
+      "en": "Zainul Abedin Museum",
+      "bn": "জয়নুল আবেদিন সংগ্রহশালা"
+    },
+    "description": {
+      "en": "Zainul Abedin Museum is a starting point for exploring Mymensingh’s cultural places and local memory.",
+      "bn": "ময়মনসিংহ জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য জয়নুল আবেদিন সংগ্রহশালা।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1787.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1787।"
+    },
+    "culture": {
+      "en": "Mymensingh ballads",
+      "bn": "ময়মনসিংহ গীতিকা"
+    },
+    "food": {
+      "en": "Muktagacha Monda",
+      "bn": "মুক্তাগাছার মণ্ডা"
+    },
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Mymensingh District",
+        "url": "https://en.banglapedia.org/index.php?title=Mymensingh_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://beautifulbangladesh.gov.bd/cat/landmarks",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://tangail.gov.bd/pages/static-pages/6995975d35ce18e1c0786874",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "netrokona",
+    "name": "Netrokona",
+    "bn": "নেত্রকোণা",
+    "division": "Mymensingh",
+    "divisionBn": "ময়মনসিংহ",
+    "boundaryName": "Netrakona",
+    "category": "culture",
+    "sight": {
+      "en": "Birisiri Cultural Academy",
+      "bn": "বিরিশিরি সাংস্কৃতিক একাডেমি"
+    },
+    "description": {
+      "en": "Birisiri Cultural Academy is a starting point for exploring Netrokona’s cultural places and local memory.",
+      "bn": "নেত্রকোণা জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য বিরিশিরি সাংস্কৃতিক একাডেমি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Baul music",
+      "bn": "বাউল গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Netrokona District",
+        "url": "https://en.banglapedia.org/index.php?title=Netrokona_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "sherpur",
+    "name": "Sherpur",
+    "bn": "শেরপুর",
+    "division": "Mymensingh",
+    "divisionBn": "ময়মনসিংহ",
+    "boundaryName": "Sherpur",
+    "category": "nature",
+    "sight": {
+      "en": "Madhutila Ecopark",
+      "bn": "মধুটিলা ইকোপার্ক"
+    },
+    "description": {
+      "en": "Madhutila Ecopark is a starting point for exploring Sherpur’s landscapes and natural places.",
+      "bn": "শেরপুর জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য মধুটিলা ইকোপার্ক।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Sherpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Sherpur_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "barguna",
+    "name": "Barguna",
+    "bn": "বরগুনা",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Barguna",
+    "category": "heritage",
+    "sight": {
+      "en": "Bibichini Shahi Mosque",
+      "bn": "বিবিচিনি শাহী মসজিদ"
+    },
+    "description": {
+      "en": "Bibichini Shahi Mosque is a starting point for exploring Barguna’s architecture and archaeological heritage.",
+      "bn": "বরগুনা জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য বিবিচিনি শাহী মসজিদ।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Barguna District",
+        "url": "https://en.banglapedia.org/index.php?title=Barguna_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "barishal",
+    "name": "Barishal",
+    "bn": "বরিশাল",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Barisal",
+    "category": "nature",
+    "sight": {
+      "en": "Durgasagar",
+      "bn": "দুর্গাসাগর"
+    },
+    "description": {
+      "en": "Durgasagar is a starting point for exploring Barishal’s landscapes and natural places.",
+      "bn": "বরিশাল জেলার ভূপ্রকৃতি ও প্রাকৃতিক স্থান আবিষ্কারের একটি গন্তব্য দুর্গাসাগর।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1797.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1797।"
+    },
+    "culture": null,
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Barisal District",
+        "url": "https://en.banglapedia.org/index.php?title=Barisal_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "bhola",
+    "name": "Bhola",
+    "bn": "ভোলা",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Bhola",
+    "category": "coast",
+    "sight": {
+      "en": "Char Kukri-Mukri",
+      "bn": "চর কুকরি মুকরি"
+    },
+    "description": {
+      "en": "Char Kukri-Mukri is a starting point for exploring Bhola’s coastal and island landscapes.",
+      "bn": "ভোলা জেলার উপকূল ও দ্বীপের ভূদৃশ্য আবিষ্কারের একটি গন্তব্য চর কুকরি মুকরি।"
+    },
+    "history": {
+      "en": "Bhola is one of the districts of Barishal division.",
+      "bn": "ভোলা বরিশাল বিভাগের একটি জেলা।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Bhola District",
+        "url": "https://en.banglapedia.org/index.php?title=Bhola_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "jhalakathi",
+    "name": "Jhalakathi",
+    "bn": "ঝালকাঠি",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Jhalokati",
+    "category": "culture",
+    "sight": {
+      "en": "Gabkhan Bridge",
+      "bn": "গাবখান সেতু"
+    },
+    "description": {
+      "en": "Gabkhan Bridge is a starting point for exploring Jhalakathi’s cultural places and local memory.",
+      "bn": "ঝালকাঠি জেলার সাংস্কৃতিক স্থান ও স্থানীয় স্মৃতি আবিষ্কারের একটি গন্তব্য গাবখান সেতু।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Jhalokati District",
+        "url": "https://en.banglapedia.org/index.php?title=Jhalokati_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://jhalakathi.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "patuakhali",
+    "name": "Patuakhali",
+    "bn": "পটুয়াখালী",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Patuakhali",
+    "category": "coast",
+    "sight": {
+      "en": "Kuakata Sea Beach",
+      "bn": "কুয়াকাটা সমুদ্রসৈকত"
+    },
+    "description": {
+      "en": "Kuakata offers views of both sunrise and sunset over the sea.",
+      "bn": "কুয়াকাটায় সমুদ্রের ওপর সূর্যোদয় ও সূর্যাস্ত দেখা যায়।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1969.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1969।"
+    },
+    "culture": {
+      "en": "Jatra theatre",
+      "bn": "যাত্রা"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Patuakhali District",
+        "url": "https://en.banglapedia.org/index.php?title=Patuakhali_District",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  },
+  {
+    "id": "pirojpur",
+    "name": "Pirojpur",
+    "bn": "পিরোজপুর",
+    "division": "Barishal",
+    "divisionBn": "বরিশাল",
+    "boundaryName": "Pirojpur",
+    "category": "heritage",
+    "sight": {
+      "en": "Rayerkathi Palace",
+      "bn": "রায়েরকাঠি রাজবাড়ি"
+    },
+    "description": {
+      "en": "Rayerkathi Palace is a starting point for exploring Pirojpur’s architecture and archaeological heritage.",
+      "bn": "পিরোজপুর জেলার স্থাপত্য ও প্রত্নতাত্ত্বিক ঐতিহ্য আবিষ্কারের একটি গন্তব্য রায়েরকাঠি রাজবাড়ি।"
+    },
+    "history": {
+      "en": "The district’s administrative formation is recorded in 1984.",
+      "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
+    },
+    "culture": {
+      "en": "Bhatiyali songs",
+      "bn": "ভাটিয়ালি গান"
+    },
+    "food": null,
+    "sources": [
+      {
+        "label": "National Portal · district register",
+        "url": "https://bangladesh.gov.bd/views/district-list/",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Banglapedia · Pirojpur District",
+        "url": "https://en.banglapedia.org/index.php?title=Pirojpur_District",
+        "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Tourism / heritage reference",
+        "url": "https://pirojpur.gov.bd/pages/tourist-spot",
+        "reviewed": "2026-11-12"
+      }
+    ]
+  }
+]

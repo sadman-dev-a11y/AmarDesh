@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tea",
+    "author": "Mahjuja Islam",
+    "source": "https://commons.wikimedia.org/wiki/File:Tea_garden_in_Jaflong.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "beach",
+    "author": "CAPTAIN RAJU",
+    "source": "https://commons.wikimedia.org/wiki/File:Cox%27s_Bazar_Sea_Beach_in_2025.18.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "forest",
+    "author": "bri vos",
+    "source": "https://commons.wikimedia.org/wiki/File:Sun_in_Sunderbans.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "fort",
+    "author": "Saifullah Nakih",
+    "source": "https://wordpress.org/photos/photo/7296629cc7/",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  }
+]
