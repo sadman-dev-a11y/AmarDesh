@@ -20,7 +20,10 @@
       "bn": "ঢাকা ঢাকা বিভাগের একটি জেলা।"
     },
     "culture": null,
-    "food": null,
+    "food": {
+      "en": "Bakarkhani",
+      "bn": "বাকরখানি"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -36,6 +39,18 @@
         "label": "Tourism / heritage reference",
         "url": "https://www.beautifulbangladesh.gov.bd/cat/heritage/4",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://beautifulbangladesh.gov.bd/loc/dhaka/91",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Ahsan Manzil",
+        "bn": "আহসান মঞ্জিল",
+        "source": "https://beautifulbangladesh.gov.bd/"
       }
     ]
   },
@@ -75,6 +90,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Faridpur_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Pathrail Shahi Mosque",
+        "bn": "পাতরাইল শাহী মসজিদ",
+        "source": "https://en.banglapedia.org/index.php?title=Faridpur_District"
+      }
     ]
   },
   {
@@ -113,6 +135,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Gazipur_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Toke Fort",
+        "bn": "টোক দুর্গ",
+        "source": "https://en.banglapedia.org/index.php?title=Gazipur_District"
+      }
     ]
   },
   {
@@ -148,7 +177,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Gopalganj_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "kishoreganj",
@@ -186,7 +216,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Kishoreganj_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "madaripur",
@@ -220,6 +251,13 @@
         "label": "Banglapedia · Madaripur District",
         "url": "https://en.banglapedia.org/index.php?title=Madaripur_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Raja Ram Temple",
+        "bn": "রাজা রাম মন্দির",
+        "source": "https://en.banglapedia.org/index.php?title=Madaripur_District"
       }
     ]
   },
@@ -264,7 +302,8 @@
         "url": "https://archaeology.gov.bd/pages/static-pages/6922df4b933eb65569e21196",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "munshiganj",
@@ -298,6 +337,13 @@
         "label": "Banglapedia · Munshiganj District",
         "url": "https://en.banglapedia.org/index.php?title=Munshiganj_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Baba Adam Mosque",
+        "bn": "বাবা আদম মসজিদ",
+        "source": "https://en.banglapedia.org/index.php?title=Munshiganj_District"
       }
     ]
   },
@@ -336,6 +382,13 @@
         "label": "Banglapedia · Narayanganj District",
         "url": "https://en.banglapedia.org/index.php?title=Narayanganj_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Sonakanda Fort",
+        "bn": "সোনাকান্দা দুর্গ",
+        "source": "https://en.banglapedia.org/index.php?title=Narayanganj_District"
       }
     ]
   },
@@ -377,7 +430,8 @@
         "url": "https://www.narsingdi.gov.bd/en/site/view/tourist_spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "rajbari",
@@ -414,6 +468,13 @@
         "label": "Banglapedia · Rajbari District",
         "url": "https://en.banglapedia.org/index.php?title=Rajbari_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Goalanda Ferry Ghat",
+        "bn": "গোয়ালন্দ ফেরিঘাট",
+        "source": "https://en.banglapedia.org/index.php?title=Rajbari_District"
       }
     ]
   },
@@ -453,7 +514,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Shariatpur_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "tangail",
@@ -499,7 +561,8 @@
         "url": "https://tangail.gov.bd/pages/static-pages/6995975d35ce18e1c0786874",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "bagerhat",
@@ -522,7 +585,10 @@
       "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1984।"
     },
     "culture": null,
-    "food": null,
+    "food": {
+      "en": "Chui jhal · regional produce",
+      "bn": "চুইঝাল · আঞ্চলিক কৃষিপণ্য"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -538,6 +604,18 @@
         "label": "Tourism / heritage reference",
         "url": "https://whc.unesco.org/en/list/321/",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/national/209186",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Khan Jahan Ali’s Tomb",
+        "bn": "খান জাহান আলীর সমাধি",
+        "source": "https://en.banglapedia.org/index.php?title=Bagerhat_District"
       }
     ]
   },
@@ -577,6 +655,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Chuadanga_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Karpasdanga Nilkuthi",
+        "bn": "কার্পাসডাঙ্গা নীলকুঠি",
+        "source": "https://en.banglapedia.org/index.php?title=Chuadanga_District"
+      }
     ]
   },
   {
@@ -614,6 +699,13 @@
         "label": "Banglapedia · Jessore District",
         "url": "https://en.banglapedia.org/index.php?title=Jessore_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Deul Bharat",
+        "bn": "ভরত দেউল",
+        "source": "https://en.banglapedia.org/index.php?title=Jessore_District"
       }
     ]
   },
@@ -655,7 +747,8 @@
         "url": "https://jhenaidah.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "khulna",
@@ -678,7 +771,10 @@
       "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1882।"
     },
     "culture": null,
-    "food": null,
+    "food": {
+      "en": "Chui jhal · regional cooking ingredient",
+      "bn": "চুইঝাল · আঞ্চলিক রান্নার উপকরণ"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -694,6 +790,18 @@
         "label": "Tourism / heritage reference",
         "url": "https://whc.unesco.org/en/list/798/",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/national/209186",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Khan Jahan Ali Bridge",
+        "bn": "খান জাহান আলী সেতু",
+        "source": "https://en.banglapedia.org/index.php?title=Khulna_District"
       }
     ]
   },
@@ -732,6 +840,13 @@
         "label": "Banglapedia · Kushtia District",
         "url": "https://en.banglapedia.org/index.php?title=Kushtia_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Lalon Shah’s Tomb",
+        "bn": "লালন শাহের সমাধি",
+        "source": "https://en.banglapedia.org/index.php?title=Kushtia_District"
       }
     ]
   },
@@ -776,7 +891,8 @@
         "url": "https://parjatan.gov.bd/pages/static-pages/6922dbd3933eb65569e0ccf9",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "meherpur",
@@ -814,7 +930,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Meherpur_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "narail",
@@ -840,7 +957,10 @@
       "en": "Bhatiyali songs",
       "bn": "ভাটিয়ালি গান"
     },
-    "food": null,
+    "food": {
+      "en": "Chui jhal · regional produce",
+      "bn": "চুইঝাল · আঞ্চলিক কৃষিপণ্য"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -851,6 +971,18 @@
         "label": "Banglapedia · Narail District",
         "url": "https://en.banglapedia.org/index.php?title=Narail_District",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/national/209186",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Baradia Math",
+        "bn": "বড়দিয়া মঠ",
+        "source": "https://en.banglapedia.org/index.php?title=Narail_District"
       }
     ]
   },
@@ -878,7 +1010,10 @@
       "en": "Jari songs",
       "bn": "জারি গান"
     },
-    "food": null,
+    "food": {
+      "en": "Chui jhal · regional produce",
+      "bn": "চুইঝাল · আঞ্চলিক কৃষিপণ্য"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -889,6 +1024,18 @@
         "label": "Banglapedia · Satkhira District",
         "url": "https://en.banglapedia.org/index.php?title=Satkhira_District",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.bssnews.net/bangla/national/209186",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Jahajghata Naval Fort",
+        "bn": "জাহাজঘাটা নৌদুর্গ",
+        "source": "https://en.banglapedia.org/index.php?title=Satkhira_District"
       }
     ]
   },
@@ -930,6 +1077,13 @@
         "url": "https://beautifulbangladesh.gov.bd/",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Keokradong",
+        "bn": "কেওক্রাডং",
+        "source": "https://beautifulbangladesh.gov.bd/"
+      }
     ]
   },
   {
@@ -964,6 +1118,13 @@
         "label": "Banglapedia · Brahmanbaria District",
         "url": "https://en.banglapedia.org/index.php?title=Brahmanbaria_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Gangasagar Dighi",
+        "bn": "গঙ্গাসাগর দীঘি",
+        "source": "https://en.banglapedia.org/index.php?title=Brahmanbaria_District"
       }
     ]
   },
@@ -1003,6 +1164,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Chandpur_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Shaharpar Dighi",
+        "bn": "শাহারপাড় দীঘি",
+        "source": "https://en.banglapedia.org/index.php?title=Chandpur_District"
+      }
     ]
   },
   {
@@ -1029,7 +1197,10 @@
       "en": "Nabanna celebrations",
       "bn": "নবান্ন উৎসব"
     },
-    "food": null,
+    "food": {
+      "en": "Mezbani beef",
+      "bn": "মেজবানি গরুর মাংস"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -1040,6 +1211,18 @@
         "label": "Banglapedia · Chittagong District",
         "url": "https://en.banglapedia.org/index.php?title=Chittagong_District",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://www.tbsnews.net/features/food/mezban-cuisine-choice-feasts-310606",
+        "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Chandranath Hill",
+        "bn": "চন্দ্রনাথ পাহাড়",
+        "source": "https://en.banglapedia.org/index.php?title=Chittagong_District"
       }
     ]
   },
@@ -1087,6 +1270,13 @@
         "url": "https://www.bssnews.net/bangla/special-report/307129",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Mainamati Museum",
+        "bn": "ময়নামতি জাদুঘর",
+        "source": "https://en.banglapedia.org/index.php?title=Comilla_District"
+      }
     ]
   },
   {
@@ -1122,7 +1312,8 @@
         "url": "https://beautifulbangladesh.gov.bd/cat/sea-beaches",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "feni",
@@ -1165,7 +1356,8 @@
         "url": "https://feni.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "khagrachhari",
@@ -1199,6 +1391,13 @@
         "label": "Banglapedia · Khagrachhari District",
         "url": "https://en.banglapedia.org/index.php?title=Khagrachhari_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Ramgarh Lake",
+        "bn": "রামগড় হ্রদ",
+        "source": "https://en.banglapedia.org/index.php?title=Khagrachhari_District"
       }
     ]
   },
@@ -1238,7 +1437,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Lakshmipur_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "noakhali",
@@ -1281,7 +1481,8 @@
         "url": "https://noakhali.gov.bd/pages/static-pages/6990cf2635ce18e1c0719ad9",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "rangamati",
@@ -1316,7 +1517,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Rangamati_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "bogura",
@@ -1362,6 +1564,13 @@
         "url": "https://www.bssnews.net/bangla/special-report/307129",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Gokul Medh",
+        "bn": "গোকুল মেধ",
+        "source": "https://en.banglapedia.org/index.php?title=Bogra_District"
+      }
     ]
   },
   {
@@ -1397,7 +1606,8 @@
         "url": "https://chapainawabganj.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "joypurhat",
@@ -1431,6 +1641,13 @@
         "label": "Banglapedia · Joypurhat District",
         "url": "https://en.banglapedia.org/index.php?title=Joypurhat_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Patharghata, Panchbibi",
+        "bn": "পাথরঘাটা, পাঁচবিবি",
+        "source": "https://en.banglapedia.org/index.php?title=Joypurhat_District"
       }
     ]
   },
@@ -1475,6 +1692,13 @@
         "url": "https://whc.unesco.org/en/list/322/",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Kusumba Mosque",
+        "bn": "কুসুম্বা মসজিদ",
+        "source": "https://en.banglapedia.org/index.php?title=Naogaon_District"
+      }
     ]
   },
   {
@@ -1518,6 +1742,13 @@
         "url": "https://www.bssnews.net/bangla/special-report/307129",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Uttara Ganabhaban",
+        "bn": "উত্তরা গণভবন",
+        "source": "https://en.banglapedia.org/index.php?title=Natore_District"
+      }
     ]
   },
   {
@@ -1558,7 +1789,8 @@
         "url": "https://archaeology.portal.gov.bd/pages/static-pages/6922dea1933eb65569e1c28b",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "rajshahi",
@@ -1596,7 +1828,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Rajshahi_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "sirajganj",
@@ -1639,7 +1872,8 @@
         "url": "https://rkb.shahjadpur.sirajganj.gov.bd/pages/static-pages/697f6dd735ce18e1c06b1ea9",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "habiganj",
@@ -1676,6 +1910,13 @@
         "label": "Banglapedia · Habiganj District",
         "url": "https://en.banglapedia.org/index.php?title=Habiganj_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Baniachong Rajbari",
+        "bn": "বানিয়াচং রাজবাড়ি",
+        "source": "https://en.banglapedia.org/index.php?title=Habiganj_District"
       }
     ]
   },
@@ -1714,6 +1955,13 @@
         "label": "Banglapedia · Maulvibazar District",
         "url": "https://en.banglapedia.org/index.php?title=Maulvibazar_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Madhabpur Lake",
+        "bn": "মাধবপুর হ্রদ",
+        "source": "https://en.banglapedia.org/index.php?title=Maulvibazar_District"
       }
     ]
   },
@@ -1758,7 +2006,8 @@
         "url": "https://beautifulbangladesh.gov.bd/district-destination/sunamganj/land-of-rivers/121",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "sylhet",
@@ -1781,7 +2030,10 @@
       "bn": "প্রশাসনিক জেলা হিসেবে গঠনের সাল 1782।"
     },
     "culture": null,
-    "food": null,
+    "food": {
+      "en": "Satkora in meat, fish and lentil dishes",
+      "bn": "মাংস, মাছ ও ডালের সঙ্গে সাতকরা"
+    },
     "sources": [
       {
         "label": "National Portal · district register",
@@ -1797,8 +2049,14 @@
         "label": "Tourism / heritage reference",
         "url": "https://beautifulbangladesh.gov.bd/cat/landmarks",
         "reviewed": "2026-11-12"
+      },
+      {
+        "label": "Regional food reference",
+        "url": "https://file.portal.gov.bd/uploads/a4f2f2b2-fdfd-4916-9a4d-8cd5d6d0efb2/640/c3b/826/640c3b8268d9e125774630.pdf",
+        "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "dinajpur",
@@ -1832,6 +2090,13 @@
         "label": "Banglapedia · Dinajpur District",
         "url": "https://en.banglapedia.org/index.php?title=Dinajpur_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Ramsagar Dighi",
+        "bn": "রামসাগর দীঘি",
+        "source": "https://en.banglapedia.org/index.php?title=Dinajpur_District"
       }
     ]
   },
@@ -1867,6 +2132,13 @@
         "label": "Banglapedia · Gaibandha District",
         "url": "https://en.banglapedia.org/index.php?title=Gaibandha_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Naldanga Zamindar House",
+        "bn": "নলডাঙ্গা জমিদার বাড়ি",
+        "source": "https://en.banglapedia.org/index.php?title=Gaibandha_District"
       }
     ]
   },
@@ -1906,6 +2178,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Kurigram_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Bhitarmand Zamindar Bari",
+        "bn": "ভিতরবন্দ জমিদার বাড়ি",
+        "source": "https://en.banglapedia.org/index.php?title=Kurigram_District"
+      }
     ]
   },
   {
@@ -1943,6 +2222,13 @@
         "label": "Banglapedia · Lalmonirhat District",
         "url": "https://en.banglapedia.org/index.php?title=Lalmonirhat_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Tushbhandar Zamindar Bari",
+        "bn": "তুষভাণ্ডার জমিদার বাড়ি",
+        "source": "https://en.banglapedia.org/index.php?title=Lalmonirhat_District"
       }
     ]
   },
@@ -1987,7 +2273,8 @@
         "url": "https://nilphamari.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "panchagarh",
@@ -2024,6 +2311,13 @@
         "label": "Banglapedia · Panchagarh District",
         "url": "https://en.banglapedia.org/index.php?title=Panchagarh_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Tentulia Dak Bungalow",
+        "bn": "তেঁতুলিয়া ডাকবাংলো",
+        "source": "https://en.banglapedia.org/index.php?title=Panchagarh_District"
       }
     ]
   },
@@ -2063,6 +2357,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Rangpur_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Begum Rokeya Memorial Centre",
+        "bn": "বেগম রোকেয়া স্মৃতিকেন্দ্র",
+        "source": "https://en.banglapedia.org/index.php?title=Rangpur_District"
+      }
     ]
   },
   {
@@ -2101,7 +2402,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Thakurgaon_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "jamalpur",
@@ -2136,7 +2438,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Jamalpur_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "mymensingh",
@@ -2187,7 +2490,8 @@
         "url": "https://tangail.gov.bd/pages/static-pages/6995975d35ce18e1c0786874",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "netrokona",
@@ -2224,6 +2528,13 @@
         "label": "Banglapedia · Netrokona District",
         "url": "https://en.banglapedia.org/index.php?title=Netrokona_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Ranikhong Catholic Church",
+        "bn": "রানীখং ক্যাথলিক গির্জা",
+        "source": "https://en.banglapedia.org/index.php?title=Netrokona_District"
       }
     ]
   },
@@ -2263,6 +2574,13 @@
         "url": "https://en.banglapedia.org/index.php?title=Sherpur_District",
         "reviewed": "2026-11-12"
       }
+    ],
+    "morePlaces": [
+      {
+        "en": "Gazni Recreation Centre",
+        "bn": "গজনী অবকাশ",
+        "source": "https://en.banglapedia.org/index.php?title=Sherpur_District"
+      }
     ]
   },
   {
@@ -2298,7 +2616,8 @@
         "url": "https://en.banglapedia.org/index.php?title=Barguna_District",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "barishal",
@@ -2332,6 +2651,13 @@
         "label": "Banglapedia · Barisal District",
         "url": "https://en.banglapedia.org/index.php?title=Barisal_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Chakhar Archaeological Museum",
+        "bn": "চাখার প্রত্নতাত্ত্বিক জাদুঘর",
+        "source": "https://en.banglapedia.org/index.php?title=Barisal_District"
       }
     ]
   },
@@ -2370,6 +2696,13 @@
         "label": "Banglapedia · Bhola District",
         "url": "https://en.banglapedia.org/index.php?title=Bhola_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Monpura Island",
+        "bn": "মনপুরা দ্বীপ",
+        "source": "https://en.banglapedia.org/index.php?title=Bhola_District"
       }
     ]
   },
@@ -2414,7 +2747,8 @@
         "url": "https://jhalakathi.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
       }
-    ]
+    ],
+    "morePlaces": []
   },
   {
     "id": "patuakhali",
@@ -2451,6 +2785,13 @@
         "label": "Banglapedia · Patuakhali District",
         "url": "https://en.banglapedia.org/index.php?title=Patuakhali_District",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Shutki Palli, Kuakata",
+        "bn": "শুঁটকি পল্লী, কুয়াকাটা",
+        "source": "https://en.banglapedia.org/index.php?title=Patuakhali_District"
       }
     ]
   },
@@ -2494,6 +2835,13 @@
         "label": "Tourism / heritage reference",
         "url": "https://pirojpur.gov.bd/pages/tourist-spot",
         "reviewed": "2026-11-12"
+      }
+    ],
+    "morePlaces": [
+      {
+        "en": "Momin Mosque",
+        "bn": "মমিন মসজিদ",
+        "source": "https://pirojpur.gov.bd/pages/static-pages/697887bd35ce18e1c0662d76"
       }
     ]
   }

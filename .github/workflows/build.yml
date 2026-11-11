@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
 concurrency:
   group: amardesh-${{ github.ref }}
   cancel-in-progress: true
@@ -77,3 +78,13 @@ jobs:
           git add .
           git commit -m "Publish AmarDesh web build ${GITHUB_SHA}"
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push --force "https://github.com/${GITHUB_REPOSITORY}.git" gh-pages
+      - name: Request Pages rebuild after publishing
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" >/dev/null 2>&1; then
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+          else
+            echo "Enable GitHub Pages from gh-pages / root in repository settings."
+          fi

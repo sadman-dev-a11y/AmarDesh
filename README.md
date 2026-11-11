@@ -51,13 +51,13 @@ Reviewed **12 November 2026**. Each district record includes source URLs and rev
 
 ### Content coverage and limits
 
-Every district has a current division relationship, bilingual name, starter destination, description, history/basic context and references. This is a curated starter guide, **not a comprehensive 64-district tourism encyclopedia**. Specific local food coverage is currently five districts; cultural music entries cover 41. Missing specialties and cultural entries are explicitly acknowledged instead of invented. Some history entries use basic administrative context. Some obscure destinations appear through the surprise discovery feature, but no claim about current popularity or access is made. Only four destination photographs are used.
+Every district has a current division relationship, bilingual name, starter destination, description, history/basic context and references. This is a curated starter guide, **not a comprehensive 64-district tourism encyclopedia**. Specific local food coverage is currently twelve districts; cultural music entries cover 41. Missing specialties and cultural entries are explicitly acknowledged instead of invented. Some history entries use basic administrative context. Some obscure destinations appear through the surprise discovery feature, but no claim about current popularity or access is made. The guide includes 102 landmark entries (one main place per district plus 38 additional places) and four destination photographs.
 
 Access restrictions, conditions, transport, permits and opening times can change. Verify with the relevant official office before travel. Particularly check hill-tract permissions, forest permits, island access and water/weather conditions. The planner is a manual itinerary, not turn-by-turn routing or a booking service. No attraction coordinate points are fabricated: place search uses the verified attraction name.
 
 ### Research maintenance
 
-The curated register is in `scripts/districts.tsv`; the app data contains the reviewed translations and reference URLs. Review edits to `src/data/districts.json` directly. `scripts/build-data.py` documents the initial transformation but is not a substitute for editorial review: regenerating without the original research notes drops cultural entries. Boundary geometry must remain paired to the 64 current IDs and matching divisions. Run tests after any data change; source review dates must reflect real re-review.
+The curated register is in `scripts/districts.tsv`; the app data contains the reviewed translations and reference URLs. Review edits to `src/data/districts.json` directly. The reviewed JSON is authoritative; do not regenerate it from scraped text. Boundary geometry must remain paired to the 64 current IDs and matching divisions. Run tests after any data change; source review dates must reflect real re-review.
 
 ## Signing a production release
 
