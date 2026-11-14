@@ -73,8 +73,12 @@ Create and securely retain a production keystore outside Git. Supply these varia
 - `AMARDESH_KEY_ALIAS`
 - `AMARDESH_KEY_PASSWORD`
 
-With those variables available, `./gradlew assembleRelease` uses the optional signing configuration. Without them, release output remains unsigned. Back up the production keystore securely and keep the same signing identity for updates. Increment `versionCode`/`versionName` for each distributed update; this edition uses `20000` / `2.0.0`.
+With those variables available, `./gradlew assembleRelease` uses the optional signing configuration. Without them, release output remains unsigned. Back up the production keystore securely and keep the same signing identity for updates. Increment `versionCode`/`versionName` for each distributed update; this edition uses `20001` / `2.0.1`.
 
 ## Maintaining the guide
 
 Edit reviewed JSON directly; do not overwrite it with unreviewed scraping. Check district relationships and regional food claims against primary/local sources. Add source IDs and genuine review dates with every content change. New photo records require a reusable license, author, source and adaptation note. Never put credentials or private signing material in the repository. Run the checks after edits.
+
+## 2.0.1 maintenance update
+
+Fixed filter-only discovery, preserved district selection and carousel position, and improved Bengali search normalization. Backup restores preserve trip IDs and active selection, remove duplicate stops, reject impossible calendar dates and retain plans beyond the old 30-trip/100-stop limits. Visible itinerary summaries update when a trip changes, and fractional day input is normalized to whole days. Regression checks include every division and district through the actual UI controls. Android builds additionally validate archive integrity, bundled content and photograph coverage.

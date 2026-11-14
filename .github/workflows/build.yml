@@ -44,13 +44,13 @@ jobs:
           "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
           "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$APK" > /tmp/apk-identity.txt
           head -20 /tmp/apk-identity.txt
-          unzip -l "$APK" | grep "assets/public/index.html"
+          python3 scripts/verify-apk.py "$APK"
       - name: Name the APK
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk AmarDesh-v2.0.0-debug.apk
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk AmarDesh-v2.0.1-debug.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: AmarDesh-v2.0.0-debug-apk
-          path: AmarDesh-v2.0.0-debug.apk
+          name: AmarDesh-v2.0.1-debug-apk
+          path: AmarDesh-v2.0.1-debug.apk
           if-no-files-found: error
           retention-days: 90
       - name: Publish downloadable prerelease
@@ -58,13 +58,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG="v2.0.0-build.${GITHUB_RUN_NUMBER}"
-          gh release create "$TAG" AmarDesh-v2.0.0-debug.apk --target "$GITHUB_SHA" --prerelease --title "AmarDesh 2.0.0 · build ${GITHUB_RUN_NUMBER}" --notes "Installable Android debug build. Android 7.0+ (API 24). Debug signing is for testing; uninstall an older differently signed build before installation. Redesigned tourist guide with division discovery, 103 attractions, 13 food stories and offline trips. See README for coverage and verification limits."
+          TAG="v2.0.1-build.${GITHUB_RUN_NUMBER}"
+          gh release create "$TAG" AmarDesh-v2.0.1-debug.apk --target "$GITHUB_SHA" --prerelease --title "AmarDesh 2.0.1 · build ${GITHUB_RUN_NUMBER}" --notes "Installable Android debug build. Android 7.0+ (API 24). Debug signing is for testing; uninstall an older differently signed build before installation. Redesigned tourist guide with division discovery, 103 attractions, 13 food stories and offline trips. See README for coverage and verification limits."
       - name: Publish tagged version
         if: startsWith(github.ref, 'refs/tags/v')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" AmarDesh-v2.0.0-debug.apk --title "AmarDesh ${GITHUB_REF_NAME}" --notes "Debug-signed APK for testing. See README for production signing."
+        run: gh release create "${GITHUB_REF_NAME}" AmarDesh-v2.0.1-debug.apk --title "AmarDesh ${GITHUB_REF_NAME}" --notes "Debug-signed APK for testing. See README for production signing."
       - uses: actions/upload-artifact@v4
         with:
           name: AmarDesh-web

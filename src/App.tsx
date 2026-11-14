@@ -24,6 +24,7 @@ import {
   parseState,
   chooseDistrict,
   searchAll,
+  normalize,
   recommend,
   interestIds,
   type State,
@@ -492,16 +493,13 @@ function Home() {
           <button
             className="primary warm"
             onClick={() =>
-              document
-                .getElementById("discover")
-                ?.scrollIntoView({
-                  behavior: window.matchMedia(
-                    "(prefers-reduced-motion: reduce)",
-                  ).matches
-                    ? "instant"
-                    : "smooth",
-                  block: "start",
-                })
+              document.getElementById("discover")?.scrollIntoView({
+                behavior: window.matchMedia("(prefers-reduced-motion: reduce)")
+                  .matches
+                  ? "instant"
+                  : "smooth",
+                block: "start",
+              })
             }
           >
             {t.begin}
@@ -648,6 +646,7 @@ function Explore() {
   const [q, setQ] = useState(""),
     [division, setDivision] = useState(""),
     [kind, setKind] = useState("all");
+  const searching = !!(q.trim() || division || kind !== "all");
   const hits = searchAll(q, division, kind);
   const lang = state.lang;
   return (
@@ -703,7 +702,19 @@ function Explore() {
             ))}
           </div>
         </div>
-        {q.trim() ? (
+        {searching && (
+          <button
+            className="text-link"
+            onClick={() => {
+              setQ("");
+              setDivision("");
+              setKind("all");
+            }}
+          >
+            {t.resetFilters}
+          </button>
+        )}
+        {searching ? (
           <div className="search-results" aria-live="polite">
             <span className="eyebrow">
               {hits.length} {t.results}
@@ -719,12 +730,21 @@ function Explore() {
                         (d) => d.division === h.name.en,
                       )!;
                       setState((p) => chooseDistrict(p, d.id));
-                      document
-                        .getElementById("discover")
-                        ?.scrollIntoView({
-                          block: "start",
-                          behavior: "smooth",
-                        });
+                      setQ("");
+                      setDivision("");
+                      setKind("all");
+                      window.requestAnimationFrame(() =>
+                        document
+                          .getElementById("discover")
+                          ?.scrollIntoView({
+                            block: "start",
+                            behavior: window.matchMedia(
+                              "(prefers-reduced-motion: reduce)",
+                            ).matches
+                              ? "instant"
+                              : "smooth",
+                          }),
+                      );
                     } else {
                       if (h.kind === "district")
                         setState((p) => chooseDistrict(p, h.id));
@@ -758,11 +778,15 @@ function Explore() {
           <p className="search-suggestions">{t.searchStart}</p>
         )}
       </section>
-      <Discovery />
-      <section className="section">
-        <h2>{t.popular}</h2>
-        <Cards items={featured} />
-      </section>
+      {!searching && (
+        <>
+          <Discovery />
+          <section className="section">
+            <h2>{t.popular}</h2>
+            <Cards items={featured} />
+          </section>
+        </>
+      )}
     </>
   );
 }
@@ -781,7 +805,7 @@ function FoodIndex() {
           const d = districtById(id)!;
           return [d.name, d.bn, ...d.aliases];
         }),
-      ].some((x) => x.toLocaleLowerCase().includes(query.toLocaleLowerCase())),
+      ].some((x) => normalize(x).includes(normalize(query))),
   );
   return (
     <>
@@ -1171,7 +1195,7 @@ function More() {
         <h2>{t.about}</h2>
         <p>{t.aboutText}</p>
         <p>{t.migration}</p>
-        <span className="edition">AmarDesh 2.0.0 · {t.local}</span>
+        <span className="edition">AmarDesh 2.0.1 · {t.local}</span>
         <a
           className="text-link"
           href="https://github.com/sadman-dev-a11y/AmarDesh"

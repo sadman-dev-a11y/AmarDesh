@@ -210,3 +210,59 @@ describe("progress, backup and itinerary", () => {
     expect(s.trips[0].stops[0].day).toBe(30);
   });
 });
+it("browses using filters without requiring a search term", () => {
+  const hits = searchAll("", "Sylhet", "district");
+  expect(hits).toHaveLength(4);
+  expect(hits.every((h) => h.context === "Sylhet")).toBe(true);
+  expect(searchAll("", "", "food")).toHaveLength(13);
+});
+it("keeps Bengali vowel signs distinct and ignores spaces around search terms", () => {
+  expect(searchAll(" কুমিল্লা ").some((h) => h.id === "cumilla")).toBe(true);
+  expect(searchAll("ঢাকা").some((h) => h.id === "dhaka")).toBe(true);
+});
+it("preserves the selected district when its division is selected again", () => {
+  const s = chooseDistrict(initialState(), "narayanganj");
+  expect(chooseDivision(s, "Dhaka")).toBe(s);
+});
+it("keeps trip IDs and the active trip when malformed backup entries precede it", () => {
+  const s = parseState({
+    version: 2,
+    activeTrip: "second",
+    trips: [
+      null,
+      { id: "first", name: "First", days: 3 },
+      { id: "second", name: "Second", days: 2 },
+    ],
+  });
+  expect(s.activeTrip).toBe("second");
+  expect(s.trips.map((t) => t.id)).toEqual(["first", "second"]);
+  expect(parseState(s)).toEqual(s);
+});
+it("restores all valid trips and distinct stops without silently truncating plans", () => {
+  const s = parseState({
+    version: 2,
+    trips: Array.from({ length: 35 }, (_, i) => ({
+      id: "plan-" + i,
+      stops: [
+        ...attractions.map((a) => ({ id: a.id, day: 1 })),
+        { id: attractions[0].id, day: 2 },
+      ],
+    })),
+  });
+  expect(s.trips).toHaveLength(35);
+  expect(s.trips[0].stops).toHaveLength(attractions.length);
+  expect(s.trips[0].stops[0].day).toBe(1);
+});
+it("rejects impossible calendar dates while retaining valid leap days", () => {
+  const s = parseState({
+    version: 2,
+    visits: {
+      dhaka: { date: "2026-02-30" },
+      khulna: { date: "2024-02-29", note: "Leap day" },
+    },
+    trips: [{ id: "x", start: "2026-99-99" }],
+  });
+  expect(s.visits.dhaka).toBeUndefined();
+  expect(s.visits.khulna.date).toBe("2024-02-29");
+  expect(s.trips[0].start).toBe("");
+});

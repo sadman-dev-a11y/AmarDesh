@@ -3,6 +3,7 @@ import {
   districts,
   loadProgress,
   parseProgress,
+  validDate,
   type Lang,
   type Progress,
 } from "./model";
@@ -127,46 +128,51 @@ export function parseState(value: unknown): State {
   s.savedFoods = ids(v.savedFoods, new Set(foods.map((f) => f.id)));
   s.visits = parseProgress({ version: 1, visits: v.visits }).visits;
   s.quiz = ids(v.quiz, new Set(districts.map((d) => d.id)));
-  if (Array.isArray(v.trips))
+  if (Array.isArray(v.trips)) {
+    const usedIds = new Set<string>();
+    const selected = v.trips.find(
+      (t) => t && typeof t === "object" && t.id === v.activeTrip,
+    );
     s.trips = v.trips
-      .filter((t) => t && typeof t === "object")
-      .slice(0, 30)
+      .filter((t) => t && typeof t === "object" && !Array.isArray(t))
       .map((raw, i) => {
         const t = raw as Record<string, unknown>;
+        let id = text(t.id, 100) || "restored-" + i;
+        while (usedIds.has(id)) id = "restored-" + i + "-" + id;
+        usedIds.add(id);
+        if (raw === selected) s.activeTrip = id;
         const days = Math.max(1, Math.floor(num(t.days, 30)));
         const valid = new Set(attractions.map((a) => a.id));
-        const stopList = Array.isArray(t.stops)
-          ? t.stops
-              .filter(
-                (x) => x && typeof x === "object" && valid.has(String(x.id)),
-              )
-              .slice(0, 100)
-          : [];
+        const seen = new Set<string>();
+        const stops: Trip["stops"] = [];
+        if (Array.isArray(t.stops))
+          for (const stop of t.stops) {
+            if (
+              !stop ||
+              typeof stop !== "object" ||
+              !valid.has(stop.id) ||
+              seen.has(stop.id)
+            )
+              continue;
+            seen.add(stop.id);
+            stops.push({
+              id: stop.id,
+              day: Math.max(1, Math.min(days, Math.floor(num(stop.day, 30)))),
+              notes: text(stop.notes),
+            });
+          }
         return {
-          id: "trip-" + i,
+          id,
           name: text(t.name, 100) || "My journey",
-          start: /^\d{4}-\d{2}-\d{2}$/.test(String(t.start))
-            ? String(t.start)
-            : "",
+          start: validDate(t.start) ? t.start : "",
           days,
-          stops: stopList.map((x) => ({
-            id: String(x.id),
-            day: Math.max(1, Math.min(days, Math.floor(num(x.day, 30)))),
-            notes: text(x.notes),
-          })),
+          stops,
           notes: text(t.notes),
           budget: num(t.budget, 1e8),
         };
       });
-  const activeIndex = Array.isArray(v.trips)
-    ? v.trips.findIndex(
-        (t) =>
-          t &&
-          typeof t === "object" &&
-          (t as Record<string, unknown>).id === v.activeTrip,
-      )
-    : -1;
-  s.activeTrip = s.trips[Math.max(0, activeIndex)]?.id || "";
+  }
+  s.activeTrip ||= s.trips[0]?.id || "";
   return s;
 }
 export function loadState() {
@@ -179,6 +185,8 @@ export function loadState() {
 }
 export function chooseDivision(s: State, name: string): State {
   const first = districts.find((d) => d.division === name);
+  if (s.division === name && districtById(s.district)?.division === name)
+    return s;
   return first ? { ...s, division: name, district: first.id } : s;
 }
 export function chooseDistrict(s: State, id: string): State {
@@ -213,16 +221,16 @@ export const normalize = (s: string) =>
   s
     .normalize("NFKD")
     .toLocaleLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, "");
+    .replace(/[^\p{L}\p{M}\p{N}]+/gu, "");
 export function searchAll(
   query: string,
   division = "",
   kind = "all",
 ): SearchHit[] {
   const q = normalize(query);
-  if (!q) return [];
+  if (!q && !division && kind === "all") return [];
   const matches = (...parts: (string | undefined)[]) =>
-    parts.some((s) => s && normalize(s).includes(q));
+    !q || parts.some((s) => s && normalize(s).includes(q));
   const out: SearchHit[] = [];
   for (const div of divisions)
     if (

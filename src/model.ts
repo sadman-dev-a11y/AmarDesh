@@ -58,6 +58,14 @@ export const empty: Progress = {
   },
 };
 const valid = new Set(districts.map((d) => d.id));
+export function validDate(value: unknown): value is string {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value))
+    return false;
+  const date = new Date(value + "T00:00:00Z");
+  return (
+    Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value
+  );
+}
 export function parseProgress(value: unknown): Progress {
   if (!value || typeof value !== "object") throw new Error("Invalid backup");
   const p = value as Progress;
@@ -69,12 +77,7 @@ export function parseProgress(value: unknown): Progress {
   const visits: Progress["visits"] = {};
   if (p.visits && typeof p.visits === "object")
     for (const [id, v] of Object.entries(p.visits))
-      if (
-        valid.has(id) &&
-        v &&
-        typeof v.date === "string" &&
-        /^\d{4}-\d{2}-\d{2}$/.test(v.date)
-      )
+      if (valid.has(id) && v && validDate(v.date))
         visits[id] = {
           date: v.date,
           note: typeof v.note === "string" ? v.note.slice(0, 2000) : "",
@@ -93,10 +96,7 @@ export function parseProgress(value: unknown): Progress {
     quiz: safeIds(p.quiz),
     trip: {
       name: typeof t.name === "string" ? t.name.slice(0, 100) : empty.trip.name,
-      start:
-        typeof t.start === "string" && /^\d{4}-\d{2}-\d{2}$/.test(t.start)
-          ? t.start
-          : "",
+      start: validDate(t.start) ? t.start : "",
       days,
       stops: Array.isArray(t.stops)
         ? t.stops

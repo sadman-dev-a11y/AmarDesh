@@ -6,22 +6,21 @@ import {
   fireEvent,
   waitFor,
   cleanup,
+  within,
 } from "@testing-library/react";
 import App from "./App";
 import { en } from "./i18n";
-import { attractions } from "./tourism";
+import { attractions, divisions, districts } from "./tourism";
 beforeEach(() => {
   localStorage.clear();
   window.location.hash = "explore";
   window.scrollTo = vi.fn();
   HTMLElement.prototype.scrollTo = vi.fn();
-  window.matchMedia = vi
-    .fn()
-    .mockReturnValue({
-      matches: false,
-      addEventListener: vi.fn(),
-      removeEventListener: vi.fn(),
-    });
+  window.matchMedia = vi.fn().mockReturnValue({
+    matches: false,
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+  });
 });
 afterEach(cleanup);
 const nav = (name: string) =>
@@ -173,4 +172,58 @@ it("rejects an invalid restore while keeping saved progress", () => {
   nav(en.restore);
   expect(screen.getByText(en.backupBad)).toBeTruthy();
   expect(JSON.parse(localStorage.getItem("amardesh-v2")!).version).toBe(2);
+});
+it("filters the explorer without text, removes unrelated featured cards and clears filters", () => {
+  render(<App />);
+  fireEvent.change(screen.getByRole("combobox", { name: en.division }), {
+    target: { value: "Sylhet" },
+  });
+  expect(screen.queryByRole("heading", { name: en.popular })).toBeNull();
+  expect(screen.getByRole("button", { name: /Shah Jalal/ })).toBeTruthy();
+  expect(screen.queryByRole("button", { name: /Lalbagh Fort/ })).toBeNull();
+  nav(en.resetFilters);
+  expect(screen.getByRole("heading", { name: en.popular })).toBeTruthy();
+});
+it("can select every division and all 64 districts in the actual discovery controls", () => {
+  render(<App />);
+  const divisionControls = screen.getByRole("group", { name: en.division });
+  for (const division of divisions) {
+    fireEvent.click(
+      within(divisionControls).getByRole("button", { name: division.name.en }),
+    );
+    for (const d of districts.filter((d) => d.division === division.name.en)) {
+      fireEvent.click(
+        within(
+          screen.getByRole("group", { name: en.chooseDistrict }),
+        ).getByRole("button", { name: d.name }),
+      );
+      expect(
+        screen.getByRole("heading", { name: "Explore " + d.name }),
+      ).toBeTruthy();
+    }
+  }
+});
+it("refreshes the visible share summary after editing notes and normalizes fractional days", async () => {
+  window.location.hash = "trips";
+  render(<App />);
+  fireEvent.change(screen.getByLabelText(en.tripName), {
+    target: { value: "Updated trip" },
+  });
+  nav(en.create);
+  fireEvent.change(screen.getByLabelText(en.days), {
+    target: { value: "1.8" },
+  });
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).trips[0].days).toBe(
+    1,
+  );
+  nav(en.share);
+  await waitFor(() =>
+    expect(screen.getByLabelText(en.shareReady)).toBeTruthy(),
+  );
+  fireEvent.change(screen.getByLabelText(en.notes), {
+    target: { value: "New meeting point" },
+  });
+  expect(
+    (screen.getByLabelText(en.shareReady) as HTMLTextAreaElement).value,
+  ).toContain("New meeting point");
 });

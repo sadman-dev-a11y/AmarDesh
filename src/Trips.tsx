@@ -6,11 +6,13 @@ export function Trips() {
   const { state, setState, t, go, togglePlace, toggleFood, notify } =
     useTravel();
   const [name, setName] = useState(""),
-    [summary, setSummary] = useState(""),
+    [summaryTrip, setSummaryTrip] = useState(""),
     [removed, setRemoved] = useState<Trip | null>(null);
   const lang = state.lang;
   const current =
     state.trips.find((x) => x.id === state.activeTrip) || state.trips[0];
+  const summary =
+    current?.id === summaryTrip ? itinerarySummary(current, lang) : "";
   const update = (patch: Partial<Trip>) =>
     setState((p) => ({
       ...p,
@@ -38,7 +40,7 @@ export function Trips() {
   const share = async () => {
     if (!current) return;
     const text = itinerarySummary(current, lang);
-    setSummary(text);
+    setSummaryTrip(current.id);
     try {
       if (navigator.share) await navigator.share({ title: current.name, text });
       else if (navigator.clipboard) await navigator.clipboard.writeText(text);
@@ -89,7 +91,7 @@ export function Trips() {
                 value={current.id}
                 onChange={(e) => {
                   setState((p) => ({ ...p, activeTrip: e.target.value }));
-                  setSummary("");
+                  setSummaryTrip("");
                 }}
               >
                 {state.trips.map((trip) => (
@@ -136,7 +138,7 @@ export function Trips() {
                   onChange={(e) => {
                     const days = Math.max(
                       1,
-                      Math.min(30, Number(e.target.value) || 1),
+                      Math.floor(Math.min(30, Number(e.target.value) || 1)),
                     );
                     update({
                       days,

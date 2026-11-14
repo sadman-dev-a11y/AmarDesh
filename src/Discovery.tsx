@@ -7,6 +7,7 @@ import {
   divisions,
   districtById,
   type Section,
+  normalize,
 } from "./tourism";
 import { Icon, Photo } from "./components";
 export function Discovery() {
@@ -19,27 +20,39 @@ export function Discovery() {
   const current = divisions.findIndex((v) => v.name.en === state.division);
   const district = districtById(state.district)!;
   useEffect(() => () => clearTimeout(timer.current), []);
-  const select = (index: number) => {
-    const v = divisions[(index + 8) % 8];
-    setState((p) => chooseDivision(p, v.name.en));
-    const card = track.current?.children[(index + 8) % 8] as
-      | HTMLElement
-      | undefined;
-    if (card && track.current)
-      track.current.scrollTo({
+  const center = (index: number, behavior: ScrollBehavior) => {
+    const root = track.current;
+    const card = root?.children[index] as HTMLElement | undefined;
+    if (root && card)
+      root.scrollTo({
         left:
           card.offsetLeft -
-          track.current.offsetLeft -
-          (track.current.clientWidth - card.clientWidth) / 2,
-        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
-          ? "instant"
-          : "smooth",
+          root.offsetLeft -
+          (root.clientWidth - card.clientWidth) / 2,
+        behavior,
       });
+  };
+  useEffect(() => {
+    swiping.current = false;
+    clearTimeout(timer.current);
+    center(current, "instant");
+  }, [current]);
+  const select = (index: number) => {
+    swiping.current = false;
+    clearTimeout(timer.current);
+    const next = (index + divisions.length) % divisions.length;
+    setState((p) => chooseDivision(p, divisions[next].name.en));
+    center(
+      next,
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "instant"
+        : "smooth",
+    );
   };
   const matches = q.trim()
     ? districts.filter((d) =>
         [d.name, d.bn, ...d.aliases].some((x) =>
-          x.toLocaleLowerCase().includes(q.toLocaleLowerCase()),
+          normalize(x).includes(normalize(q)),
         ),
       )
     : [];
