@@ -5,7 +5,6 @@
     "bn": "ঢাকা",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Dhaka",
     "category": "heritage",
     "sight": {
       "en": "Lalbagh Fort",
@@ -52,6 +51,15 @@
         "bn": "আহসান মঞ্জিল",
         "source": "https://beautifulbangladesh.gov.bd/"
       }
+    ],
+    "aliases": [
+      "Dhaka"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-2",
+      "source-3",
+      "source-4"
     ]
   },
   {
@@ -60,7 +68,6 @@
     "bn": "ফরিদপুর",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Faridpur",
     "category": "heritage",
     "sight": {
       "en": "Mathurapur Deul",
@@ -97,6 +104,13 @@
         "bn": "পাতরাইল শাহী মসজিদ",
         "source": "https://en.banglapedia.org/index.php?title=Faridpur_District"
       }
+    ],
+    "aliases": [
+      "Faridpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-5"
     ]
   },
   {
@@ -105,7 +119,6 @@
     "bn": "গাজীপুর",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Gazipur",
     "category": "heritage",
     "sight": {
       "en": "Bhawal Rajbari",
@@ -142,6 +155,13 @@
         "bn": "টোক দুর্গ",
         "source": "https://en.banglapedia.org/index.php?title=Gazipur_District"
       }
+    ],
+    "aliases": [
+      "Gazipur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-6"
     ]
   },
   {
@@ -150,7 +170,6 @@
     "bn": "গোপালগঞ্জ",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Gopalganj",
     "category": "heritage",
     "sight": {
       "en": "Tungipara Memorial Complex",
@@ -178,7 +197,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Gopalganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-7"
+    ]
   },
   {
     "id": "kishoreganj",
@@ -186,7 +212,6 @@
     "bn": "কিশোরগঞ্জ",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Kishoreganj",
     "category": "culture",
     "sight": {
       "en": "Sholakia Eidgah",
@@ -217,7 +242,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Kishoreganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-8"
+    ]
   },
   {
     "id": "madaripur",
@@ -225,7 +257,6 @@
     "bn": "মাদারীপুর",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Madaripur",
     "category": "nature",
     "sight": {
       "en": "Shakuni Lake",
@@ -259,6 +290,13 @@
         "bn": "রাজা রাম মন্দির",
         "source": "https://en.banglapedia.org/index.php?title=Madaripur_District"
       }
+    ],
+    "aliases": [
+      "Madaripur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-9"
     ]
   },
   {
@@ -267,7 +305,6 @@
     "bn": "মানিকগঞ্জ",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Manikganj",
     "category": "heritage",
     "sight": {
       "en": "Baliati Palace",
@@ -303,7 +340,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Manikganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-10",
+      "source-11"
+    ]
   },
   {
     "id": "munshiganj",
@@ -311,7 +356,6 @@
     "bn": "মুন্সীগঞ্জ",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Munshiganj",
     "category": "heritage",
     "sight": {
       "en": "Idrakpur Fort",
@@ -345,6 +389,13 @@
         "bn": "বাবা আদম মসজিদ",
         "source": "https://en.banglapedia.org/index.php?title=Munshiganj_District"
       }
+    ],
+    "aliases": [
+      "Munshiganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-12"
     ]
   },
   {
@@ -353,7 +404,6 @@
     "bn": "নারায়ণগঞ্জ",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Narayanganj",
     "category": "heritage",
     "sight": {
       "en": "Panam Nagar",
@@ -390,6 +440,13 @@
         "bn": "সোনাকান্দা দুর্গ",
         "source": "https://en.banglapedia.org/index.php?title=Narayanganj_District"
       }
+    ],
+    "aliases": [
+      "Narayanganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-13"
     ]
   },
   {
@@ -398,7 +455,6 @@
     "bn": "নরসিংদী",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Narsingdi",
     "category": "heritage",
     "sight": {
       "en": "Wari-Bateshwar",
@@ -431,7 +487,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Narsingdi"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-14",
+      "source-15"
+    ]
   },
   {
     "id": "rajbari",
@@ -439,7 +503,6 @@
     "bn": "রাজবাড়ী",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Rajbari",
     "category": "culture",
     "sight": {
       "en": "Mir Mosharraf Hossain's Tomb",
@@ -476,6 +539,13 @@
         "bn": "গোয়ালন্দ ফেরিঘাট",
         "source": "https://en.banglapedia.org/index.php?title=Rajbari_District"
       }
+    ],
+    "aliases": [
+      "Rajbari"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-16"
     ]
   },
   {
@@ -484,7 +554,6 @@
     "bn": "শরীয়তপুর",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Shariatpur",
     "category": "heritage",
     "sight": {
       "en": "Fateh Jangapur Fort",
@@ -515,7 +584,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Shariatpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-17"
+    ]
   },
   {
     "id": "tangail",
@@ -523,7 +599,6 @@
     "bn": "টাঙ্গাইল",
     "division": "Dhaka",
     "divisionBn": "ঢাকা",
-    "boundaryName": "Tangail",
     "category": "nature",
     "sight": {
       "en": "Madhupur National Park",
@@ -562,7 +637,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Tangail"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-18",
+      "source-19"
+    ]
   },
   {
     "id": "bagerhat",
@@ -570,7 +653,6 @@
     "bn": "বাগেরহাট",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Bagerhat",
     "category": "heritage",
     "sight": {
       "en": "Sixty Dome Mosque",
@@ -617,6 +699,15 @@
         "bn": "খান জাহান আলীর সমাধি",
         "source": "https://en.banglapedia.org/index.php?title=Bagerhat_District"
       }
+    ],
+    "aliases": [
+      "Bagerhat"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-20",
+      "source-21",
+      "source-22"
     ]
   },
   {
@@ -625,7 +716,6 @@
     "bn": "চুয়াডাঙ্গা",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Chuadanga",
     "category": "heritage",
     "sight": {
       "en": "Gholdari Jami Mosque",
@@ -662,6 +752,13 @@
         "bn": "কার্পাসডাঙ্গা নীলকুঠি",
         "source": "https://en.banglapedia.org/index.php?title=Chuadanga_District"
       }
+    ],
+    "aliases": [
+      "Chuadanga"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-23"
     ]
   },
   {
@@ -670,7 +767,6 @@
     "bn": "যশোর",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Jessore",
     "category": "culture",
     "sight": {
       "en": "Sagardari, Madhu Palli",
@@ -707,6 +803,13 @@
         "bn": "ভরত দেউল",
         "source": "https://en.banglapedia.org/index.php?title=Jessore_District"
       }
+    ],
+    "aliases": [
+      "Jessore"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-24"
     ]
   },
   {
@@ -715,7 +818,6 @@
     "bn": "ঝিনাইদহ",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Jhenaidah",
     "category": "heritage",
     "sight": {
       "en": "Naldanga Temple",
@@ -748,7 +850,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Jhenaidah"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-25",
+      "source-26"
+    ]
   },
   {
     "id": "khulna",
@@ -756,7 +866,6 @@
     "bn": "খুলনা",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Khulna",
     "category": "nature",
     "sight": {
       "en": "The Sundarbans",
@@ -803,6 +912,15 @@
         "bn": "খান জাহান আলী সেতু",
         "source": "https://en.banglapedia.org/index.php?title=Khulna_District"
       }
+    ],
+    "aliases": [
+      "Khulna"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-27",
+      "source-28",
+      "source-22"
     ]
   },
   {
@@ -811,7 +929,6 @@
     "bn": "কুষ্টিয়া",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Kushtia",
     "category": "culture",
     "sight": {
       "en": "Shilaidaha Kuthibari",
@@ -848,6 +965,13 @@
         "bn": "লালন শাহের সমাধি",
         "source": "https://en.banglapedia.org/index.php?title=Kushtia_District"
       }
+    ],
+    "aliases": [
+      "Kushtia"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-29"
     ]
   },
   {
@@ -856,7 +980,6 @@
     "bn": "মাগুরা",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Magura",
     "category": "heritage",
     "sight": {
       "en": "Raja Sitaram's Palace-Fort",
@@ -892,7 +1015,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Magura"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-30",
+      "source-31"
+    ]
   },
   {
     "id": "meherpur",
@@ -900,7 +1031,6 @@
     "bn": "মেহেরপুর",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Meherpur",
     "category": "heritage",
     "sight": {
       "en": "Mujibnagar Memorial",
@@ -931,7 +1061,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Meherpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-32"
+    ]
   },
   {
     "id": "narail",
@@ -939,7 +1076,6 @@
     "bn": "নড়াইল",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Narail",
     "category": "heritage",
     "sight": {
       "en": "Goal Bathan Mosque",
@@ -984,6 +1120,14 @@
         "bn": "বড়দিয়া মঠ",
         "source": "https://en.banglapedia.org/index.php?title=Narail_District"
       }
+    ],
+    "aliases": [
+      "Narail"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-33",
+      "source-22"
     ]
   },
   {
@@ -992,7 +1136,6 @@
     "bn": "সাতক্ষীরা",
     "division": "Khulna",
     "divisionBn": "খুলনা",
-    "boundaryName": "Satkhira",
     "category": "heritage",
     "sight": {
       "en": "Sonabaria Math",
@@ -1037,6 +1180,14 @@
         "bn": "জাহাজঘাটা নৌদুর্গ",
         "source": "https://en.banglapedia.org/index.php?title=Satkhira_District"
       }
+    ],
+    "aliases": [
+      "Satkhira"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-34",
+      "source-22"
     ]
   },
   {
@@ -1045,7 +1196,6 @@
     "bn": "বান্দরবান",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Bandarban",
     "category": "nature",
     "sight": {
       "en": "Nilgiri",
@@ -1084,6 +1234,14 @@
         "bn": "কেওক্রাডং",
         "source": "https://beautifulbangladesh.gov.bd/"
       }
+    ],
+    "aliases": [
+      "Bandarban"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-35",
+      "source-36"
     ]
   },
   {
@@ -1092,7 +1250,6 @@
     "bn": "ব্রাহ্মণবাড়িয়া",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Brahamanbaria",
     "category": "culture",
     "sight": {
       "en": "Kal Bhairab Temple",
@@ -1126,6 +1283,13 @@
         "bn": "গঙ্গাসাগর দীঘি",
         "source": "https://en.banglapedia.org/index.php?title=Brahmanbaria_District"
       }
+    ],
+    "aliases": [
+      "Brahamanbaria"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-37"
     ]
   },
   {
@@ -1134,7 +1298,6 @@
     "bn": "চাঁদপুর",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Chandpur",
     "category": "heritage",
     "sight": {
       "en": "Rupsha Zamindar Bari",
@@ -1171,6 +1334,13 @@
         "bn": "শাহারপাড় দীঘি",
         "source": "https://en.banglapedia.org/index.php?title=Chandpur_District"
       }
+    ],
+    "aliases": [
+      "Chandpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-38"
     ]
   },
   {
@@ -1179,7 +1349,6 @@
     "bn": "চট্টগ্রাম",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Chittagong",
     "category": "coast",
     "sight": {
       "en": "Patenga Sea Beach",
@@ -1224,6 +1393,14 @@
         "bn": "চন্দ্রনাথ পাহাড়",
         "source": "https://en.banglapedia.org/index.php?title=Chittagong_District"
       }
+    ],
+    "aliases": [
+      "Chittagong"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-39",
+      "source-40"
     ]
   },
   {
@@ -1232,7 +1409,6 @@
     "bn": "কুমিল্লা",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Comilla",
     "category": "heritage",
     "sight": {
       "en": "Shalban Vihara",
@@ -1277,6 +1453,14 @@
         "bn": "ময়নামতি জাদুঘর",
         "source": "https://en.banglapedia.org/index.php?title=Comilla_District"
       }
+    ],
+    "aliases": [
+      "Comilla"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-41",
+      "source-42"
     ]
   },
   {
@@ -1285,7 +1469,6 @@
     "bn": "কক্সবাজার",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Cox's Bazar",
     "category": "coast",
     "sight": {
       "en": "Cox's Bazar Sea Beach",
@@ -1313,7 +1496,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Cox's Bazar"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-43"
+    ]
   },
   {
     "id": "feni",
@@ -1321,7 +1511,6 @@
     "bn": "ফেনী",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Feni",
     "category": "nature",
     "sight": {
       "en": "Bijoy Singh Dighi",
@@ -1357,7 +1546,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Feni"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-44",
+      "source-45"
+    ]
   },
   {
     "id": "khagrachhari",
@@ -1365,7 +1562,6 @@
     "bn": "খাগড়াছড়ি",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Khagrachhari",
     "category": "nature",
     "sight": {
       "en": "Alutila",
@@ -1399,6 +1595,13 @@
         "bn": "রামগড় হ্রদ",
         "source": "https://en.banglapedia.org/index.php?title=Khagrachhari_District"
       }
+    ],
+    "aliases": [
+      "Khagrachhari"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-46"
     ]
   },
   {
@@ -1407,7 +1610,6 @@
     "bn": "লক্ষ্মীপুর",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Lakshmipur",
     "category": "heritage",
     "sight": {
       "en": "Sreerampur Rajbari",
@@ -1438,7 +1640,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Lakshmipur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-47"
+    ]
   },
   {
     "id": "noakhali",
@@ -1446,7 +1655,6 @@
     "bn": "নোয়াখালী",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Noakhali",
     "category": "coast",
     "sight": {
       "en": "Nijhum Dwip",
@@ -1482,7 +1690,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Noakhali"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-48",
+      "source-49"
+    ]
   },
   {
     "id": "rangamati",
@@ -1490,7 +1706,6 @@
     "bn": "রাঙ্গামাটি",
     "division": "Chattogram",
     "divisionBn": "চট্টগ্রাম",
-    "boundaryName": "Rangamati",
     "category": "nature",
     "sight": {
       "en": "Kaptai Lake",
@@ -1518,7 +1733,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Rangamati"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-50"
+    ]
   },
   {
     "id": "bogura",
@@ -1526,7 +1748,6 @@
     "bn": "বগুড়া",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Bogra",
     "category": "heritage",
     "sight": {
       "en": "Mahasthangarh",
@@ -1571,6 +1792,14 @@
         "bn": "গোকুল মেধ",
         "source": "https://en.banglapedia.org/index.php?title=Bogra_District"
       }
+    ],
+    "aliases": [
+      "Bogra"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-51",
+      "source-42"
     ]
   },
   {
@@ -1579,7 +1808,6 @@
     "bn": "চাঁপাইনবাবগঞ্জ",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Nawabganj",
     "category": "heritage",
     "sight": {
       "en": "Chhota Sona Mosque",
@@ -1607,7 +1835,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Nawabganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-52"
+    ]
   },
   {
     "id": "joypurhat",
@@ -1615,7 +1850,6 @@
     "bn": "জয়পুরহাট",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Joypurhat",
     "category": "nature",
     "sight": {
       "en": "Achhranga Beel",
@@ -1649,6 +1883,13 @@
         "bn": "পাথরঘাটা, পাঁচবিবি",
         "source": "https://en.banglapedia.org/index.php?title=Joypurhat_District"
       }
+    ],
+    "aliases": [
+      "Joypurhat"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-53"
     ]
   },
   {
@@ -1657,7 +1898,6 @@
     "bn": "নওগাঁ",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Naogaon",
     "category": "heritage",
     "sight": {
       "en": "Paharpur Buddhist Vihara",
@@ -1699,6 +1939,14 @@
         "bn": "কুসুম্বা মসজিদ",
         "source": "https://en.banglapedia.org/index.php?title=Naogaon_District"
       }
+    ],
+    "aliases": [
+      "Naogaon"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-54",
+      "source-55"
     ]
   },
   {
@@ -1707,7 +1955,6 @@
     "bn": "নাটোর",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Natore",
     "category": "heritage",
     "sight": {
       "en": "Rani Bhabani Rajbari",
@@ -1749,6 +1996,14 @@
         "bn": "উত্তরা গণভবন",
         "source": "https://en.banglapedia.org/index.php?title=Natore_District"
       }
+    ],
+    "aliases": [
+      "Natore"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-56",
+      "source-42"
     ]
   },
   {
@@ -1757,7 +2012,6 @@
     "bn": "পাবনা",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Pabna",
     "category": "heritage",
     "sight": {
       "en": "Jor Bangla Temple",
@@ -1790,7 +2044,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Pabna"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-57",
+      "source-58"
+    ]
   },
   {
     "id": "rajshahi",
@@ -1798,7 +2060,6 @@
     "bn": "রাজশাহী",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Rajshahi",
     "category": "culture",
     "sight": {
       "en": "Varendra Research Museum",
@@ -1829,7 +2090,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Rajshahi"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-59"
+    ]
   },
   {
     "id": "sirajganj",
@@ -1837,7 +2105,6 @@
     "bn": "সিরাজগঞ্জ",
     "division": "Rajshahi",
     "divisionBn": "রাজশাহী",
-    "boundaryName": "Sirajganj",
     "category": "culture",
     "sight": {
       "en": "Rabindra Kachharibari",
@@ -1873,7 +2140,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Sirajganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-60",
+      "source-61"
+    ]
   },
   {
     "id": "habiganj",
@@ -1881,7 +2156,6 @@
     "bn": "হবিগঞ্জ",
     "division": "Sylhet",
     "divisionBn": "সিলেট",
-    "boundaryName": "Habiganj",
     "category": "nature",
     "sight": {
       "en": "Baniachong Sagardighi",
@@ -1918,6 +2192,13 @@
         "bn": "বানিয়াচং রাজবাড়ি",
         "source": "https://en.banglapedia.org/index.php?title=Habiganj_District"
       }
+    ],
+    "aliases": [
+      "Habiganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-62"
     ]
   },
   {
@@ -1926,7 +2207,6 @@
     "bn": "মৌলভীবাজার",
     "division": "Sylhet",
     "divisionBn": "সিলেট",
-    "boundaryName": "Maulvibazar",
     "category": "nature",
     "sight": {
       "en": "Madhabkunda Waterfall",
@@ -1963,6 +2243,13 @@
         "bn": "মাধবপুর হ্রদ",
         "source": "https://en.banglapedia.org/index.php?title=Maulvibazar_District"
       }
+    ],
+    "aliases": [
+      "Maulvibazar"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-63"
     ]
   },
   {
@@ -1971,7 +2258,6 @@
     "bn": "সুনামগঞ্জ",
     "division": "Sylhet",
     "divisionBn": "সিলেট",
-    "boundaryName": "Sunamganj",
     "category": "nature",
     "sight": {
       "en": "Tanguar Haor",
@@ -2007,7 +2293,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Sunamganj"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-64",
+      "source-65"
+    ]
   },
   {
     "id": "sylhet",
@@ -2015,7 +2309,6 @@
     "bn": "সিলেট",
     "division": "Sylhet",
     "divisionBn": "সিলেট",
-    "boundaryName": "Sylhet",
     "category": "culture",
     "sight": {
       "en": "Shah Jalal's Shrine",
@@ -2056,7 +2349,16 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Sylhet"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-66",
+      "source-67",
+      "source-68"
+    ]
   },
   {
     "id": "dinajpur",
@@ -2064,7 +2366,6 @@
     "bn": "দিনাজপুর",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Dinajpur",
     "category": "heritage",
     "sight": {
       "en": "Kantajew Temple",
@@ -2098,6 +2399,13 @@
         "bn": "রামসাগর দীঘি",
         "source": "https://en.banglapedia.org/index.php?title=Dinajpur_District"
       }
+    ],
+    "aliases": [
+      "Dinajpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-69"
     ]
   },
   {
@@ -2106,7 +2414,6 @@
     "bn": "গাইবান্ধা",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Gaibandha",
     "category": "heritage",
     "sight": {
       "en": "Vardhan Kuthi",
@@ -2140,6 +2447,13 @@
         "bn": "নলডাঙ্গা জমিদার বাড়ি",
         "source": "https://en.banglapedia.org/index.php?title=Gaibandha_District"
       }
+    ],
+    "aliases": [
+      "Gaibandha"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-70"
     ]
   },
   {
@@ -2148,7 +2462,6 @@
     "bn": "কুড়িগ্রাম",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Kurigram",
     "category": "heritage",
     "sight": {
       "en": "Naodanga Zamindar Bari",
@@ -2185,6 +2498,13 @@
         "bn": "ভিতরবন্দ জমিদার বাড়ি",
         "source": "https://en.banglapedia.org/index.php?title=Kurigram_District"
       }
+    ],
+    "aliases": [
+      "Kurigram"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-71"
     ]
   },
   {
@@ -2193,7 +2513,6 @@
     "bn": "লালমনিরহাট",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Lalmonirhat",
     "category": "heritage",
     "sight": {
       "en": "Kakina Zamindar Bari",
@@ -2230,6 +2549,13 @@
         "bn": "তুষভাণ্ডার জমিদার বাড়ি",
         "source": "https://en.banglapedia.org/index.php?title=Lalmonirhat_District"
       }
+    ],
+    "aliases": [
+      "Lalmonirhat"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-72"
     ]
   },
   {
@@ -2238,7 +2564,6 @@
     "bn": "নীলফামারী",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Nilphamari",
     "category": "nature",
     "sight": {
       "en": "Nilsagar",
@@ -2274,7 +2599,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Nilphamari"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-73",
+      "source-74"
+    ]
   },
   {
     "id": "panchagarh",
@@ -2282,7 +2615,6 @@
     "bn": "পঞ্চগড়",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Panchagarh",
     "category": "heritage",
     "sight": {
       "en": "Mirzapur Shahi Mosque",
@@ -2319,6 +2651,13 @@
         "bn": "তেঁতুলিয়া ডাকবাংলো",
         "source": "https://en.banglapedia.org/index.php?title=Panchagarh_District"
       }
+    ],
+    "aliases": [
+      "Panchagarh"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-75"
     ]
   },
   {
@@ -2327,7 +2666,6 @@
     "bn": "রংপুর",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Rangpur",
     "category": "heritage",
     "sight": {
       "en": "Tajhat Palace",
@@ -2364,6 +2702,13 @@
         "bn": "বেগম রোকেয়া স্মৃতিকেন্দ্র",
         "source": "https://en.banglapedia.org/index.php?title=Rangpur_District"
       }
+    ],
+    "aliases": [
+      "Rangpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-76"
     ]
   },
   {
@@ -2372,7 +2717,6 @@
     "bn": "ঠাকুরগাঁও",
     "division": "Rangpur",
     "divisionBn": "রংপুর",
-    "boundaryName": "Thakurgaon",
     "category": "heritage",
     "sight": {
       "en": "Raja Tonkanath's Palace",
@@ -2403,7 +2747,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Thakurgaon"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-77"
+    ]
   },
   {
     "id": "jamalpur",
@@ -2411,7 +2762,6 @@
     "bn": "জামালপুর",
     "division": "Mymensingh",
     "divisionBn": "ময়মনসিংহ",
-    "boundaryName": "Jamalpur",
     "category": "heritage",
     "sight": {
       "en": "Narapara Fort",
@@ -2439,7 +2789,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Jamalpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-78"
+    ]
   },
   {
     "id": "mymensingh",
@@ -2447,7 +2804,6 @@
     "bn": "ময়মনসিংহ",
     "division": "Mymensingh",
     "divisionBn": "ময়মনসিংহ",
-    "boundaryName": "Mymensingh",
     "category": "culture",
     "sight": {
       "en": "Zainul Abedin Museum",
@@ -2491,7 +2847,16 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Mymensingh"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-79",
+      "source-67",
+      "source-19"
+    ]
   },
   {
     "id": "netrokona",
@@ -2499,7 +2864,6 @@
     "bn": "নেত্রকোণা",
     "division": "Mymensingh",
     "divisionBn": "ময়মনসিংহ",
-    "boundaryName": "Netrakona",
     "category": "culture",
     "sight": {
       "en": "Birisiri Cultural Academy",
@@ -2536,6 +2900,13 @@
         "bn": "রানীখং ক্যাথলিক গির্জা",
         "source": "https://en.banglapedia.org/index.php?title=Netrokona_District"
       }
+    ],
+    "aliases": [
+      "Netrakona"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-80"
     ]
   },
   {
@@ -2544,7 +2915,6 @@
     "bn": "শেরপুর",
     "division": "Mymensingh",
     "divisionBn": "ময়মনসিংহ",
-    "boundaryName": "Sherpur",
     "category": "nature",
     "sight": {
       "en": "Madhutila Ecopark",
@@ -2581,6 +2951,13 @@
         "bn": "গজনী অবকাশ",
         "source": "https://en.banglapedia.org/index.php?title=Sherpur_District"
       }
+    ],
+    "aliases": [
+      "Sherpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-81"
     ]
   },
   {
@@ -2589,7 +2966,6 @@
     "bn": "বরগুনা",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Barguna",
     "category": "heritage",
     "sight": {
       "en": "Bibichini Shahi Mosque",
@@ -2617,7 +2993,14 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Barguna"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-82"
+    ]
   },
   {
     "id": "barishal",
@@ -2625,7 +3008,6 @@
     "bn": "বরিশাল",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Barisal",
     "category": "nature",
     "sight": {
       "en": "Durgasagar",
@@ -2659,6 +3041,13 @@
         "bn": "চাখার প্রত্নতাত্ত্বিক জাদুঘর",
         "source": "https://en.banglapedia.org/index.php?title=Barisal_District"
       }
+    ],
+    "aliases": [
+      "Barisal"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-83"
     ]
   },
   {
@@ -2667,7 +3056,6 @@
     "bn": "ভোলা",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Bhola",
     "category": "coast",
     "sight": {
       "en": "Char Kukri-Mukri",
@@ -2704,6 +3092,13 @@
         "bn": "মনপুরা দ্বীপ",
         "source": "https://en.banglapedia.org/index.php?title=Bhola_District"
       }
+    ],
+    "aliases": [
+      "Bhola"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-84"
     ]
   },
   {
@@ -2712,7 +3107,6 @@
     "bn": "ঝালকাঠি",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Jhalokati",
     "category": "culture",
     "sight": {
       "en": "Gabkhan Bridge",
@@ -2748,7 +3142,15 @@
         "reviewed": "2026-11-12"
       }
     ],
-    "morePlaces": []
+    "morePlaces": [],
+    "aliases": [
+      "Jhalokati"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-85",
+      "source-86"
+    ]
   },
   {
     "id": "patuakhali",
@@ -2756,7 +3158,6 @@
     "bn": "পটুয়াখালী",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Patuakhali",
     "category": "coast",
     "sight": {
       "en": "Kuakata Sea Beach",
@@ -2793,6 +3194,13 @@
         "bn": "শুঁটকি পল্লী, কুয়াকাটা",
         "source": "https://en.banglapedia.org/index.php?title=Patuakhali_District"
       }
+    ],
+    "aliases": [
+      "Patuakhali"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-87"
     ]
   },
   {
@@ -2801,7 +3209,6 @@
     "bn": "পিরোজপুর",
     "division": "Barishal",
     "divisionBn": "বরিশাল",
-    "boundaryName": "Pirojpur",
     "category": "heritage",
     "sight": {
       "en": "Rayerkathi Palace",
@@ -2843,6 +3250,14 @@
         "bn": "মমিন মসজিদ",
         "source": "https://pirojpur.gov.bd/pages/static-pages/697887bd35ce18e1c0662d76"
       }
+    ],
+    "aliases": [
+      "Pirojpur"
+    ],
+    "sourceIds": [
+      "source-1",
+      "source-88",
+      "source-89"
     ]
   }
 ]

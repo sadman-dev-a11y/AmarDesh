@@ -1,21 +1,47 @@
-# AmarDesh 🇧🇩
+# AmarDesh 🇧🇩 · 2.0
 
-A bilingual, offline-friendly Bangladesh field guide and travel passport built with React, TypeScript, Vite, MapLibre and Capacitor. Android package: `bd.amardesh.explorer`.
+An independent bilingual Bangladesh tourist guide, built with React, TypeScript, Vite and Capacitor. Android application ID: `bd.amardesh.explorer`. No account, API key, paid backend, analytics or mandatory network connection.
 
-## Use the app
+[Live web app](https://sadman-dev-a11y.github.io/AmarDesh/) · [Download Android builds](https://github.com/sadman-dev-a11y/AmarDesh/releases) · [Build status](https://github.com/sadman-dev-a11y/AmarDesh/actions)
 
-- Explore all **8 divisions and 64 districts**, using real district polygons from BBS/OCHA via geoBoundaries.
-- Tap a polygon, zoom into a division, or use the searchable district cards. A keyboard-accessible SVG fallback uses the same geometry when WebGL is unavailable.
-- Switch between Bangla and English; fonts, guides, map geometry and photographs are bundled.
-- Filter by division and heritage, culture, nature or coast; search current and historical English spellings, Bangla names, landmarks and the included foods.
-- Save favorite districts and log visits with a date and personal memory. Passport stamps and three achievement badges track progress.
-- Answer division and landmark quizzes with explanations and linked references. Correct discoveries persist.
-- Plan a multi-day trip with district stops, reorder controls, per-stop days and notes, start date and your own budget. No invented fares or route-time estimates.
-- Export/restore a JSON backup; no accounts, analytics, paid backend or server-side personal data storage.
+## What changed
 
-## Build and validate
+The map has been removed, including MapLibre and the geographic boundary files. Discovery now starts with a horizontal, swipeable photographic division carousel. Select a division, choose a district, then open Attractions, Local food, History & culture, or Travel guide. The official eight division relationships and all 64 districts remain available, with bilingual district search and historic spelling aliases.
 
-Node 22+ and Java 21 are required. Android 7.0+ (API 24), compile/target SDK 36.
+Five main destinations—Home, Explore, Food, My Trips and More—organize the application. The responsive interface includes cinematic photography, illustrated fallbacks, large touch controls, keyboard focus, a skip link, reduced-motion support and light/dark/device themes. Bangla and English are available throughout the interface and guide content; source titles and original articles retain their original language.
+
+- Home: popular places, less familiar destinations, heritage, regional foods, suggested itineraries and local recommendations based on selected interests.
+- Explore: global search across divisions, districts, attractions and dishes, with combined division/type filters and direct detail navigation.
+- Destination guides: overview, experiences, getting there, planning advice, source links, review dates, save action, nearby places in the district and trip integration.
+- Food guides: 13 documented regional food stories with Bangla/English names, ingredients, flavor, cultural context, serving traditions, dietary considerations and article references. Regional associations are not exclusive origin claims. No invented restaurants, prices or ratings.
+- My Trips: multiple named plans, start dates, 1–30 days, attraction stops, day assignments, reorder/remove controls, stop notes, general notes, user-entered budget, shareable summaries, and delete/undo. Saved places and dishes appear here.
+- Travel essentials: entry/visa links, money, transport, weather, etiquette, connectivity, accessibility, emergency services, responsible tourism and basic phrases. Official services remain external links.
+- Passport: all 64 districts, visit dates and memories. Division quizzes record correct discoveries.
+- Backup: export or copy JSON and restore validated v1/v2 backups. Invalid data is rejected. Source inventory can also be downloaded.
+
+## Content and research
+
+`src/data/districts.json` contains the 64-district register. `src/data/tourism.json` contains **103 attractions, 13 dishes, eight division cards and 109 source records**. Each guide references source IDs with publisher, URL, review date and a publication date where established. Original summaries are paraphrased, not article reproductions. The in-app Sources page exposes the full inventory.
+
+District foundations were reviewed on 12 November 2026; the additional tourism/food research and travel essentials on 14 November 2026. Sources prioritize the Bangladesh National Portal, Bangladesh Tourism Board, Banglapedia/Asiatic Society, Department of Archaeology, district portals, UNESCO and BSS. Food research additionally uses The Business Standard, The Daily Star, University of California Press/Gastronomica and a Bangladesh Agricultural University fisheries paper.
+
+Coverage is intentionally uneven: all districts have basic bilingual context, references and at least one attraction; 13 featured destinations have expanded descriptions. Many other attraction records remain concise reference-based introductions. Cultural entries are included where documented. Food specialties are assigned only to documented regions, so some district food pages offer the national guide instead of a speculative local dish. This edition is not a comprehensive tourism encyclopedia.
+
+Travel conditions, permits, visas, prices and opening times can change. The app does not invent coordinates, fares, schedules, access guarantees, restaurant rankings or site-specific best seasons. It provides official reference links and clearly states where confirmation is needed. Suggested itineraries are sequences, not calculated routes or transport timetables. Physical accessibility must be checked with the destination.
+
+### Media rights
+
+Fifteen bundled photographs have individual authors, source URLs, original licenses and adaptation notes in `public/photos/credits.json` and the in-app credits. Wikimedia Commons and WordPress Photo Directory images are resized/compressed and may be cropped by CSS. CC BY-SA adaptations retain their original licenses. Missing destination/food images use clearly marked original illustrated covers, not unrelated stock photography. The rasmalai photograph illustrates the dish; it does not document a particular Cumilla producer. Noto Sans Bengali is bundled under the SIL Open Font License. Application source is MIT; third-party media/font licenses remain separate.
+
+## Offline behavior and existing progress
+
+Android packages the guide data, fonts and photos. The website pre-caches the complete production build after a successful first online load; external articles and live official services need internet. Service-worker content hashes replace stale app caches on updates without clearing user storage.
+
+Progress is stored locally under `amardesh-v2`. On first launch, v1 favorites become saved primary attractions; passport dates/notes, quiz progress and the existing trip/budget are migrated. The old storage key is retained. Language, theme, selection, interests, bookmarks and multiple plans persist across restarts. No personal data is uploaded. Storage errors show a backup prompt. Clearing app/browser data or uninstalling removes device data: export a backup first.
+
+## Build and verification
+
+Use Node 22+, Java 21, Android SDK/build-tools 36. Android minimum is API 24 (Android 7.0).
 
 ```sh
 npm ci
@@ -28,50 +54,27 @@ cd android
 ./gradlew assembleDebug --no-daemon
 ```
 
-APK: `android/app/build/outputs/apk/debug/app-debug.apk`.
+APK output: `android/app/build/outputs/apk/debug/app-debug.apk`.
 
-The `Verify, build Android and publish` GitHub Actions workflow runs checks, builds the web app and APK, uploads APK/web artifacts, creates a versioned prerelease for pushes to `main`, and publishes the web output to `gh-pages`. Configure GitHub Pages to deploy from `gh-pages`, `/ (root)`. Web history uses hash routes, so no server rewrite is required. The original `CineDesk` branch is preserved; `main` is the default branch.
+The workflow `.github/workflows/build.yml` runs type checks, ESLint and tests; builds the web app; synchronizes Capacitor; builds Android; verifies the APK signature with `apksigner` and prints its application metadata; uploads APK/web artifacts; publishes a versioned debug prerelease from `main`; and deploys the web build through `gh-pages`. `main` remains default and the original `CineDesk` branch is preserved.
 
-## Offline behavior and privacy
+Automated checks cover all district relationships, bilingual search across every record, valid source/media references, map removal, recommendation relevance, v1 migration, multiple-trip backups and sanitization, division quiz uniqueness, all four district sections, bookmark/planning flows, language/theme persistence, passport and invalid restores. Service-worker tests exercise installation, cache matching, navigation fallback, failed offline requests and cache cleanup. Browser QA covers desktop and a 390px phone viewport, including Bangla dark mode, destination actions and food details. These are not physical-device or screen-reader certification tests.
 
-The Android app packages all guide data, photos, fonts and district boundaries, so it does not need a first network visit. On the website, the service worker pre-caches the complete build after the first successful online load. External references and Google Maps searches need internet. MapLibre uses bundled GeoJSON with a plain local background: **no external tile server, API key or tile downloads**.
+The production web build measured approximately **3.6 MiB** locally, including all photos/fonts and a **129 kB gzip JavaScript bundle**. It contains no tile/WebGL engine, polling or continuous animation. Images are resized and lazy-loaded except primary hero images. Browsing and recommendations run on the device. No claim is made about measured battery use, field performance on every handset, or live transport availability.
 
-Favorites, language, trip, notes, visits and quiz progress use device-local storage. Clearing browser/app data or uninstalling removes them. Keep a backup. The backup dialog also exposes copyable JSON for Android environments that do not support web file downloads. Import replaces device progress; malformed data is rejected and unknown district IDs are discarded. Storage failures show an export prompt.
+## Production signing
 
-## Data, sources and licensing
+Published builds are **debug signed for installation/testing**. GitHub runners generate ephemeral debug keys: differently signed previous installations may need removal before updating. Export your progress first.
 
-Reviewed **12 November 2026**. Each district record includes source URLs and review dates in `src/data/districts.json`; references are visible in the district guide.
+Create and securely retain a production keystore outside Git. Supply these variables through a secure build environment (never committed or printed):
 
-- **Current district/division register:** [Bangladesh National Portal](https://bangladesh.gov.bd/views/district-list/).
-- **District geometry:** BBS / OCHA ROAP, 2020, `BGD-ADM2-16705992`, distributed by [geoBoundaries](https://www.geoboundaries.org/api/current/gbOpen/BGD/ADM2/), **[CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/)**. Boundary geometry is unchanged from the publisher’s simplified file; names/IDs were normalized and joined to current divisions. See `public/data/boundary-metadata.json`. Not a cadastral, navigation or legal boundary product. geoBoundaries source commit: `9469f09`.
-- **History / culture / landmarks:** individual [Banglapedia](https://en.banglapedia.org/) district articles (Asiatic Society of Bangladesh), supplemented with Bangladesh Tourism Board, Department of Archaeology, official district portals, UNESCO and Bangladesh Sangbad Sangstha references. Facts are independently paraphrased; source articles and government photos are not redistributed.
-- **Photographs:** Wikimedia Commons and WordPress Photo Directory, with individual authors, source URLs, licenses and modification notes in `public/photos/credits.json`. Images are resized/compressed and displayed with a CSS crop. CC BY image adaptations retain attribution. Other districts deliberately use category illustrations rather than unrelated photographs.
-- **Fonts:** Noto Sans Bengali, SIL Open Font License, distributed by `@fontsource/noto-sans-bengali`.
-- Application source: MIT. This does not relicense third-party boundaries, fonts or photographs.
-
-### Content coverage and limits
-
-Every district has a current division relationship, bilingual name, starter destination, description, history/basic context and references. This is a curated starter guide, **not a comprehensive 64-district tourism encyclopedia**. Specific local food coverage is currently twelve districts; cultural music entries cover 41. Missing specialties and cultural entries are explicitly acknowledged instead of invented. Some history entries use basic administrative context. Some obscure destinations appear through the surprise discovery feature, but no claim about current popularity or access is made. The guide includes 102 landmark entries (one main place per district plus 38 additional places) and four destination photographs.
-
-Access restrictions, conditions, transport, permits and opening times can change. Verify with the relevant official office before travel. Particularly check hill-tract permissions, forest permits, island access and water/weather conditions. The planner is a manual itinerary, not turn-by-turn routing or a booking service. No attraction coordinate points are fabricated: place search uses the verified attraction name.
-
-### Research maintenance
-
-The curated register is in `scripts/districts.tsv`; the app data contains the reviewed translations and reference URLs. Review edits to `src/data/districts.json` directly. The reviewed JSON is authoritative; do not regenerate it from scraped text. Boundary geometry must remain paired to the 64 current IDs and matching divisions. Run tests after any data change; source review dates must reflect real re-review.
-
-## Signing a production release
-
-The published APK is **debug signed**, suitable for installation/testing. GitHub-hosted runners generate ephemeral debug keys, so separately built debug APKs may require uninstalling an older installation first. Export a backup before uninstalling.
-
-For a stable production release, create and retain your own keystore outside Git. Set these environment variables in your secure build environment:
-
-- `AMARDESH_KEYSTORE_PATH`: absolute local path to the keystore
+- `AMARDESH_KEYSTORE_PATH`
 - `AMARDESH_KEYSTORE_PASSWORD`
 - `AMARDESH_KEY_ALIAS`
 - `AMARDESH_KEY_PASSWORD`
 
-With those variables available, `./gradlew assembleRelease` signs the release build. Store the keystore and passwords in an approved secret store and securely recoverable backups. Never commit them, print them to logs, or reuse the debug key for distribution. Without the variables, release output remains unsigned. Increase `versionCode` and `versionName` before shipping updates.
+With those variables available, `./gradlew assembleRelease` uses the optional signing configuration. Without them, release output remains unsigned. Back up the production keystore securely and keep the same signing identity for updates. Increment `versionCode`/`versionName` for each distributed update; this edition uses `20000` / `2.0.0`.
 
-## Verification scope
+## Maintaining the guide
 
-Automated tests cover the official division counts, every district-to-polygon join, closed geometry rings and geographic ranges, bilingual fields and sources, all district/landmark searches, filters, backup sanitization, quiz uniqueness and major user workflows. Browser QA covers layout and interactions; MapLibre is mocked only in component unit tests, with geometry tested separately. A successful APK build verifies compilation and packaging, not physical-device installation or all GPU/WebView combinations. Hardware testing remains recommended.
+Edit reviewed JSON directly; do not overwrite it with unreviewed scraping. Check district relationships and regional food claims against primary/local sources. Add source IDs and genuine review dates with every content change. New photo records require a reusable license, author, source and adaptation note. Never put credentials or private signing material in the repository. Run the checks after edits.

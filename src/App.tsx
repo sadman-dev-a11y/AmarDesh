@@ -1,37 +1,1489 @@
-import React,{useEffect,useRef,useState} from 'react';
-import {BangladeshMap} from './Map';
-import {districts,divisions,categories,colors,loadProgress,parseProgress,searchDistricts,quizFor,today,type Lang,type District,type Progress} from './model';
-import '@fontsource/noto-sans-bengali/400.css';
-import '@fontsource/noto-sans-bengali/600.css';
-import './style.css';
-const T={en:{explore:'Explore',passport:'Passport',planner:'Trip planner',quiz:'Discover',saved:'Saved',all:'All divisions',search:'Search a district, place or food…',eyebrow:'EIGHT DIVISIONS. ENDLESS DISCOVERIES.',hero:'A little closer',hero2:'to home.',intro:'From misty hill trails to the quiet bends of a river. Find your next story in the 64 districts of Bangladesh.',exploreMap:'Explore the map',surprise:'Surprise me',districts:'Districts',divisions:'Divisions',yourJourney:'Your journey',visited:'visited',listTitle:'Every district, a different story',listIntro:'Choose a place. Follow your curiosity.',results:'districts to explore',none:'No districts found. Try another name or clear your filters.',clear:'Clear filters',view:'Discover district',save:'Save',unsave:'Saved',stamp:'Mark as visited',unstamp:'Remove visit',addTrip:'Add to trip',inTrip:'In your trip',back:'Back to exploring',sights:'A place to begin',beyond:'Go beyond the first stop',history:'A page from the past',culture:'Living heritage',food:'A taste of the district',foodEmpty:'A verified district specialty is not yet in this edition. Ask a local host about seasonal food and ingredients.',cultureEmpty:'Explore the district’s architectural heritage through its featured place and linked references.',source:'Sources & review',review:'Reviewed 12 November 2026',travel:'Before you go',travelText:'Check opening hours, permits, weather and transport with the official destination office. Access can change, especially in the hill tracts, forests and islands. Request consent before photographing people; leave wildlife and sacred places undisturbed.',official:'Official tourism guidance',mapSearch:'Find this place on a map',log:'Your visit',date:'Visit date',note:'Your memories',offline:'Offline collection',offlineText:'District guides, boundaries, photos and your progress are stored on this device. External links need internet.',backup:'Back up / restore',planTitle:'Make room for a little adventure.',planIntro:'Build a flexible itinerary. Keep your stops, notes and your own budget together.',tripName:'Trip name',start:'Start date',days:'Days',addStop:'Add a district',choose:'Choose a district',day:'Day',remove:'Remove',up:'Move up',down:'Move down',notes:'Plans for this stop',budget:'Your budget · BDT',budgetIntro:'Enter your own estimates. These are not quoted travel prices.',transport:'Transport',stay:'Accommodation',meals:'Food',total:'Total',emptyTrip:'Your itinerary starts here. Add a district above or from any district guide.',passportTitle:'Every stamp is a story.',passportIntro:'Your personal record of Bangladesh, one district at a time.',stamps:'district stamps',badge:'Explorer badges',newbie:'First steps',wanderer:'Division wanderer',explorer:'Bangladesh explorer',badgeHelp:'Visit 1 district · 1 in every division · all 64 districts',passEmpty:'Your first stamp is waiting. Open a district and mark your visit.',quizTitle:'How well do you know home?',quizIntro:'A small discovery, every day. Learn the divisions and the places that make them memorable.',divisionQ:'Which division is this district in?',landmarkQ:'In which district will you find this place?',correct:'That’s right!',wrong:'A new thing to remember.',next:'Next question',mastered:'districts discovered',answer:'Correct answer',sources:'About & credits',close:'Close',about:'Made for curious Bangladesh explorers.',aboutText:'AmarDesh is an independent guide. Administrative names and relationships follow the Bangladesh National Portal. Boundaries are a simplified 2020 BBS/OCHA dataset distributed by geoBoundaries, licensed CC BY 3.0 IGO; geometry is unchanged and names were normalized. This is a travel illustration, not a survey map. District history and cultural names are paraphrased from Banglapedia; selected tourism and food facts have additional linked references. Content coverage varies: some districts have only a starter landmark. No live prices, hours or route estimates are provided.',backupIntro:'Copy this backup somewhere safe. Restoring replaces progress on this device. Your data is never uploaded.',export:'Download backup',restore:'Restore pasted backup',backupLabel:'Backup JSON',restored:'Backup restored.',badBackup:'Invalid backup. Your progress has not changed.',storageError:'Device storage is unavailable or full. Changes may not survive closing the app; export a backup.',online:'Ready to explore',offlineNow:'You’re offline · guides still work',rights:'Open data. Local stories. A country to discover.',allSaved:'Your next adventures, kept close.',savedEmpty:'Save a district with the heart button to keep it here.',local:'On this device',discover:'Discover a quieter corner',photocap:'Jaflong tea garden · Sylhet',photoNote:'Photography is used only for the named destination; other districts use illustrated category covers.'},bn:{explore:'অন্বেষণ',passport:'পাসপোর্ট',planner:'ভ্রমণ পরিকল্পনা',quiz:'আবিষ্কার',saved:'সংরক্ষিত',all:'সব বিভাগ',search:'জেলা, স্থান বা খাবার খুঁজুন…',eyebrow:'আট বিভাগ। অসংখ্য আবিষ্কার।',hero:'দেশকে চিনি',hero2:'আরও কাছে থেকে।',intro:'কুয়াশামাখা পাহাড় থেকে নদীর নিরিবিলি বাঁক। বাংলাদেশের ৬৪ জেলায় খুঁজে নিন আপনার পরের গল্প।',exploreMap:'মানচিত্র দেখুন',surprise:'নতুন কিছু দেখান',districts:'জেলা',divisions:'বিভাগ',yourJourney:'আপনার যাত্রা',visited:'দেখা হয়েছে',listTitle:'প্রতি জেলায় নতুন গল্প',listIntro:'একটি স্থান বেছে নিন। কৌতূহলের পথে চলুন।',results:'জেলা অন্বেষণের জন্য',none:'কোনো জেলা পাওয়া যায়নি। অন্য নামে খুঁজুন অথবা ফিল্টার মুছুন।',clear:'ফিল্টার মুছুন',view:'জেলা আবিষ্কার করুন',save:'রাখুন',unsave:'সংরক্ষিত',stamp:'ভ্রমণ করেছি',unstamp:'ভ্রমণের চিহ্ন মুছুন',addTrip:'পরিকল্পনায় যোগ করুন',inTrip:'পরিকল্পনায় আছে',back:'অন্বেষণে ফিরুন',sights:'যেখান থেকে শুরু',beyond:'আরও একটি গন্তব্য',history:'ইতিহাসের পাতা',culture:'জীবন্ত ঐতিহ্য',food:'জেলার স্বাদ',foodEmpty:'এই সংস্করণে জেলার যাচাইকৃত বিশেষ খাবার যোগ করা হয়নি। স্থানীয়দের কাছে মৌসুমি খাবার ও উপকরণ সম্পর্কে জানতে পারেন।',cultureEmpty:'নির্বাচিত স্থান ও তথ্যসূত্রের মাধ্যমে জেলার স্থাপত্য ঐতিহ্য জানুন।',source:'তথ্যসূত্র ও পর্যালোচনা',review:'পর্যালোচনা: ১২ নভেম্বর ২০২৬',travel:'যাওয়ার আগে',travelText:'সরকারি কার্যালয় থেকে খোলার সময়, অনুমতি, আবহাওয়া ও যাতায়াত যাচাই করুন। পাহাড়, বন ও দ্বীপে প্রবেশের নিয়ম বদলাতে পারে। মানুষের ছবি তোলার আগে অনুমতি নিন; বন্যপ্রাণী ও পবিত্র স্থানের প্রতি সম্মান রাখুন।',official:'সরকারি পর্যটন নির্দেশনা',mapSearch:'মানচিত্রে স্থানটি খুঁজুন',log:'আপনার ভ্রমণ',date:'ভ্রমণের তারিখ',note:'আপনার স্মৃতি',offline:'অফলাইন সংগ্রহ',offlineText:'জেলার তথ্য, সীমানা, ছবি ও অগ্রগতি এই ডিভাইসে থাকে। বাইরের লিংক দেখতে ইন্টারনেট প্রয়োজন।',backup:'ব্যাকআপ / পুনরুদ্ধার',planTitle:'একটু বেড়ানোর সময় হোক।',planIntro:'নিজের মতো করে ভ্রমণ সাজান। গন্তব্য, নোট ও নিজের বাজেট একসঙ্গে রাখুন।',tripName:'ভ্রমণের নাম',start:'শুরুর তারিখ',days:'দিন',addStop:'জেলা যোগ করুন',choose:'জেলা বেছে নিন',day:'দিন',remove:'সরান',up:'ওপরে নিন',down:'নিচে নিন',notes:'এই গন্তব্যের পরিকল্পনা',budget:'আপনার বাজেট · টাকা',budgetIntro:'নিজের আনুমানিক খরচ লিখুন। এগুলো বাজারদরের দাবি নয়।',transport:'যাতায়াত',stay:'থাকা',meals:'খাবার',total:'মোট',emptyTrip:'আপনার ভ্রমণ এখান থেকেই শুরু। ওপর থেকে অথবা জেলার পাতা থেকে গন্তব্য যোগ করুন।',passportTitle:'প্রতি সিলে একটি গল্প।',passportIntro:'একটি একটি করে বাংলাদেশের জেলা ভ্রমণের ব্যক্তিগত খতিয়ান।',stamps:'জেলার সিল',badge:'অন্বেষণের অর্জন',newbie:'প্রথম পদক্ষেপ',wanderer:'বিভাগের পথিক',explorer:'বাংলাদেশ অভিযাত্রী',badgeHelp:'১ জেলা · প্রতি বিভাগে অন্তত ১ জেলা · সব ৬৪ জেলা',passEmpty:'প্রথম সিল আপনার অপেক্ষায়। জেলার পাতা খুলে ভ্রমণের চিহ্ন দিন।',quizTitle:'নিজের দেশকে কতটা চেনেন?',quizIntro:'প্রতিদিন একটু আবিষ্কার। বিভাগের নাম ও স্মরণীয় স্থানগুলো জানুন।',divisionQ:'জেলাটি কোন বিভাগে?',landmarkQ:'এই স্থানটি কোন জেলায়?',correct:'সঠিক উত্তর!',wrong:'নতুন কিছু জানা হলো।',next:'পরের প্রশ্ন',mastered:'জেলা আবিষ্কৃত',answer:'সঠিক উত্তর',sources:'পরিচিতি ও কৃতজ্ঞতা',close:'বন্ধ করুন',about:'কৌতূহলী বাংলাদেশ পথিকদের জন্য।',aboutText:'আমারদেশ একটি স্বাধীন ভ্রমণ সহায়িকা। জেলা ও বিভাগের নাম এবং সম্পর্ক জাতীয় তথ্য বাতায়ন অনুসারে। সীমানা: geoBoundaries বিতরণকৃত ২০২০ সালের BBS/OCHA তথ্য; লাইসেন্স CC BY 3.0 IGO। জ্যামিতি অপরিবর্তিত, নাম হালনাগাদ। এটি জরিপ মানচিত্র নয়। ইতিহাস ও সাংস্কৃতিক তথ্য বাংলাপিডিয়া থেকে নিজস্ব ভাষায় সংক্ষেপ করা হয়েছে। পর্যটন ও খাবারের জন্য অতিরিক্ত সূত্র যুক্ত আছে। কিছু জেলায় প্রাথমিক একটি দর্শনীয় স্থান রয়েছে। সরাসরি হালনাগাদ ভাড়া, সময়সূচি বা রুটের হিসাব নেই।',backupIntro:'ব্যাকআপ নিরাপদে রাখুন। পুনরুদ্ধার করলে এই ডিভাইসের অগ্রগতি বদলে যাবে। তথ্য অনলাইনে পাঠানো হয় না।',export:'ব্যাকআপ নামান',restore:'লেখা ব্যাকআপ পুনরুদ্ধার',backupLabel:'ব্যাকআপ JSON',restored:'ব্যাকআপ পুনরুদ্ধার হয়েছে।',badBackup:'ব্যাকআপটি সঠিক নয়। আগের অগ্রগতি অক্ষত আছে।',storageError:'ডিভাইসে তথ্য সংরক্ষণ করা যাচ্ছে না। অ্যাপ বন্ধ করার আগে ব্যাকআপ রাখুন।',online:'অন্বেষণের জন্য প্রস্তুত',offlineNow:'অফলাইনে আছেন · তথ্য দেখা যাবে',rights:'মুক্ত তথ্য। স্থানীয় গল্প। আবিষ্কারের একটি দেশ।',allSaved:'পরের অভিযানের ঠিকানা।',savedEmpty:'হার্ট বোতাম দিয়ে জেলা রাখলে এখানে দেখা যাবে।',local:'এই ডিভাইসে',discover:'নিরিবিলি নতুন কোনো স্থান',photocap:'জাফলং চা বাগান · সিলেট',photoNote:'ছবি শুধু নির্দিষ্ট গন্তব্যেই ব্যবহৃত; অন্য জেলায় বিষয়ভিত্তিক অলংকরণ রয়েছে।'}};
-type Tab='explore'|'passport'|'planner'|'quiz'|'saved';
-const icons:Record<Tab,string>={explore:'◈',passport:'▧',planner:'⌁',quiz:'✧',saved:'♡'};
-export default function App(){
- const [p,setP]=useState(loadProgress),[route,setRoute]=useState(window.location.hash.slice(1)||'explore'),[division,setDivision]=useState(''),[query,setQuery]=useState(''),[category,setCategory]=useState('all'),[storageError,setStorageError]=useState(false),[online,setOnline]=useState(navigator.onLine),[modal,setModal]=useState<'about'|'backup'|null>(null),[backup,setBackup]=useState(''),[message,setMessage]=useState('');
- const dialog=useRef<HTMLDialogElement>(null);const lang=p.lang;const t=T[lang];const num=(n:number)=>n.toLocaleString(lang==='bn'?'bn-BD':'en-GB');
- useEffect(()=>{const onHash=()=>{setRoute(window.location.hash.slice(1)||'explore');window.scrollTo({top:0,behavior:'instant'})};window.addEventListener('hashchange',onHash);const connect=()=>setOnline(navigator.onLine);window.addEventListener('online',connect);window.addEventListener('offline',connect);return()=>{window.removeEventListener('hashchange',onHash);window.removeEventListener('online',connect);window.removeEventListener('offline',connect)}},[]);
- useEffect(()=>{document.documentElement.lang=lang;try{localStorage.setItem('amardesh-v1',JSON.stringify(p));setStorageError(false)}catch{setStorageError(true)}},[p,lang]);
- useEffect(()=>{if(modal)dialog.current?.showModal();else dialog.current?.close()},[modal]);
- const go=(r:string)=>{window.location.hash=r};const selected=route.startsWith('district/')?districts.find(d=>d.id===route.split('/')[1]):undefined;const tab=(['passport','planner','quiz','saved'].includes(route)?route:'explore') as Tab;
- const toggleFavorite=(id:string)=>setP(prev=>({...prev,favorites:prev.favorites.includes(id)?prev.favorites.filter(x=>x!==id):[...prev.favorites,id]}));
- const addStop=(id:string)=>setP(prev=>prev.trip.stops.some(s=>s.id===id)?prev:({...prev,trip:{...prev.trip,stops:[...prev.trip.stops,{id,day:Math.min(prev.trip.days,prev.trip.stops.length+1),notes:''}]}}));
- const updateTrip=(trip:Partial<Progress['trip']>)=>setP(prev=>({...prev,trip:{...prev.trip,...trip}}));
- const filtered=searchDistricts(query,division,category,tab==='saved'?p.favorites:undefined);
- const visits=Object.keys(p.visits);const divisionVisits=new Set(districts.filter(d=>visits.includes(d.id)).map(d=>d.division));
- const openBackup=()=>{setBackup(JSON.stringify(p,null,2));setMessage('');setModal('backup')};
- const download=()=>{const url=URL.createObjectURL(new Blob([JSON.stringify(p,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='AmarDesh-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
- const surprise=()=>{const unseen=districts.filter(d=>!visits.includes(d.id));const pool=unseen.length?unseen:districts;go('district/'+pool[Math.floor(Math.random()*pool.length)].id)};
- return <><header className="topbar"><a className="brand" href="#explore" aria-label="AmarDesh home"><img src={`${import.meta.env.BASE_URL}icon.svg`} alt=""/><span>Amar<span>Desh</span><small>{lang==='bn'?'আমার বাংলাদেশ':'A FIELD GUIDE TO BANGLADESH'}</small></span></a><nav aria-label={lang==='bn'?'প্রধান নেভিগেশন':'Main navigation'}>{(Object.keys(icons) as Tab[]).map(k=><button key={k} className={tab===k&&!selected?'active':''} onClick={()=>go(k)} aria-current={tab===k&&!selected?'page':undefined}><span aria-hidden="true">{icons[k]}</span>{t[k]}</button>)}</nav><button className="language" onClick={()=>setP(prev=>({...prev,lang:lang==='en'?'bn':'en'}))} aria-label={lang==='en'?'Switch to Bangla':'Switch to English'}>{lang==='en'?'বাংলা':'English'} <span>⇄</span></button></header>
- {storageError&&<div role="alert" className="notice">{t.storageError} <button onClick={openBackup}>{t.backup}</button></div>}
- <main id="main">{selected?<><button className="back" onClick={()=>go('explore')}>← {t.back}</button><DistrictPage d={selected} lang={lang} favorite={p.favorites.includes(selected.id)} visit={p.visits[selected.id]} inTrip={p.trip.stops.some(s=>s.id===selected.id)} onFavorite={()=>toggleFavorite(selected.id)} onTrip={()=>addStop(selected.id)} onVisit={v=>setP(prev=>{const next={...prev.visits};if(v)next[selected.id]=v;else delete next[selected.id];return {...prev,visits:next}})}/></>:tab==='explore'||tab==='saved'?<>
- {tab==='explore'?<><section className="hero"><div className="hero-copy"><p className="eyebrow"><span/> {t.eyebrow}</p><h1>{t.hero}<br/><em>{t.hero2}</em></h1><p className="intro">{t.intro}</p><div className="hero-actions"><button className="primary" onClick={()=>document.getElementById("explore-map")?.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth"})}>{t.exploreMap}<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16 16 4M4 4h12v12" stroke="currentColor" strokeWidth="1.5"/></svg></button><button className="text-button" onClick={surprise}>{t.surprise} <span>✧</span></button></div><div className="stats"><div><strong>{num(64)}</strong><span>{t.districts}</span></div><div><strong>{num(8)}</strong><span>{t.divisions}</span></div><div><strong>{num(visits.length)}<small>/ {num(64)}</small></strong><span>{t.visited}</span></div></div><div className="postcard"><img src={`${import.meta.env.BASE_URL}photos/tea.jpg`} alt={t.photocap}/><span>{t.photocap} <span>↗</span></span></div></div><div className="map-card" id="explore-map"><div className="map-top"><span>🇧🇩 {lang==='bn'?'বাংলাদেশ':'BANGLADESH'}</span><span>{lang==='bn'?'আপনার নিজের মানচিত্র':'YOUR COUNTRY, UNCOVERED'}</span></div><BangladeshMap lang={lang} division={division} onSelect={id=>go('district/'+id)}/><div className="map-legend">{divisions.map((v,i)=><button key={v.en} aria-pressed={division===v.en} onClick={()=>setDivision(division===v.en?'':v.en)}><i style={{background:colors[i]}}/>{v[lang]}</button>)}</div></div></section><div className="journey-strip"><span className="stamp-mini">▧</span><div><strong>{t.yourJourney}</strong><span>{num(visits.length)} / {num(64)} {t.districts} {t.visited}</span></div><div className="progress-track"><i style={{width:`${visits.length/64*100}%`}}/></div><button onClick={()=>go('passport')}>{t.passport} →</button></div></>:<section className="page-heading"><p className="eyebrow">♡ {t.saved}</p><h1>{t.allSaved}</h1></section>}
- <section id="district-list" className="district-section"><div className="section-heading"><div><p className="eyebrow">{tab==='saved'?t.saved:t.discover}</p><h2>{t.listTitle}</h2><p>{t.listIntro}</p></div><span className="count-pill">{num(filtered.length)} {t.results}</span></div><div className="search-row"><label className="search-box"><span aria-hidden="true">⌕</span><input aria-label={t.search} placeholder={t.search} value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label={t.clear} onClick={()=>setQuery('')}>×</button>}</label><select aria-label={t.divisions} value={division} onChange={e=>setDivision(e.target.value)}><option value="">{t.all}</option>{divisions.map(v=><option key={v.en} value={v.en}>{v[lang]}</option>)}</select></div><div className="filters">{Object.entries(categories).map(([key,label])=><button key={key} aria-pressed={category===key} onClick={()=>setCategory(key)}>{label[lang]}</button>)}{(division||query||category!=='all')&&<button className="clear" onClick={()=>{setDivision('');setQuery('');setCategory('all')}}>{t.clear} ×</button>}</div><div className="district-grid">{filtered.map((d,i)=><DistrictCard key={d.id} d={d} lang={lang} index={i} favorite={p.favorites.includes(d.id)} visited={!!p.visits[d.id]} onOpen={()=>go('district/'+d.id)} onFavorite={()=>toggleFavorite(d.id)}/>)}</div>{filtered.length===0&&<p className="empty-state">{tab==='saved'&&!p.favorites.length?t.savedEmpty:t.none}</p>}</section></>:tab==='passport'?<><section className="page-heading"><p className="eyebrow">▧ {t.passport}</p><h1>{t.passportTitle}</h1><p>{t.passportIntro}</p></section><section className="passport-summary"><div className="big-stamp"><span>AMARDESH</span><strong>{num(visits.length)}</strong><span>{t.stamps} / {num(64)}</span></div><div><h2>{t.badge}</h2><div className="badges">{[[t.newbie,visits.length>=1,'✧'],[t.wanderer,divisionVisits.size===8,'◈'],[t.explorer,visits.length===64,'✺']].map(([label,earned,icon])=><div className={earned?'earned':''} key={String(label)}><strong>{icon}</strong><span>{label}</span></div>)}</div><p>{t.badgeHelp}</p><button className="text-button" onClick={openBackup}>{t.backup} ↗</button></div></section>{!visits.length&&<p className="empty-state">{t.passEmpty}</p>}<div className="passport-divisions">{divisions.map(v=><section key={v.en}><div className="section-heading"><h2>{v[lang]}</h2><span>{num(districts.filter(d=>d.division===v.en&&p.visits[d.id]).length)} / {num(districts.filter(d=>d.division===v.en).length)}</span></div><div className="stamp-grid">{districts.filter(d=>d.division===v.en).map(d=><button className={`district-stamp ${p.visits[d.id]?'visited':''}`} key={d.id} onClick={()=>go('district/'+d.id)}><span>{p.visits[d.id]?'✓':'○'}</span><strong>{lang==='bn'?d.bn:d.name}</strong><small>{p.visits[d.id]?.date||'—'}</small></button>)}</div></section>)}</div></>:tab==='planner'?<><section className="page-heading"><p className="eyebrow">⌁ {t.planner}</p><h1>{t.planTitle}</h1><p>{t.planIntro}</p></section><div className="planner-layout"><section className="panel"><div className="form-grid"><label>{t.tripName}<input maxLength={100} value={p.trip.name} onChange={e=>updateTrip({name:e.target.value})}/></label><label>{t.start}<input type="date" value={p.trip.start} onChange={e=>updateTrip({start:e.target.value})}/></label><label>{t.days}<input type="number" min={1} max={30} value={p.trip.days} onChange={e=>{const days=Math.min(30,Math.max(1,Number(e.target.value)||1));updateTrip({days,stops:p.trip.stops.map(s=>({...s,day:Math.min(days,s.day)}))})}}/></label></div><label className="add-stop">{t.addStop}<select value="" onChange={e=>addStop(e.target.value)}><option value="" disabled>{t.choose}</option>{districts.filter(d=>!p.trip.stops.some(s=>s.id===d.id)).map(d=><option key={d.id} value={d.id}>{lang==='bn'?d.bn:d.name}</option>)}</select></label>{!p.trip.stops.length&&<p className="empty-state">{t.emptyTrip}</p>}{p.trip.stops.map((s,i)=>{const d=districts.find(d=>d.id===s.id)!;return <article className="trip-stop" key={s.id}><div className="stop-number">{num(i+1)}</div><div className="stop-body"><button className="stop-title" onClick={()=>go('district/'+d.id)}>{lang==='bn'?d.bn:d.name} ↗</button><p>{d.sight[lang]}</p><label>{t.day}<select value={s.day} onChange={e=>updateTrip({stops:p.trip.stops.map((v,j)=>i===j?{...v,day:Number(e.target.value)}:v)})}>{Array.from({length:p.trip.days},(_,j)=><option key={j} value={j+1}>{t.day} {num(j+1)}</option>)}</select></label><label className="sr-only" htmlFor={'note-'+s.id}>{t.notes}</label><textarea id={'note-'+s.id} maxLength={2000} placeholder={t.notes} value={s.notes} onChange={e=>updateTrip({stops:p.trip.stops.map((v,j)=>i===j?{...v,notes:e.target.value}:v)})}/><div className="stop-actions"><button disabled={i===0} onClick={()=>{const stops=[...p.trip.stops];[stops[i-1],stops[i]]=[stops[i],stops[i-1]];updateTrip({stops})}}>{t.up} ↑</button><button disabled={i===p.trip.stops.length-1} onClick={()=>{const stops=[...p.trip.stops];[stops[i+1],stops[i]]=[stops[i],stops[i+1]];updateTrip({stops})}}>{t.down} ↓</button><button onClick={()=>updateTrip({stops:p.trip.stops.filter((_,j)=>j!==i)})}>{t.remove} ×</button></div></div></article>})}</section><aside className="budget panel"><h2>{t.budget}</h2><p>{t.budgetIntro}</p>{(['transport','stay','food'] as const).map(k=><label key={k}>{k==='food'?t.meals:t[k]}<input type="number" min={0} max={1e8} value={p.trip[k]} onChange={e=>updateTrip({[k]:Math.min(1e8,Math.max(0,Number(e.target.value)||0))})}/></label>)}<div className="budget-total"><span>{t.total}</span><strong>৳ {num(p.trip.transport+p.trip.stay+p.trip.food)}</strong></div><button className="primary" onClick={openBackup}>{t.backup} ↗</button><h3>{t.travel}</h3><p>{t.travelText}</p><a href="https://tourismboard.gov.bd/" target="_blank" rel="noreferrer">{t.official} ↗</a></aside></div></>:<Quiz lang={lang} mastered={p.quiz} onMaster={id=>setP(prev=>({...prev,quiz:prev.quiz.includes(id)?prev.quiz:[...prev.quiz,id]}))}/>}
- <section className="offline-banner"><span>◉</span><div><strong>{t.offline}</strong><p>{t.offlineText}</p></div><span className="offline-status">{online?t.online:t.offlineNow}</span></section></main><footer><div><strong>AmarDesh <span>🇧🇩</span></strong><p>{t.rights}</p></div><div><button onClick={()=>setModal('about')}>{t.sources} ↗</button><button onClick={openBackup}>{t.backup} ↗</button><small>v1.0.0 · {t.local}</small></div></footer>
- <dialog ref={dialog} onCancel={()=>setModal(null)} onClick={e=>{if(e.target===dialog.current)setModal(null)}}><div className="dialog-content"><button className="dialog-close" onClick={()=>setModal(null)} aria-label={t.close}>×</button>{modal==='about'?<><p className="eyebrow">AMARDESH · 1.0.0</p><h2>{t.about}</h2><p>{t.aboutText}</p><p>{t.photoNote}</p><h3>{t.source}</h3><ul><li><a href="https://bangladesh.gov.bd/views/district-list/" target="_blank" rel="noreferrer">Bangladesh National Portal</a></li><li><a href="https://www.geoboundaries.org/api/current/gbOpen/BGD/ADM2/" target="_blank" rel="noreferrer">BBS / OCHA via geoBoundaries</a> · <a href="https://creativecommons.org/licenses/by/3.0/igo/" target="_blank" rel="noreferrer">CC BY 3.0 IGO</a></li><li><a href="https://en.banglapedia.org/" target="_blank" rel="noreferrer">Banglapedia · Asiatic Society of Bangladesh</a></li></ul><PhotoCredits/><p>{t.review}</p></>:<><h2>{t.backup}</h2><p>{t.backupIntro}</p><label>{t.backupLabel}<textarea className="backup-area" aria-label={t.backupLabel} value={backup} onChange={e=>setBackup(e.target.value)}/></label><div className="dialog-actions"><button className="primary" onClick={download}>{t.export}</button><button className="secondary" onClick={()=>{try{const restored=parseProgress(JSON.parse(backup));setP(restored);setMessage(T[restored.lang].restored)}catch{setMessage(t.badBackup)}}}>{t.restore}</button></div><p role="status">{message}</p></>}</div></dialog></>
+import { useEffect, useRef, useState } from "react";
+import { Context, useTravel } from "./context";
+import { en, bn } from "./i18n";
+import {
+  Icon,
+  Photo,
+  Credit,
+  PlaceCard,
+  FoodCard,
+  SourceList,
+} from "./components";
+import { Discovery } from "./Discovery";
+import { Trips } from "./Trips";
+import {
+  districts,
+  divisions,
+  attractions,
+  foods,
+  sources,
+  featured,
+  districtById,
+  primaryAttraction,
+  loadState,
+  parseState,
+  chooseDistrict,
+  searchAll,
+  recommend,
+  interestIds,
+  type State,
+  type Section,
+  type Attraction,
+  type Food,
+  type Interest,
+} from "./tourism";
+import { quizFor, today } from "./model";
+import { essentials, phrases } from "./essentials";
+import credits from "../public/photos/credits.json";
+import "@fontsource/noto-sans-bengali/400.css";
+import "@fontsource/noto-sans-bengali/600.css";
+import "./style.css";
+const tabs = ["home", "explore", "food", "trips", "more"] as const;
+export default function App() {
+  const [state, setState] = useState(loadState),
+    [route, setRoute] = useState(window.location.hash.slice(1) || "home"),
+    [online, setOnline] = useState(navigator.onLine),
+    [message, setMessage] = useState(""),
+    [storageError, setStorageError] = useState(false);
+  const depth = useRef(0);
+  const t = state.lang === "bn" ? bn : en;
+  const go = (path: string) => {
+    if (path === window.location.hash.slice(1)) {
+      window.scrollTo({ top: 0 });
+      return;
+    }
+    depth.current++;
+    window.location.hash = path;
+  };
+  const back = () => {
+    if (depth.current > 0) {
+      depth.current--;
+      window.history.back();
+    } else go("explore");
+  };
+  useEffect(() => {
+    const hash = () => {
+      setRoute(window.location.hash.slice(1) || "home");
+      window.scrollTo({ top: 0, behavior: "instant" });
+    };
+    const network = () => setOnline(navigator.onLine);
+    window.addEventListener("hashchange", hash);
+    window.addEventListener("online", network);
+    window.addEventListener("offline", network);
+    return () => {
+      window.removeEventListener("hashchange", hash);
+      window.removeEventListener("online", network);
+      window.removeEventListener("offline", network);
+    };
+  }, []);
+  useEffect(() => {
+    document.documentElement.lang = state.lang;
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const apply = () =>
+      document.documentElement.setAttribute(
+        "data-theme",
+        state.theme === "system"
+          ? mq.matches
+            ? "dark"
+            : "light"
+          : state.theme,
+      );
+    apply();
+    mq.addEventListener?.("change", apply);
+    try {
+      localStorage.setItem("amardesh-v2", JSON.stringify(state));
+      setStorageError(false);
+    } catch {
+      setStorageError(true);
+    }
+    return () => mq.removeEventListener?.("change", apply);
+  }, [state]);
+  useEffect(() => {
+    if (!message) return;
+    const timer = setTimeout(() => setMessage(""), 4500);
+    return () => clearTimeout(timer);
+  }, [message]);
+  const togglePlace = (id: string) =>
+    setState((p) => ({
+      ...p,
+      savedPlaces: p.savedPlaces.includes(id)
+        ? p.savedPlaces.filter((x) => x !== id)
+        : [...p.savedPlaces, id],
+    }));
+  const toggleFood = (id: string) =>
+    setState((p) => ({
+      ...p,
+      savedFoods: p.savedFoods.includes(id)
+        ? p.savedFoods.filter((x) => x !== id)
+        : [...p.savedFoods, id],
+    }));
+  const addStop = (id: string) => {
+    setState((p) => {
+      const active =
+        p.trips.find((trip) => trip.id === p.activeTrip) || p.trips[0];
+      if (!active) {
+        const trip = {
+          id: "trip-" + Date.now(),
+          name:
+            state.lang === "bn"
+              ? "আমার বাংলাদেশ ভ্রমণ"
+              : "My Bangladesh journey",
+          start: "",
+          days: 3,
+          notes: "",
+          budget: 0,
+          stops: [{ id, day: 1, notes: "" }],
+        };
+        return { ...p, trips: [trip], activeTrip: trip.id };
+      }
+      return {
+        ...p,
+        activeTrip: active.id,
+        trips: p.trips.map((trip) =>
+          trip.id !== active.id || trip.stops.some((s) => s.id === id)
+            ? trip
+            : {
+                ...trip,
+                stops: [
+                  ...trip.stops,
+                  {
+                    id,
+                    day: Math.min(trip.days, trip.stops.length + 1),
+                    notes: "",
+                  },
+                ],
+              },
+        ),
+      };
+    });
+    setMessage(t.added);
+  };
+  const pieces = route.split("/");
+  const district =
+    pieces[0] === "district" ? districtById(pieces[1]) : undefined;
+  const a =
+    pieces[0] === "place"
+      ? attractions.find((a) => a.id === pieces[1])
+      : undefined;
+  const f =
+    pieces[0] === "dish" ? foods.find((f) => f.id === pieces[1]) : undefined;
+  const section = (
+    ["attractions", "food", "history", "guide"].includes(pieces[2])
+      ? pieces[2]
+      : "attractions"
+  ) as Section;
+  const active =
+    route === "home"
+      ? "home"
+      : route === "trips"
+        ? "trips"
+        : route === "food" || f
+          ? "food"
+          : route === "more" ||
+              ["essentials", "sources", "backup", "passport", "quiz"].includes(
+                route,
+              )
+            ? "more"
+            : "explore";
+  useEffect(() => {
+    if (district)
+      setState((p) =>
+        p.district === district.id ? p : chooseDistrict(p, district.id),
+      );
+  }, [district]);
+  return (
+    <Context.Provider
+      value={{
+        state,
+        setState,
+        t,
+        go,
+        togglePlace,
+        toggleFood,
+        addStop,
+        notify: setMessage,
+      }}
+    >
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("main")?.focus();
+        }}
+      >
+        {state.lang === "bn" ? "মূল অংশে যান" : "Skip to content"}
+      </a>
+      <header className="topbar">
+        <a href="#home" className="brand">
+          <img src={`${import.meta.env.BASE_URL}icon.svg`} alt="" />
+          <span>
+            AmarDesh
+            <small>
+              {state.lang === "bn"
+                ? "বাংলাদেশকে নতুন করে জানুন"
+                : "BANGLADESH, BEYOND THE EXPECTED"}
+            </small>
+          </span>
+        </a>
+        <nav
+          aria-label={
+            state.lang === "bn" ? "প্রধান নেভিগেশন" : "Main navigation"
+          }
+        >
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => go(tab)}
+              className={active === tab ? "active" : ""}
+              aria-current={active === tab ? "page" : undefined}
+            >
+              <Icon name={tab === "explore" ? "compass" : tab} />
+              <span>{t[tab]}</span>
+            </button>
+          ))}
+        </nav>
+        <div className="header-actions">
+          <button
+            className="icon-button"
+            aria-label={t.search}
+            onClick={() => go("explore")}
+          >
+            <Icon name="search" />
+          </button>
+          <button
+            className="language-button"
+            onClick={() =>
+              setState((p) => ({ ...p, lang: p.lang === "en" ? "bn" : "en" }))
+            }
+            aria-label={
+              state.lang === "en" ? "Switch to Bangla" : "Switch to English"
+            }
+          >
+            {state.lang === "en" ? "বাংলা" : "EN"}
+          </button>
+        </div>
+      </header>
+      {storageError && (
+        <div className="warning" role="alert">
+          {t.storageError}
+          <button onClick={() => go("backup")}>{t.backup}</button>
+        </div>
+      )}
+      {!online && (
+        <div className="network-banner" role="status">
+          <Icon name="offline" size={16} />
+          {t.offlineNow}
+        </div>
+      )}
+      <main id="main" tabIndex={-1}>
+        {!tabs.includes(route as (typeof tabs)[number]) && (
+          <button className="back-button" onClick={back}>
+            <Icon name="left" size={18} />
+            {t.back}
+          </button>
+        )}
+        {district ? (
+          <DistrictGuide id={district.id} section={section} />
+        ) : a ? (
+          <AttractionGuide a={a} />
+        ) : f ? (
+          <DishGuide f={f} />
+        ) : route === "home" ? (
+          <Home />
+        ) : route === "explore" ? (
+          <Explore />
+        ) : route === "food" ? (
+          <FoodIndex />
+        ) : route === "trips" ? (
+          <Trips />
+        ) : route === "more" ? (
+          <More />
+        ) : route === "essentials" ? (
+          <Essentials />
+        ) : route === "sources" ? (
+          <Sources />
+        ) : route === "backup" ? (
+          <Backup />
+        ) : route === "passport" ? (
+          <Passport />
+        ) : route === "quiz" ? (
+          <Quiz />
+        ) : (
+          <div className="empty-state">
+            <h1>{t.notFound}</h1>
+            <button className="primary" onClick={() => go("home")}>
+              {t.home}
+            </button>
+          </div>
+        )}
+        <section className="offline-card">
+          <span className="offline-icon">
+            <Icon name="offline" size={26} />
+          </span>
+          <div>
+            <h3>{t.offline}</h3>
+            <p>{t.offlineText}</p>
+          </div>
+          <span className="online-dot">
+            {online ? t.onlineNow : t.offlineNow}
+          </span>
+        </section>
+      </main>
+      <footer>
+        <div className="brand-footer">
+          AmarDesh<span>2.0 · {t.journey}</span>
+        </div>
+        <button onClick={() => go("sources")}>
+          {t.sources}
+          <Icon name="arrow" size={16} />
+        </button>
+        <button onClick={() => go("backup")}>{t.backup}</button>
+      </footer>
+      {message && (
+        <div className="toast" role="status">
+          <Icon name="check" size={18} />
+          {message}
+        </div>
+      )}
+    </Context.Provider>
+  );
 }
-function cover(d:District){if(d.id==='dhaka')return 'fort';if(d.id==='sylhet')return 'tea';if(d.id==='cox-s-bazar')return 'beach';if(d.id==='khulna')return 'forest';return null}
-function DistrictCard({d,lang,index,favorite,visited,onOpen,onFavorite}:{d:District;lang:Lang;index:number;favorite:boolean;visited:boolean;onOpen:()=>void;onFavorite:()=>void}){const image=cover(d);return <article className="district-card" style={{'--card-color':colors[divisions.findIndex(v=>v.en===d.division)]} as React.CSSProperties}><div className={`card-cover cover-${d.category}`}><button className="cover-link" onClick={onOpen} aria-label={`${T[lang].view}: ${lang==='bn'?d.bn:d.name}`}>{image?<img loading="lazy" src={`${import.meta.env.BASE_URL}photos/${image}.jpg`} alt={d.id==='sylhet'?T[lang].photocap:d.sight[lang]}/>:<span className="landscape" aria-hidden="true"><i/><i/><i/><b>{d.category==='heritage'?'⌑':d.category==='culture'?'✺':d.category==='coast'?'≈':'△'}</b></span>}</button><span className="category-tag">{categories[d.category as keyof typeof categories][lang]}</span><button className={`heart ${favorite?'saved':''}`} aria-label={`${favorite?T[lang].unsave:T[lang].save} ${lang==='bn'?d.bn:d.name}`} aria-pressed={favorite} onClick={onFavorite}>{favorite?'♥':'♡'}</button>{visited&&<span className="visited-tag">✓ {T[lang].visited}</span>}</div><div className="card-body"><p className="eyebrow">{lang==='bn'?d.divisionBn:d.division} <span>{String(index+1).padStart(2,'0')}</span></p><button onClick={onOpen} className="card-title">{lang==='bn'?d.bn:d.name}<span>↗</span></button><p>{d.sight[lang]}</p></div></article>}
-function DistrictPage({d,lang,favorite,visit,inTrip,onFavorite,onTrip,onVisit}:{d:District;lang:Lang;favorite:boolean;visit?:{date:string;note:string};inTrip:boolean;onFavorite:()=>void;onTrip:()=>void;onVisit:(v?:{date:string;note:string})=>void}){const t=T[lang],image=cover(d);return <><section className="district-hero"><div><p className="eyebrow">{lang==='bn'?d.divisionBn:d.division} / {t.districts}</p><h1>{lang==='bn'?d.bn:d.name}</h1><p className="intro">{d.description[lang]}</p><div className="district-actions"><button className="primary" onClick={()=>onVisit(visit?undefined:{date:today(),note:''})}>{visit?'✓ '+t.unstamp:'▧ '+t.stamp}</button><button className="secondary" aria-pressed={favorite} onClick={onFavorite}>{favorite?'♥':'♡'} {favorite?t.unsave:t.save}</button><button className="secondary" disabled={inTrip} onClick={onTrip}>{inTrip?'✓ '+t.inTrip:'+ '+t.addTrip}</button></div></div><div className={`detail-cover cover-${d.category}`}>{image?<img src={`${import.meta.env.BASE_URL}photos/${image}.jpg`} alt={d.id==='sylhet'?t.photocap:d.sight[lang]}/>:<div className="landscape"><i/><i/><i/><b>◈</b></div>}</div></section><div className="detail-layout"><div><section className="panel sight"><p className="eyebrow">01 / {t.sights}</p><h2>{d.sight[lang]}</h2><p>{d.description[lang]}</p><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.sight.en+' '+d.name+' Bangladesh')}`} target="_blank" rel="noreferrer">{t.mapSearch} ↗</a></section>{d.morePlaces.length>0&&<section className="panel"><p className="eyebrow">{t.beyond}</p>{d.morePlaces.map(place=><div key={place.en}><h2>{place[lang]}</h2><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.en+" "+d.name+" Bangladesh")}`} target="_blank" rel="noreferrer">{t.mapSearch} →</a><p><a href={place.source} target="_blank" rel="noreferrer">{t.source} →</a></p></div>)}</section>}<div className="detail-pair"><section className="panel"><span className="feature-icon">⌑</span><h2>{t.history}</h2><p>{d.history[lang]}</p></section><section className="panel"><span className="feature-icon">✺</span><h2>{t.culture}</h2><p>{d.culture?.[lang]||t.cultureEmpty}</p></section></div><section className="panel food"><span className="feature-icon">♧</span><div><h2>{t.food}</h2><p>{d.food?.[lang]||t.foodEmpty}</p></div></section>{visit&&<section className="panel visit-log"><h2>▧ {t.log}</h2><label>{t.date}<input type="date" value={visit.date} onChange={e=>{if(e.target.value)onVisit({...visit,date:e.target.value})}}/></label><label>{t.note}<textarea maxLength={2000} value={visit.note} onChange={e=>onVisit({...visit,note:e.target.value})}/></label></section>}</div><aside><section className="panel travel"><h2>{t.travel}</h2><p>{t.travelText}</p><a href="https://tourismboard.gov.bd/" target="_blank" rel="noreferrer">{t.official} ↗</a></section><section className="panel sources"><h2>{t.source}</h2><p>{t.review}</p>{d.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label} ↗</a>)}</section></aside></div></>}
-function Quiz({lang,mastered,onMaster}:{lang:Lang;mastered:string[];onMaster:(id:string)=>void}){const [index,setIndex]=useState(0),[answer,setAnswer]=useState<string|null>(null);const t=T[lang],d=districts[(index*17+7)%districts.length],q=quizFor(d,index);const label=(id:string)=>q.landmark?(lang==='bn'?districts.find(d=>d.id===id)!.bn:districts.find(d=>d.id===id)!.name):(lang==='bn'?divisions.find(d=>d.en===id)!.bn:id);return <><section className="page-heading"><p className="eyebrow">✧ {t.quiz}</p><h1>{t.quizTitle}</h1><p>{t.quizIntro}</p></section><section className="quiz-card panel"><div className="quiz-top"><span>✧ {index+1}</span><span>{mastered.length} / 64 {t.mastered}</span></div><p className="eyebrow">{q.landmark?t.landmarkQ:t.divisionQ}</p><h2>{q.landmark?d.sight[lang]:lang==='bn'?d.bn:d.name}</h2><div className="quiz-options">{q.options.map((o,i)=><button key={o} disabled={answer!==null} className={answer!==null?(o===q.answer?'correct':o===answer?'wrong':''):''} onClick={()=>{setAnswer(o);if(o===q.answer)onMaster(d.id)}}><span aria-hidden="true">{String.fromCharCode(65+i)}</span>{label(o)}<b>{answer!==null&&o===q.answer?'✓':''}</b></button>)}</div>{answer!==null&&<div className="quiz-result" role="status"><strong>{answer===q.answer?t.correct:t.wrong}</strong><p>{t.answer}: {label(q.answer)}</p><p>{d.description[lang]}</p><a href={d.sources[d.sources.length-1].url} target="_blank" rel="noreferrer">{t.source} ↗</a><button className="primary" onClick={()=>{setIndex(v=>v+1);setAnswer(null)}}>{t.next} →</button></div>}</section></>}
-function PhotoCredits(){const [credits,setCredits]=useState<{id:string;author:string;source:string;license:string}[]>([]);useEffect(()=>{fetch(`${import.meta.env.BASE_URL}photos/credits.json`).then(r=>r.json()).then(setCredits).catch(()=>{})},[]);return <ul>{credits.map(c=><li key={c.id}><a target="_blank" rel="noreferrer" href={c.source}>{c.id} · {c.author} · {c.license}</a></li>)}</ul>}
+function InterestPicker() {
+  const { state, setState, t } = useTravel();
+  const label = (id: Interest) =>
+    id === "food"
+      ? t.foodInterest
+      : id === "history"
+        ? t.historyInterest
+        : t[id];
+  return (
+    <div className="interest-list" role="group" aria-label={t.interests}>
+      {interestIds.map((id) => (
+        <button
+          key={id}
+          aria-pressed={state.interests.includes(id)}
+          onClick={() =>
+            setState((p) => ({
+              ...p,
+              interests: p.interests.includes(id)
+                ? p.interests.filter((x) => x !== id)
+                : [...p.interests, id],
+            }))
+          }
+        >
+          {label(id)}
+          {state.interests.includes(id) && <Icon name="check" size={14} />}
+        </button>
+      ))}
+    </div>
+  );
+}
+function Cards({ items }: { items: Attraction[] }) {
+  const { state, t, go, togglePlace } = useTravel();
+  return (
+    <div className="place-grid">
+      {items.map((a) => (
+        <PlaceCard
+          key={a.id}
+          a={a}
+          lang={state.lang}
+          t={t}
+          saved={state.savedPlaces.includes(a.id)}
+          onSave={() => togglePlace(a.id)}
+          onOpen={() => go("place/" + a.id)}
+        />
+      ))}
+    </div>
+  );
+}
+function Dishes({ items }: { items: Food[] }) {
+  const { state, t, go, toggleFood } = useTravel();
+  return (
+    <div className="food-grid">
+      {items.map((f) => (
+        <FoodCard
+          key={f.id}
+          f={f}
+          lang={state.lang}
+          t={t}
+          saved={state.savedFoods.includes(f.id)}
+          onSave={() => toggleFood(f.id)}
+          onOpen={() => go("dish/" + f.id)}
+        />
+      ))}
+    </div>
+  );
+}
+function Home() {
+  const { state, setState, t, go, notify } = useTravel();
+  const lang = state.lang;
+  const suggestions = [
+    {
+      name: {
+        en: "Mughal streets & merchant stories",
+        bn: "মুঘল পথ ও বণিকের গল্প",
+      },
+      days: 2,
+      districts: ["dhaka", "narayanganj"],
+      description: {
+        en: "Begin in Old Dhaka, then discover Sonargaon’s historic street.",
+        bn: "পুরান ঢাকা থেকে শুরু করে সোনারগাঁয়ের ঐতিহাসিক পথ আবিষ্কার করুন।",
+      },
+    },
+    {
+      name: { en: "The southwest, slowly", bn: "ধীরে ধীরে দক্ষিণ-পশ্চিম" },
+      days: 4,
+      districts: ["bagerhat", "khulna"],
+      description: {
+        en: "Brick-built heritage, followed by a pre-arranged forest journey.",
+        bn: "ইটের ঐতিহ্যের পরে আগে থেকে ব্যবস্থা করা বনভ্রমণ।",
+      },
+    },
+    {
+      name: { en: "A northern heritage trail", bn: "উত্তরের ঐতিহ্যের পথ" },
+      days: 4,
+      districts: ["bogura", "naogaon", "dinajpur"],
+      description: {
+        en: "Link archaeological sites with terracotta craftsmanship.",
+        bn: "প্রত্নস্থানের সঙ্গে পোড়ামাটির কারুকাজের যোগসূত্র খুঁজুন।",
+      },
+    },
+  ];
+  const useSuggested = (s: (typeof suggestions)[number]) => {
+    const trip = {
+      id: "trip-" + Date.now(),
+      name: s.name[lang],
+      days: s.days,
+      start: "",
+      budget: 0,
+      notes: t.suggestedNote,
+      stops: s.districts.map((id, i) => ({
+        id: primaryAttraction(id).id,
+        day: Math.min(s.days, i + 1),
+        notes: "",
+      })),
+    };
+    setState((p) => ({ ...p, trips: [...p.trips, trip], activeTrip: trip.id }));
+    notify(t.added);
+    go("trips");
+  };
+  return (
+    <>
+      <section className="welcome">
+        <Photo
+          id="beach"
+          alt={lang === "bn" ? "কক্সবাজার সমুদ্রসৈকত" : "Cox’s Bazar Sea Beach"}
+          t={t}
+          priority
+        />
+        <div className="hero-gradient" />
+        <div className="hero-copy">
+          <span className="hero-eyebrow">
+            <span />
+            {t.tagline}
+          </span>
+          <h1>
+            {t.hero}
+            <br />
+            <em>{t.hero2}</em>
+          </h1>
+          <p>{t.intro}</p>
+          <button
+            className="primary warm"
+            onClick={() =>
+              document
+                .getElementById("discover")
+                ?.scrollIntoView({
+                  behavior: window.matchMedia(
+                    "(prefers-reduced-motion: reduce)",
+                  ).matches
+                    ? "instant"
+                    : "smooth",
+                  block: "start",
+                })
+            }
+          >
+            {t.begin}
+            <Icon name="arrow" size={20} />
+          </button>
+        </div>
+        <div className="hero-foot">
+          <span>
+            08 <small>{t.division}</small>
+          </span>
+          <span>
+            64 <small>{t.district}</small>
+          </span>
+          <span>
+            {lang === "bn"
+              ? "কক্সবাজার · বাংলাদেশ"
+              : "COX’S BAZAR · BANGLADESH"}
+          </span>
+        </div>
+      </section>
+      <Discovery />
+      <section className="section">
+        <div className="section-title">
+          <div>
+            <span className="eyebrow">{t.journey}</span>
+            <h2>{t.popular}</h2>
+          </div>
+          <button className="text-link" onClick={() => go("explore")}>
+            {t.viewAll}
+            <Icon name="arrow" size={18} />
+          </button>
+        </div>
+        <Cards items={featured.slice(0, 6)} />
+      </section>
+      <section className="recommendation-section section">
+        <div className="section-title">
+          <div>
+            <span className="eyebrow">
+              <Icon name="spark" size={14} />
+              {t.interests}
+            </span>
+            <h2>{t.recommend}</h2>
+            <p>{t.interestIntro}</p>
+          </div>
+        </div>
+        <InterestPicker />
+        <Cards items={recommend(state.interests, 3).map((r) => r.item)} />
+        {state.interests.length > 0 && (
+          <p className="recommend-note">
+            {t.matches}:{" "}
+            {state.interests
+              .map((i) =>
+                i === "history"
+                  ? t.historyInterest
+                  : i === "food"
+                    ? t.foodInterest
+                    : t[i],
+              )
+              .join(" · ")}
+          </p>
+        )}
+      </section>
+      <section className="section taste-section">
+        <div className="section-title">
+          <div>
+            <span className="eyebrow">{t.regional}</span>
+            <h2>{t.taste}</h2>
+          </div>
+          <button className="text-link" onClick={() => go("food")}>
+            {t.viewAll}
+            <Icon name="arrow" size={18} />
+          </button>
+        </div>
+        <Dishes items={foods.slice(0, 3)} />
+      </section>
+      <section className="section">
+        <div className="section-title">
+          <h2>{t.hidden}</h2>
+        </div>
+        <Cards
+          items={["faridpur", "satkhira", "habiganj"].map((id) =>
+            primaryAttraction(id),
+          )}
+        />
+      </section>
+      <section className="section">
+        <div className="section-title">
+          <h2>{t.heritage}</h2>
+        </div>
+        <Cards
+          items={featured.filter((a) => a.category === "heritage").slice(-3)}
+        />
+      </section>
+      <section className="section">
+        <div className="section-title">
+          <div>
+            <span className="eyebrow">{t.trips}</span>
+            <h2>{t.suggested}</h2>
+            <p>{t.suggestedNote}</p>
+          </div>
+        </div>
+        <div className="itinerary-grid">
+          {suggestions.map((s, i) => (
+            <article className="itinerary-card" key={s.name.en}>
+              <span className="itinerary-number">0{i + 1}</span>
+              <span className="eyebrow">
+                {s.days} {t.days}
+              </span>
+              <h3>{s.name[lang]}</h3>
+              <p>{s.description[lang]}</p>
+              <div className="itinerary-stops">
+                {s.districts.map((id) => (
+                  <span key={id}>
+                    {lang === "bn"
+                      ? districtById(id)!.bn
+                      : districtById(id)!.name}
+                  </span>
+                ))}
+              </div>
+              <button className="text-link" onClick={() => useSuggested(s)}>
+                {t.saveTrip}
+                <Icon name="arrow" size={18} />
+              </button>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="essentials-teaser">
+        <Icon name="guide" size={42} />
+        <div>
+          <span className="eyebrow">{t.essentials}</span>
+          <h2>{t.essentialsIntro}</h2>
+        </div>
+        <button className="primary" onClick={() => go("essentials")}>
+          {t.essentials}
+          <Icon name="arrow" size={18} />
+        </button>
+      </section>
+    </>
+  );
+}
+function Explore() {
+  const { state, t, go, setState } = useTravel();
+  const [q, setQ] = useState(""),
+    [division, setDivision] = useState(""),
+    [kind, setKind] = useState("all");
+  const hits = searchAll(q, division, kind);
+  const lang = state.lang;
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.explore}</span>
+        <h1>{t.searchTitle}</h1>
+      </section>
+      <section className="global-search">
+        <label className="search-input">
+          <Icon name="search" />
+          <input
+            autoComplete="off"
+            aria-label={t.search}
+            placeholder={t.search}
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+          />
+          {q && (
+            <button onClick={() => setQ("")} aria-label={t.close}>
+              <Icon name="close" size={18} />
+            </button>
+          )}
+        </label>
+        <div className="search-filters">
+          <select
+            aria-label={t.division}
+            value={division}
+            onChange={(e) => setDivision(e.target.value)}
+          >
+            <option value="">{t.allDivisions}</option>
+            {divisions.map((d) => (
+              <option key={d.id} value={d.name.en}>
+                {d.name[lang]}
+              </option>
+            ))}
+          </select>
+          <div className="filter-pills">
+            {[
+              ["all", t.all],
+              ["attraction", t.attractions],
+              ["food", t.localFood],
+              ["district", t.district],
+              ["division", t.division],
+            ].map(([key, label]) => (
+              <button
+                key={key}
+                aria-pressed={kind === key}
+                onClick={() => setKind(key)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+        {q.trim() ? (
+          <div className="search-results" aria-live="polite">
+            <span className="eyebrow">
+              {hits.length} {t.results}
+            </span>
+            {hits.length ? (
+              hits.slice(0, 120).map((h) => (
+                <button
+                  className="search-result"
+                  key={h.kind + h.id}
+                  onClick={() => {
+                    if (h.kind === "division") {
+                      const d = districts.find(
+                        (d) => d.division === h.name.en,
+                      )!;
+                      setState((p) => chooseDistrict(p, d.id));
+                      document
+                        .getElementById("discover")
+                        ?.scrollIntoView({
+                          block: "start",
+                          behavior: "smooth",
+                        });
+                    } else {
+                      if (h.kind === "district")
+                        setState((p) => chooseDistrict(p, h.id));
+                      go(h.route);
+                    }
+                  }}
+                >
+                  <span className="result-icon">
+                    <Icon
+                      name={
+                        h.kind === "food"
+                          ? "food"
+                          : h.kind === "attraction"
+                            ? "nature"
+                            : "compass"
+                      }
+                    />
+                  </span>
+                  <span>
+                    <strong>{h.name[lang]}</strong>
+                    <small>{h.context}</small>
+                  </span>
+                  <Icon name="arrow" size={19} />
+                </button>
+              ))
+            ) : (
+              <p className="empty-state">{t.searchEmpty}</p>
+            )}
+          </div>
+        ) : (
+          <p className="search-suggestions">{t.searchStart}</p>
+        )}
+      </section>
+      <Discovery />
+      <section className="section">
+        <h2>{t.popular}</h2>
+        <Cards items={featured} />
+      </section>
+    </>
+  );
+}
+function FoodIndex() {
+  const { state, t } = useTravel();
+  const [query, setQuery] = useState(""),
+    [division, setDivision] = useState("");
+  const list = foods.filter(
+    (f) =>
+      (!division ||
+        f.regions.some((id) => districtById(id)?.division === division)) &&
+      [
+        f.name.en,
+        f.name.bn,
+        ...f.regions.flatMap((id) => {
+          const d = districtById(id)!;
+          return [d.name, d.bn, ...d.aliases];
+        }),
+      ].some((x) => x.toLocaleLowerCase().includes(query.toLocaleLowerCase())),
+  );
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.regional}</span>
+        <h1>{t.taste}</h1>
+        <p>{t.noOrigin}</p>
+      </section>
+      <div className="food-filter">
+        <label className="search-input">
+          <Icon name="search" />
+          <input
+            value={query}
+            aria-label={t.search}
+            placeholder={t.search}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </label>
+        <select
+          aria-label={t.division}
+          value={division}
+          onChange={(e) => setDivision(e.target.value)}
+        >
+          <option value="">{t.allDivisions}</option>
+          {divisions.map((d) => (
+            <option key={d.id} value={d.name.en}>
+              {d.name[state.lang]}
+            </option>
+          ))}
+        </select>
+      </div>
+      <Dishes items={list} />
+      {!list.length && <p className="empty-state">{t.noFoodHelp}</p>}
+    </>
+  );
+}
+function DistrictGuide({ id, section }: { id: string; section: Section }) {
+  const { state, setState, t, go } = useTravel();
+  const d = districtById(id)!;
+  const lang = state.lang;
+  const list = attractions.filter((a) => a.district === id);
+  const dishes = foods.filter((f) => f.regions.includes(id));
+  const visit = state.visits[id];
+  const sections: [Section, string][] = [
+    ["attractions", t.attractions],
+    ["food", t.localFood],
+    ["history", t.history],
+    ["guide", t.guide],
+  ];
+  return (
+    <>
+      <section className="district-heading">
+        <div>
+          <span className="eyebrow">
+            {lang === "bn" ? d.divisionBn : d.division} · {t.district}
+          </span>
+          <h1>{lang === "bn" ? d.bn : d.name}</h1>
+          <p>{d.description[lang]}</p>
+          <button
+            className="visit-button"
+            onClick={() =>
+              setState((p) => {
+                const visits = { ...p.visits };
+                if (visits[id]) delete visits[id];
+                else visits[id] = { date: today(), note: "" };
+                return { ...p, visits };
+              })
+            }
+          >
+            <Icon name={visit ? "check" : "passport"} size={18} />
+            {visit ? t.removeVisit : t.markVisit}
+          </button>
+        </div>
+        <Photo id={list[0]?.image} alt={list[0]?.name[lang] || d.name} t={t} />
+      </section>
+      <div className="section-tabs" role="group" aria-label={t.explore}>
+        {sections.map(([key, label]) => (
+          <button
+            key={key}
+            aria-pressed={section === key}
+            onClick={() => go(`district/${id}/${key}`)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      <div className="district-content" key={id + section}>
+        {section === "attractions" ? (
+          <>
+            <h2>{t.attractions}</h2>
+            <Cards items={list} />
+          </>
+        ) : section === "food" ? (
+          <>
+            <h2>{t.localFood}</h2>
+            {dishes.length ? (
+              <Dishes items={dishes} />
+            ) : (
+              <section className="empty-state panel">
+                <Icon name="food" size={36} />
+                <h3>{t.noFood}</h3>
+                <p>{t.noFoodHelp}</p>
+                <button className="primary" onClick={() => go("food")}>
+                  {t.browseFood}
+                  <Icon name="arrow" size={18} />
+                </button>
+              </section>
+            )}
+          </>
+        ) : section === "history" ? (
+          <div className="reading-layout">
+            <section className="reading panel">
+              <span className="eyebrow">{t.history}</span>
+              <h2>{lang === "bn" ? d.bn : d.name}</h2>
+              <p>{d.history[lang]}</p>
+              <h3>{t.culture}</h3>
+              <p>{d.culture?.[lang] || d.description[lang]}</p>
+              <p>
+                {lang === "bn"
+                  ? "নিচের স্থান ও তথ্যসূত্রে জেলার স্থাপত্য, ধর্মীয় ও স্থানীয় ঐতিহ্যের পরিচয় পাবেন।"
+                  : "The following places and district references offer starting points for the area’s architectural, religious and local heritage."}
+              </p>
+              <SourceList ids={d.sourceIds} t={t} />
+            </section>
+            <aside>
+              <Cards items={list.slice(0, 2)} />
+            </aside>
+          </div>
+        ) : (
+          <div className="reading-layout">
+            <section className="reading panel">
+              <h2>{t.guide}</h2>
+              <h3>{t.location}</h3>
+              <p>
+                {lang === "bn"
+                  ? `${d.bn}, ${d.divisionBn} বিভাগ।`
+                  : `${d.name}, ${d.division} division.`}
+              </p>
+              <h3>{t.transport}</h3>
+              <p>{list[0]?.transport[lang]}</p>
+              <h3>{t.season}</h3>
+              <p>{list[0]?.season[lang]}</p>
+              <h3>{t.advice}</h3>
+              <p>{list[0]?.advice[lang]}</p>
+              <h3>{t.accessibility}</h3>
+              <p>{essentials.find((e) => e.key === "accessibility")![lang]}</p>
+              <p className="review-date">
+                {t.reviewed}: {list[0]?.verified}
+              </p>
+              <SourceList ids={d.sourceIds} t={t} />
+            </section>
+            <aside className="panel guide-sidebar">
+              <Icon name="guide" size={40} />
+              <h3>{t.essentials}</h3>
+              <p>{t.disclaimer}</p>
+              <button className="primary" onClick={() => go("essentials")}>
+                {t.essentials}
+                <Icon name="arrow" size={18} />
+              </button>
+            </aside>
+          </div>
+        )}
+      </div>
+    </>
+  );
+}
+function AttractionGuide({ a }: { a: Attraction }) {
+  const { state, t, go, addStop, togglePlace } = useTravel();
+  const lang = state.lang,
+    d = districtById(a.district)!;
+  return (
+    <>
+      <section className="detail-hero">
+        <Photo id={a.image} alt={a.name[lang]} t={t} priority />
+        <div className="detail-hero-copy">
+          <span className="eyebrow">
+            {lang === "bn" ? d.bn : d.name} ·{" "}
+            {lang === "bn" ? d.divisionBn : d.division}
+          </span>
+          <h1>{a.name[lang]}</h1>
+          <div className="detail-actions">
+            <button className="primary" onClick={() => addStop(a.id)}>
+              <Icon name="plus" size={18} />
+              {t.addTrip}
+            </button>
+            <button
+              className="secondary"
+              aria-pressed={state.savedPlaces.includes(a.id)}
+              onClick={() => togglePlace(a.id)}
+            >
+              <Icon name="bookmark" size={18} />
+              {state.savedPlaces.includes(a.id) ? t.saved : t.save}
+            </button>
+          </div>
+        </div>
+      </section>
+      <Credit id={a.image} t={t} />
+      <div className="reading-layout">
+        <article className="reading panel">
+          <span className="eyebrow">{t.why}</span>
+          <h2>{a.name[lang]}</h2>
+          <p className="lead">{a.overview[lang]}</p>
+          <h3>{t.activities}</h3>
+          <ul className="activity-list">
+            {a.activities[lang].split(";").map((x) => (
+              <li key={x}>
+                <Icon name="check" size={17} />
+                {x}
+              </li>
+            ))}
+          </ul>
+          <h3>{t.transport}</h3>
+          <p>{a.transport[lang]}</p>
+          <h3>{t.season}</h3>
+          <p>{a.season[lang]}</p>
+          <h3>{t.advice}</h3>
+          <p>{a.advice[lang]}</p>
+          <p className="review-date">
+            {t.reviewed}: {a.verified}
+          </p>
+          <SourceList ids={a.sourceIds} t={t} />
+        </article>
+        <aside className="panel guide-sidebar">
+          <h3>{t.location}</h3>
+          <p>
+            {lang === "bn"
+              ? `${d.bn} · ${d.divisionBn}`
+              : `${d.name} · ${d.division}`}
+          </p>
+          <p>{t.noSchedule}</p>
+          <button
+            className="text-link"
+            onClick={() => go(`district/${d.id}/guide`)}
+          >
+            {t.moreGuide}
+            <Icon name="arrow" size={18} />
+          </button>
+          <button className="text-link" onClick={() => go("essentials")}>
+            {t.essentials}
+            <Icon name="arrow" size={18} />
+          </button>
+        </aside>
+      </div>
+      <section className="section">
+        <h2>{t.nearby}</h2>
+        <Cards
+          items={attractions.filter(
+            (x) => x.district === a.district && x.id !== a.id,
+          )}
+        />
+      </section>
+    </>
+  );
+}
+function DishGuide({ f }: { f: Food }) {
+  const { state, t, go, toggleFood } = useTravel();
+  const lang = state.lang;
+  return (
+    <>
+      <section className="dish-heading">
+        <Photo id={f.image} alt={f.name[lang]} t={t} priority />
+        <div>
+          <span className="eyebrow">{t.regional}</span>
+          <h1>{f.name[lang]}</h1>
+          <p className="transliteration">
+            {f.name.bn} · {f.transliteration}
+          </p>
+          <p className="lead">{f.overview[lang]}</p>
+          <button
+            className="primary"
+            aria-pressed={state.savedFoods.includes(f.id)}
+            onClick={() => toggleFood(f.id)}
+          >
+            <Icon name="bookmark" size={18} />
+            {state.savedFoods.includes(f.id) ? t.saved : t.save}
+          </button>
+        </div>
+      </section>
+      <Credit id={f.image} t={t} />
+      {f.image === "rasmalai" && (
+        <p className="credit">
+          {lang === "bn"
+            ? "রসমালাইয়ের উদাহরণ ছবি; নির্দিষ্ট কুমিল্লার প্রস্তুতকারকের নয়।"
+            : "Illustrative rasmalai photograph; not a specific Cumilla producer."}
+        </p>
+      )}
+      <div className="reading-layout">
+        <article className="reading panel">
+          <h2>{t.ingredients}</h2>
+          <div className="ingredient-tags">
+            {f.ingredients[lang].split(";").map((x) => (
+              <span key={x}>{x}</span>
+            ))}
+          </div>
+          <h3>{t.flavour}</h3>
+          <p>{f.flavor[lang]}</p>
+          <h3>{t.culture}</h3>
+          <p>{f.culture[lang]}</p>
+          <h3>{t.occasions}</h3>
+          <p>{f.occasion[lang]}</p>
+          <h3>{t.diet}</h3>
+          <p>{f.diet[lang]}</p>
+          <SourceList ids={f.sourceIds} t={t} />
+        </article>
+        <aside className="panel guide-sidebar">
+          <h3>{t.region}</h3>
+          <div className="region-links">
+            {f.regions.map((id) => {
+              const d = districtById(id)!;
+              return (
+                <button key={id} onClick={() => go(`district/${id}/food`)}>
+                  {lang === "bn" ? d.bn : d.name}
+                  <Icon name="arrow" size={16} />
+                </button>
+              );
+            })}
+          </div>
+          <p>{f.association[lang]}</p>
+          <small>
+            {t.reviewed}: {f.verified}
+          </small>
+        </aside>
+      </div>
+    </>
+  );
+}
+function More() {
+  const { state, setState, t, go } = useTravel();
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.more}</span>
+        <h1>{t.settings}</h1>
+      </section>
+      <section className="settings-grid">
+        <div className="panel">
+          <h2>{t.settings}</h2>
+          <label>
+            {t.language}
+            <select
+              value={state.lang}
+              onChange={(e) =>
+                setState((p) => ({
+                  ...p,
+                  lang: e.target.value === "bn" ? "bn" : "en",
+                }))
+              }
+            >
+              <option value="en">English</option>
+              <option value="bn">বাংলা</option>
+            </select>
+          </label>
+          <label>
+            {t.theme}
+            <select
+              value={state.theme}
+              onChange={(e) =>
+                setState((p) => ({
+                  ...p,
+                  theme: e.target.value as State["theme"],
+                }))
+              }
+            >
+              <option value="system">{t.system}</option>
+              <option value="light">{t.light}</option>
+              <option value="dark">{t.dark}</option>
+            </select>
+          </label>
+        </div>
+        <div className="more-links">
+          {[
+            ["essentials", t.essentials, "guide"],
+            ["passport", t.passport, "passport"],
+            ["quiz", t.quiz, "spark"],
+            ["backup", t.backup, "trips"],
+            ["sources", t.sources, "history"],
+          ].map(([route, label, icon]) => (
+            <button key={route} onClick={() => go(route)}>
+              <Icon name={icon} />
+              <span>{label}</span>
+              <Icon name="right" size={18} />
+            </button>
+          ))}
+        </div>
+      </section>
+      <section className="panel reading">
+        <h2>{t.about}</h2>
+        <p>{t.aboutText}</p>
+        <p>{t.migration}</p>
+        <span className="edition">AmarDesh 2.0.0 · {t.local}</span>
+        <a
+          className="text-link"
+          href="https://github.com/sadman-dev-a11y/AmarDesh"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {t.openSource}
+          <Icon name="arrow" size={18} />
+        </a>
+      </section>
+    </>
+  );
+}
+function Essentials() {
+  const { state, t } = useTravel();
+  const lang = state.lang;
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.essentials}</span>
+        <h1>{t.essentialsIntro}</h1>
+        <p>{t.reviewed}: 2026-11-14</p>
+      </section>
+      <div className="essentials-grid">
+        {essentials.map((e, i) => (
+          <section className="panel reading" key={e.key}>
+            <span className="eyebrow">{String(i + 1).padStart(2, "0")}</span>
+            <h2>{t[e.key]}</h2>
+            <p>{e[lang]}</p>
+            {e.key === "safety" && (
+              <a className="emergency" href="tel:999">
+                999 <small>{t.safety}</small>
+              </a>
+            )}
+            <div className="official-links">
+              {e.urls.map((url) => (
+                <a key={url} href={url} target="_blank" rel="noreferrer">
+                  {new URL(url).hostname}
+                  <Icon name="arrow" size={16} />
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+      <section className="panel">
+        <h2>{t.phrases}</h2>
+        <div className="phrase-grid">
+          {phrases.map(([latin, bangla, english, bengali]) => (
+            <div key={latin}>
+              <strong>{bangla}</strong>
+              <span>{latin}</span>
+              <small>{lang === "bn" ? bengali : english}</small>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
+function Sources() {
+  const { t } = useTravel();
+  const [query, setQuery] = useState("");
+  const list = sources.filter((s) =>
+    [s.title, s.publisher, s.url].some((x) =>
+      x.toLowerCase().includes(query.toLowerCase()),
+    ),
+  );
+  const download = () => {
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(sources, null, 2)], {
+        type: "application/json",
+      }),
+    );
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "AmarDesh-Research-Sources.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.content}</span>
+        <h1>{t.sources}</h1>
+        <p>{t.contentNote}</p>
+      </section>
+      <section className="panel reading">
+        <h2>{t.sourceInventory}</h2>
+        <p>
+          {attractions.length} {t.attractions} · {foods.length} {t.localFood} ·{" "}
+          {sources.length} {t.sources}
+        </p>
+        <label>
+          {t.search}
+          <input value={query} onChange={(e) => setQuery(e.target.value)} />
+        </label>
+        <button className="text-link" onClick={download}>
+          {t.exportSources}
+          <Icon name="arrow" size={17} />
+        </button>
+        <SourceList ids={list.map((s) => s.id)} t={t} />
+      </section>
+      <section className="panel">
+        <h2>{t.credits}</h2>
+        <div className="credits-grid">
+          {credits.map((c) => (
+            <article key={c.id}>
+              <Photo id={c.id} alt={c.id} t={t} />
+              <a href={c.source} target="_blank" rel="noreferrer">
+                {c.author}
+              </a>
+              <a href={c.licenseUrl} target="_blank" rel="noreferrer">
+                {c.license}
+              </a>
+              <small>{c.modifications}</small>
+            </article>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
+function Backup() {
+  const { state, setState, t, notify } = useTravel();
+  const [value, setValue] = useState(JSON.stringify(state, null, 2));
+  const download = () => {
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(state, null, 2)], { type: "application/json" }),
+    );
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "AmarDesh-2-backup.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  return (
+    <>
+      <section className="page-heading">
+        <h1>{t.backup}</h1>
+        <p>{t.backupNote}</p>
+      </section>
+      <section className="panel backup-panel">
+        <label>
+          {t.backupLabel}
+          <textarea
+            rows={15}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+          />
+        </label>
+        <div className="button-row">
+          <button className="primary" onClick={download}>
+            {t.download}
+          </button>
+          <button
+            className="secondary"
+            onClick={() => {
+              try {
+                setState(parseState(JSON.parse(value)));
+                notify(t.backupGood);
+              } catch {
+                notify(t.backupBad);
+              }
+            }}
+          >
+            {t.restore}
+          </button>
+        </div>
+      </section>
+    </>
+  );
+}
+function Passport() {
+  const { state, setState, t, go } = useTravel();
+  const [selected, setSelected] = useState("");
+  const d = districtById(selected);
+  const visit = d ? state.visits[d.id] : null;
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.passport}</span>
+        <h1>{t.passportIntro}</h1>
+        <p>
+          {Object.keys(state.visits).length} / 64 {t.visited}
+        </p>
+      </section>
+      {d && visit && (
+        <section className="panel form-grid">
+          <h2>{state.lang === "bn" ? d.bn : d.name}</h2>
+          <label>
+            {t.visitDate}
+            <input
+              type="date"
+              value={visit.date}
+              onChange={(e) => {
+                if (e.target.value)
+                  setState((p) => ({
+                    ...p,
+                    visits: {
+                      ...p.visits,
+                      [d.id]: { ...visit, date: e.target.value },
+                    },
+                  }));
+              }}
+            />
+          </label>
+          <label>
+            {t.notes}
+            <textarea
+              value={visit.note}
+              maxLength={2000}
+              onChange={(e) =>
+                setState((p) => ({
+                  ...p,
+                  visits: {
+                    ...p.visits,
+                    [d.id]: { ...visit, note: e.target.value },
+                  },
+                }))
+              }
+            />
+          </label>
+        </section>
+      )}
+      {divisions.map((v) => (
+        <section className="passport-division" key={v.id}>
+          <h2>{v.name[state.lang]}</h2>
+          <div className="stamp-grid">
+            {districts
+              .filter((d) => d.division === v.name.en)
+              .map((d) => (
+                <button
+                  key={d.id}
+                  className={state.visits[d.id] ? "visited" : ""}
+                  onClick={() =>
+                    state.visits[d.id]
+                      ? setSelected(d.id)
+                      : go(`district/${d.id}/history`)
+                  }
+                >
+                  <Icon
+                    name={state.visits[d.id] ? "check" : "passport"}
+                    size={24}
+                  />
+                  <strong>{state.lang === "bn" ? d.bn : d.name}</strong>
+                  <small>{state.visits[d.id]?.date || "—"}</small>
+                </button>
+              ))}
+          </div>
+        </section>
+      ))}
+    </>
+  );
+}
+function Quiz() {
+  const { state, setState, t } = useTravel();
+  const [index, setIndex] = useState(0),
+    [answer, setAnswer] = useState("");
+  const d = districts[(index * 17 + 7) % 64];
+  const q = quizFor(d, (index % 32) * 2);
+  return (
+    <>
+      <section className="page-heading">
+        <span className="eyebrow">{t.quiz}</span>
+        <h1>{t.quizQuestion}</h1>
+        <p>
+          {state.quiz.length} / 64 {t.learned}
+        </p>
+      </section>
+      <section className="panel quiz-panel">
+        <h2>{state.lang === "bn" ? d.bn : d.name}</h2>
+        <div className="quiz-options">
+          {q.options.map((v) => (
+            <button
+              key={v}
+              disabled={!!answer}
+              className={answer && v === q.answer ? "correct" : ""}
+              onClick={() => {
+                setAnswer(v);
+                if (v === q.answer)
+                  setState((p) => ({
+                    ...p,
+                    quiz: [...new Set([...p.quiz, d.id])],
+                  }));
+              }}
+            >
+              {state.lang === "bn"
+                ? divisions.find((d) => d.name.en === v)?.name.bn
+                : v}
+            </button>
+          ))}
+        </div>
+        {answer && (
+          <div role="status">
+            <h3>{answer === q.answer ? t.correct : t.incorrect}</h3>
+            <p>
+              {t.answer}: {state.lang === "bn" ? d.divisionBn : d.division}
+            </p>
+            <button
+              className="primary"
+              onClick={() => {
+                setIndex((i) => i + 1);
+                setAnswer("");
+              }}
+            >
+              {t.nextQuestion}
+              <Icon name="arrow" size={18} />
+            </button>
+          </div>
+        )}
+      </section>
+    </>
+  );
+}

@@ -2,7 +2,7 @@ name: Verify, build Android and publish
 on:
   push:
     branches: [main, CineDesk]
-    tags: ['v*']
+    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -19,12 +19,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
           cache: npm
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: "21"
       - uses: android-actions/setup-android@v3
         with:
           packages: platform-tools platforms;android-36 build-tools;36.0.0
@@ -38,12 +38,19 @@ jobs:
           chmod +x android/gradlew
           cd android
           ./gradlew assembleDebug --no-daemon
+      - name: Verify APK identity and signature
+        run: |
+          APK=android/app/build/outputs/apk/debug/app-debug.apk
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
+          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$APK" > /tmp/apk-identity.txt
+          head -20 /tmp/apk-identity.txt
+          unzip -l "$APK" | grep "assets/public/index.html"
       - name: Name the APK
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk AmarDesh-v1.0.0-debug.apk
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk AmarDesh-v2.0.0-debug.apk
       - uses: actions/upload-artifact@v4
         with:
-          name: AmarDesh-v1.0.0-debug-apk
-          path: AmarDesh-v1.0.0-debug.apk
+          name: AmarDesh-v2.0.0-debug-apk
+          path: AmarDesh-v2.0.0-debug.apk
           if-no-files-found: error
           retention-days: 90
       - name: Publish downloadable prerelease
@@ -51,13 +58,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          TAG="v1.0.0-build.${GITHUB_RUN_NUMBER}"
-          gh release create "$TAG" AmarDesh-v1.0.0-debug.apk --target "$GITHUB_SHA" --prerelease --title "AmarDesh 1.0.0 · build ${GITHUB_RUN_NUMBER}" --notes "Installable Android debug build. Android 7.0+ (API 24). Debug signing is for testing; uninstall an older differently signed build before installation. District content is a curated starter collection; see README for coverage and validation limits."
+          TAG="v2.0.0-build.${GITHUB_RUN_NUMBER}"
+          gh release create "$TAG" AmarDesh-v2.0.0-debug.apk --target "$GITHUB_SHA" --prerelease --title "AmarDesh 2.0.0 · build ${GITHUB_RUN_NUMBER}" --notes "Installable Android debug build. Android 7.0+ (API 24). Debug signing is for testing; uninstall an older differently signed build before installation. Redesigned tourist guide with division discovery, 103 attractions, 13 food stories and offline trips. See README for coverage and verification limits."
       - name: Publish tagged version
         if: startsWith(github.ref, 'refs/tags/v')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" AmarDesh-v1.0.0-debug.apk --title "AmarDesh ${GITHUB_REF_NAME}" --notes "Debug-signed APK for testing. See README for production signing."
+        run: gh release create "${GITHUB_REF_NAME}" AmarDesh-v2.0.0-debug.apk --title "AmarDesh ${GITHUB_REF_NAME}" --notes "Debug-signed APK for testing. See README for production signing."
       - uses: actions/upload-artifact@v4
         with:
           name: AmarDesh-web

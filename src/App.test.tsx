@@ -1,16 +1,176 @@
 // @vitest-environment jsdom
-import {afterEach,beforeEach,describe,it,expect,vi} from 'vitest';
-import {render,screen,fireEvent,waitFor,cleanup} from '@testing-library/react';
-import {districts} from './model';
-vi.mock('./Map',()=>({BangladeshMap:({onSelect}:{onSelect:(id:string)=>void})=><div aria-label="Test district boundaries">{districts.map(d=><button key={d.id} onClick={()=>onSelect(d.id)}>Boundary {d.name}</button>)}</div>}));
-import App from './App';
-beforeEach(()=>{localStorage.clear();window.location.hash='explore';window.scrollTo=vi.fn();HTMLDialogElement.prototype.showModal=vi.fn();HTMLDialogElement.prototype.close=vi.fn()});
+import { afterEach, beforeEach, it, expect, vi } from "vitest";
+import {
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+  cleanup,
+} from "@testing-library/react";
+import App from "./App";
+import { en } from "./i18n";
+import { attractions } from "./tourism";
+beforeEach(() => {
+  localStorage.clear();
+  window.location.hash = "explore";
+  window.scrollTo = vi.fn();
+  HTMLElement.prototype.scrollTo = vi.fn();
+  window.matchMedia = vi
+    .fn()
+    .mockReturnValue({
+      matches: false,
+      addEventListener: vi.fn(),
+      removeEventListener: vi.fn(),
+    });
+});
 afterEach(cleanup);
-const clickNav=(text:string)=>fireEvent.click(screen.getAllByRole('button',{name:text})[0]);
-describe('user workflows',()=>{
- it('switches the whole interface to Bangla and persists the preference',async()=>{render(<App/>);fireEvent.click(screen.getByRole('button',{name:'Switch to Bangla'}));expect(screen.getByPlaceholderText('জেলা, স্থান বা খাবার খুঁজুন…')).toBeTruthy();expect(JSON.parse(localStorage.getItem('amardesh-v1')!).lang).toBe('bn')});
- it('searches for a landmark and saves a district across navigation',async()=>{render(<App/>);fireEvent.change(screen.getByPlaceholderText('Search a district, place or food…'),{target:{value:'Lalbagh'}});expect(screen.getAllByRole('article')).toHaveLength(1);fireEvent.click(screen.getByRole('button',{name:'Save Dhaka'}));clickNav('Saved');await waitFor(()=>expect(screen.getByText('Your next adventures, kept close.')).toBeTruthy());expect(screen.getByRole('button',{name:'Saved Dhaka'})).toBeTruthy();expect(JSON.parse(localStorage.getItem('amardesh-v1')!).favorites).toEqual(['dhaka'])});
- it('opens a map district, stamps a visit and adds it to the trip',async()=>{render(<App/>);fireEvent.click(screen.getByRole('button',{name:'Boundary Dhaka'}));await waitFor(()=>expect(screen.getByRole('button',{name:'▧ Mark as visited'})).toBeTruthy());fireEvent.click(screen.getByRole('button',{name:'▧ Mark as visited'}));expect(screen.getByLabelText('Visit date')).toBeTruthy();fireEvent.click(screen.getByRole('button',{name:'+ Add to trip'}));expect(JSON.parse(localStorage.getItem('amardesh-v1')!).trip.stops[0].id).toBe('dhaka');clickNav('Passport');await waitFor(()=>expect(screen.getByText('Every stamp is a story.')).toBeTruthy());expect(screen.getByText('1')).toBeTruthy()});
- it('creates an itinerary with user costs and clamps shortened day ranges',async()=>{window.location.hash='planner';render(<App/>);fireEvent.change(screen.getByLabelText('Add a district'),{target:{value:'dhaka'}});fireEvent.change(screen.getByLabelText('Transport'),{target:{value:'1200'}});fireEvent.change(screen.getByLabelText('Days'),{target:{value:'1'}});const saved=JSON.parse(localStorage.getItem('amardesh-v1')!);expect(saved.trip.transport).toBe(1200);expect(saved.trip.stops).toEqual([{id:'dhaka',day:1,notes:''}])});
- it('shows quiz feedback, records correct discoveries and advances',async()=>{window.location.hash='quiz';render(<App/>);fireEvent.click(screen.getByRole('button',{name:'Dhaka'}));expect(screen.getByText('That’s right!')).toBeTruthy();expect(JSON.parse(localStorage.getItem('amardesh-v1')!).quiz).toEqual(['munshiganj']);fireEvent.click(screen.getByRole('button',{name:'Next question →'}));expect(screen.getByText('In which district will you find this place?')).toBeTruthy()});
+const nav = (name: string) =>
+  fireEvent.click(screen.getAllByRole("button", { name })[0]);
+it("selects a division, district and all four exploration routes", async () => {
+  render(<App />);
+  fireEvent.click(screen.getByRole("button", { name: "Dhaka" }));
+  fireEvent.click(screen.getByRole("button", { name: "Narayanganj" }));
+  expect(
+    screen.getByRole("heading", { name: "Explore Narayanganj" }),
+  ).toBeTruthy();
+  fireEvent.click(
+    screen.getByRole("button", { name: new RegExp(en.historyHint) }),
+  );
+  await waitFor(() =>
+    expect(window.location.hash).toContain("district/narayanganj/history"),
+  );
+  await waitFor(() =>
+    expect(
+      screen.getByRole("heading", { name: "Narayanganj", level: 1 }),
+    ).toBeTruthy(),
+  );
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).district).toBe(
+    "narayanganj",
+  );
+});
+it("searches attractions, opens their detail, bookmarks and plans an actual place", async () => {
+  render(<App />);
+  fireEvent.change(screen.getByPlaceholderText(en.search), {
+    target: { value: "Lalbagh" },
+  });
+  fireEvent.click(screen.getAllByRole("button", { name: /Lalbagh Fort/ })[0]);
+  await waitFor(() =>
+    expect(
+      screen.getByRole("heading", { name: "Lalbagh Fort", level: 1 }),
+    ).toBeTruthy(),
+  );
+  fireEvent.click(screen.getByRole("button", { name: en.save }));
+  fireEvent.click(screen.getByRole("button", { name: en.addTrip }));
+  const s = JSON.parse(localStorage.getItem("amardesh-v2")!);
+  expect(s.savedPlaces).toHaveLength(1);
+  expect(s.trips[0].stops[0].id).toBe(s.savedPlaces[0]);
+  nav(en.trips);
+  await waitFor(() =>
+    expect(screen.getByRole("heading", { name: en.tripsTitle })).toBeTruthy(),
+  );
+  expect(screen.getByLabelText(en.addPlace)).toBeTruthy();
+});
+it("switches language and dark theme and persists both", async () => {
+  window.location.hash = "more";
+  render(<App />);
+  fireEvent.change(screen.getByLabelText(en.theme), {
+    target: { value: "dark" },
+  });
+  expect(document.documentElement.getAttribute("data-theme")).toBe("dark");
+  fireEvent.click(screen.getByRole("button", { name: "Switch to Bangla" }));
+  expect(document.documentElement.lang).toBe("bn");
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).lang).toBe("bn");
+});
+it("creates two trips, clamps days, edits notes, shares, deletes and restores", async () => {
+  window.location.hash = "trips";
+  render(<App />);
+  fireEvent.change(screen.getByLabelText(en.tripName), {
+    target: { value: "Coast" },
+  });
+  nav(en.create);
+  fireEvent.change(screen.getByLabelText(en.addPlace), {
+    target: { value: attractions[0].id },
+  });
+  fireEvent.change(screen.getByLabelText(en.days), { target: { value: "1" } });
+  fireEvent.change(screen.getByLabelText(en.notes), {
+    target: { value: "Bring water" },
+  });
+  fireEvent.change(screen.getAllByLabelText(en.tripName)[0], {
+    target: { value: "Heritage" },
+  });
+  nav(en.create);
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).trips).toHaveLength(
+    2,
+  );
+  nav(en.deleteTrip);
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).trips).toHaveLength(
+    1,
+  );
+  nav(en.undo);
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).trips).toHaveLength(
+    2,
+  );
+});
+it("opens a regional dish and saves it without relying on network", async () => {
+  window.location.hash = "dish/mezban";
+  render(<App />);
+  expect(screen.getByRole("heading", { level: 1 })).toBeTruthy();
+  fireEvent.click(screen.getByRole("button", { name: en.save }));
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).savedFoods).toEqual([
+    "mezban",
+  ]);
+  Object.defineProperty(navigator, "onLine", {
+    configurable: true,
+    value: false,
+  });
+  window.dispatchEvent(new Event("offline"));
+  await waitFor(() =>
+    expect(screen.getAllByText(en.offlineNow).length).toBeGreaterThan(0),
+  );
+});
+it.each(["attractions", "food", "history", "guide"])(
+  "opens the district %s page directly",
+  (section) => {
+    window.location.hash = "district/dhaka/" + section;
+    render(<App />);
+    expect(
+      screen.getByRole("heading", { name: "Dhaka", level: 1 }),
+    ).toBeTruthy();
+    expect(screen.getByRole("button", { name: en.markVisit })).toBeTruthy();
+  },
+);
+it("records a passport visit and retains it through navigation", async () => {
+  window.location.hash = "district/dhaka/history";
+  render(<App />);
+  nav(en.markVisit);
+  expect(
+    JSON.parse(localStorage.getItem("amardesh-v2")!).visits.dhaka.date,
+  ).toMatch(/^2026-/);
+  window.location.hash = "passport";
+  window.dispatchEvent(new Event("hashchange"));
+  await waitFor(() =>
+    expect(
+      screen.getByRole("heading", { name: en.passportIntro }),
+    ).toBeTruthy(),
+  );
+  expect(screen.getByText("1 / 64 Visited")).toBeTruthy();
+});
+it("records a correct quiz answer and advances", () => {
+  window.location.hash = "quiz";
+  render(<App />);
+  nav("Dhaka");
+  expect(screen.getByText(en.correct)).toBeTruthy();
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).quiz).toHaveLength(1);
+  nav(en.nextQuestion);
+  expect(screen.queryByText(en.correct)).toBeNull();
+});
+it("rejects an invalid restore while keeping saved progress", () => {
+  window.location.hash = "backup";
+  render(<App />);
+  fireEvent.change(screen.getByLabelText(en.backupLabel), {
+    target: { value: "not JSON" },
+  });
+  nav(en.restore);
+  expect(screen.getByText(en.backupBad)).toBeTruthy();
+  expect(JSON.parse(localStorage.getItem("amardesh-v2")!).version).toBe(2);
 });
