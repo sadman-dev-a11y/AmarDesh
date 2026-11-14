@@ -1,0 +1,147 @@
+[
+  {
+    "id": "tea",
+    "author": "Mahjuja Islam",
+    "source": "https://commons.wikimedia.org/wiki/File:Tea_garden_in_Jaflong.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "beach",
+    "author": "CAPTAIN RAJU",
+    "source": "https://commons.wikimedia.org/wiki/File:Cox%27s_Bazar_Sea_Beach_in_2025.18.jpg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "forest",
+    "author": "bri vos",
+    "source": "https://commons.wikimedia.org/wiki/File:Sun_in_Sunderbans.jpg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "fort",
+    "author": "Saifullah Nakih",
+    "source": "https://wordpress.org/photos/photo/7296629cc7/",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "reviewed": "2026-11-12",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  },
+  {
+    "id": "bakarkhani",
+    "title": "Bakorkhani.jpg",
+    "author": "Ali Haidar Khan",
+    "source": "https://commons.wikimedia.org/wiki/File:Bakorkhani.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "mezban",
+    "title": "Mejban Beef and Rice-Chittagong.jpg",
+    "author": "Sakib131999",
+    "source": "https://commons.wikimedia.org/wiki/File:Mejban_Beef_and_Rice-Chittagong.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "doi",
+    "title": "Bograr dahi.jpg",
+    "author": "RockyMasum",
+    "source": "https://commons.wikimedia.org/wiki/File:Bograr_dahi.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "paharpur",
+    "title": "Paharpur Buddhist Bihar.jpg",
+    "author": "Abdulmominbd",
+    "source": "https://commons.wikimedia.org/wiki/File:Paharpur_Buddhist_Bihar.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "temple",
+    "title": "Kantajew Temple, Dinajpur.jpg",
+    "author": "Tanvir Ahmed Seajar",
+    "source": "https://commons.wikimedia.org/wiki/File:Kantajew_Temple%2C_Dinajpur.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "rasmalai",
+    "title": "Rasmalai.jpg",
+    "author": "Thamizhpparithi Maari",
+    "source": "https://commons.wikimedia.org/wiki/File:Rasmalai.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "mosque",
+    "title": "Sixty Dome Mosque,Bagerhat.jpg",
+    "author": "মোয়ায মাহমুদ",
+    "source": "https://commons.wikimedia.org/wiki/File:Sixty_Dome_Mosque%2CBagerhat.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "palace",
+    "title": "Tajhat Palace Front.jpg",
+    "author": "T. M. Masum Billah",
+    "source": "https://commons.wikimedia.org/wiki/File:Tajhat_Palace_Front.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "kuakata",
+    "title": "Kuakata.jpg",
+    "author": "Mahbub Hasan",
+    "source": "https://commons.wikimedia.org/wiki/File:Kuakata.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "lake",
+    "title": "Kaptai lake, Rangamati, Bangladesh.jpg",
+    "author": "Mahjuja Islam",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaptai_lake%2C_Rangamati%2C_Bangladesh.jpg",
+    "license": "BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; CSS crop, original license retained"
+  },
+  {
+    "id": "museum",
+    "author": "Hermitage17",
+    "source": "https://commons.wikimedia.org/wiki/File:Jainul_Abedin_Museum.jpg",
+    "license": "Public domain (PD-self)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+    "reviewed": "2026-11-14",
+    "modifications": "Resized and compressed; displayed with CSS crop"
+  }
+]
