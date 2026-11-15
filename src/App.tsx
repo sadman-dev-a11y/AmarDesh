@@ -1,3 +1,4 @@
+import { useLayoutBounds } from './useLayoutBounds';
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Context, useTravel } from "./context";
 import { en, bn } from "./i18n";
@@ -50,6 +51,7 @@ import credits from "../public/photos/credits.json";
 import "./fonts.css";
 
 import "./style.css";
+import "./responsive.css";
 const tabs = ["home", "explore", "food", "trips", "more"] as const;
 export default function App() {
   const [ready, setReady] = useState(!native);
@@ -60,6 +62,7 @@ export default function App() {
     [message, setMessage] = useState(""),
     [storageError, setStorageError] = useState(false);
   const depth = useRef(0);
+  useLayoutBounds(ready);
   useEffect(() => {
     if (!native) return;
     let active = true;

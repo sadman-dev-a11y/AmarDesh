@@ -67,7 +67,7 @@ export function Photo({
         <img
           src={`${import.meta.env.BASE_URL}photos/${id}-hero.webp`}
           srcSet={`${import.meta.env.BASE_URL}photos/${id}-thumb.webp 400w, ${import.meta.env.BASE_URL}photos/${id}-hero.webp 1200w`}
-          sizes={priority ? "100vw" : "(max-width: 600px) 90vw, 400px"}
+          sizes={priority ? "100vw" : "(max-width: 760px) 50vw, 400px"}
           alt={alt}
           loading={priority ? "eager" : "lazy"}
           decoding="async"

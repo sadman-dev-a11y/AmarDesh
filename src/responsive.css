@@ -1,0 +1,61 @@
+/* Content determines height; safe areas and navigation are measured separately. */
+:root {
+  --safe-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+  --bottom-nav-height: 6rem;
+  --header-height: 6rem;
+}
+html { scroll-padding-block: calc(var(--header-height) + 1rem) calc(var(--bottom-nav-height) + 1rem); }
+.welcome { height: auto; min-height: 0; display: flex; flex-direction: column; }
+.hero-copy { padding: clamp(1.5rem, 5vw, 3.75rem); padding-bottom: 0; }
+.hero-foot { position: relative; inset: auto; padding: 1.5rem clamp(1.5rem, 5vw, 3.75rem) 2rem; flex-wrap: wrap; gap: 1rem 1.5rem; }
+.hero-foot > span { white-space: normal; }
+.hero-foot > span:last-child { max-width: 100%; }
+.hero-copy .primary { max-width: 100%; height: auto; white-space: normal; }
+.hero-eyebrow > span { flex-shrink: 0; }
+.district-chips button, .section-tabs button { flex: 0 0 auto; width: max-content; }
+.district-chips, .section-tabs, .division-track { max-width: 100%; }
+button, input, select, textarea { max-width: 100%; }
+button { overflow-wrap: anywhere; }
+.search-result > span:nth-child(2), .new-trip > label, .offline-card > div,
+.section-title > :first-child, .trip-heading > *, .food-filter > * { min-width: 0; }
+.panel, .itinerary-card, .stamp-grid > *, .exploration-card, .card-copy { min-width: 0; overflow-wrap: anywhere; }
+.itinerary-card h3 { padding-right: 2rem; }
+.itinerary-number { pointer-events: none; }
+.button-row, .trip-heading, .undo-bar { flex-wrap: wrap; }
+input[type=file] { width: 100%; }
+.onboarding { align-items: safe center; padding-top: calc(1rem + var(--safe-top)); padding-bottom: calc(1rem + var(--safe-bottom)); }
+.onboarding .panel { width: 100%; min-width: 0; }
+@media (max-width: 760px) {
+  .topbar { position: sticky; top: 0; z-index: 40; height: auto; min-height: calc(4.5rem + var(--safe-top)); padding: calc(.5rem + var(--safe-top)) 1rem .5rem; gap: .5rem; }
+  .brand { flex: 1; min-width: 0; white-space: normal; }
+  .brand > span { overflow-wrap: anywhere; font-size: 1.375rem; }
+  .brand img { flex: 0 0 32px; width: 32px; height: 32px; }
+  .header-actions { gap: .25rem; }
+  .header-actions > button { width: auto; min-width: 48px; min-height: 48px; height: auto; }
+  .topbar nav { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 2px; padding: .375rem .375rem calc(.375rem + var(--safe-bottom)); }
+  .topbar nav button { min-width: 0; width: 100%; min-height: 48px; padding: .25rem 2px; line-height: 1.4; }
+  .topbar nav span { max-width: 100%; overflow-wrap: anywhere; }
+  main { padding-bottom: calc(var(--bottom-nav-height) + 1rem); }
+  footer { padding: 1rem 0; }
+  .hero-copy, html[lang="bn"] .hero-copy { padding: 1.5rem 1.25rem 0; max-width: 100%; }
+  .hero-copy h1 { font-size: 2.5rem; overflow-wrap: anywhere; }
+  .hero-copy p { max-width: 100%; }
+  .hero-foot { padding: 1.5rem 1.25rem; font-size: 1.5rem; }
+  .hero-foot > span:last-child { flex-basis: 100%; width: auto; margin: 0; }
+  .section-title { flex-wrap: wrap; }
+  .section-title > :first-child { flex: 1 1 12rem; }
+  .section-title > .text-link { white-space: normal; max-width: 100%; margin-top: 0; }
+  .exploration-grid, .place-grid, .food-grid, .stamp-grid, .settings-grid, .form-grid, .phrase-grid, .detail-columns, .guide-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%, 10rem),1fr)); }
+  .new-trip { flex-wrap: wrap; }
+  .new-trip > label { flex-basis: 100%; }
+  .food-filter { flex-wrap: wrap; }
+  .food-filter > * { flex: 1 1 100%; }
+  .essentials-teaser > div { min-width: 0; flex-basis: 100%; }
+  .essentials-teaser .primary { white-space: normal; }
+  .toast { bottom: calc(var(--bottom-nav-height) + .5rem); max-width: calc(100% - 2rem); min-width: 0; }
+  .division-card { flex-basis: min(80vw, 18rem); height: auto; min-height: 18rem; display:flex; align-items:end; }
+  .division-card > .photo { position:absolute; inset:0; }
+  .division-copy { position:relative; inset:auto; padding:1.25rem; min-width:0; overflow-wrap:anywhere; }
+  .division-copy strong { font-size: 1.75rem; }
+}
