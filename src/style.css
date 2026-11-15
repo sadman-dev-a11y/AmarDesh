@@ -1899,7 +1899,7 @@ html[lang="bn"] .hero-copy h1 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   :root {
     font-size: 1.0rem;
   }
@@ -2745,7 +2745,7 @@ button, .icon-button { min-width: 3rem; }
 .map-credit { font-size:.8125rem; }
 
 .checklist {display:grid;gap:.4rem;} .checklist label {display:flex;align-items:center;gap:.75rem;min-height:3rem;} .checklist input {width:1.4rem;height:1.4rem;min-height:0;}
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .section-title > :first-child { min-width: 0; flex: 1; }
   .section-title > .text-link, .carousel-controls { flex-shrink: 0; }
   .text-link { max-width: 100%; overflow-wrap: anywhere; }

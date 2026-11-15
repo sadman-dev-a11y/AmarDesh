@@ -135,6 +135,9 @@ export default function App() {
     };
     apply();
     mq.addEventListener?.("change", apply);
+    return () => mq.removeEventListener?.("change", apply);
+  }, [state.lang, state.theme]);
+  useEffect(() => {
     try {
       if (native) {
         if (ready) void savePersistent(state).then(() => setStorageError(false)).catch(() => setStorageError(true));
@@ -143,7 +146,6 @@ export default function App() {
     } catch {
       setStorageError(true);
     }
-    return () => mq.removeEventListener?.("change", apply);
   }, [state, ready]);
   useEffect(() => {
     if (!message) return;

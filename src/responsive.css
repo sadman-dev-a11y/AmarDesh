@@ -26,7 +26,7 @@ button { overflow-wrap: anywhere; }
 input[type=file] { width: 100%; }
 .onboarding { align-items: safe center; padding-top: calc(1rem + var(--safe-top)); padding-bottom: calc(1rem + var(--safe-bottom)); }
 .onboarding .panel { width: 100%; min-width: 0; }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .topbar { position: sticky; top: 0; z-index: 40; height: auto; min-height: calc(4.5rem + var(--safe-top)); padding: calc(.5rem + var(--safe-top)) 1rem .5rem; gap: .5rem; }
   .brand { flex: 1; min-width: 0; white-space: normal; }
   .brand > span { overflow-wrap: anywhere; font-size: 1.375rem; }
@@ -59,3 +59,5 @@ input[type=file] { width: 100%; }
   .division-copy { position:relative; inset:auto; padding:1.25rem; min-width:0; overflow-wrap:anywhere; }
   .division-copy strong { font-size: 1.75rem; }
 }
+
+h1, h2, h3, p, .eyebrow { overflow-wrap: anywhere; }

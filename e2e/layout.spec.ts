@@ -27,7 +27,7 @@ for(const lang of ['en','bn']) for(const size of sizes) {
    await expect(page.locator('#main .skeleton-page')).toHaveCount(0);
    const layout=await page.evaluate(()=>{
     const clipped=[...document.querySelectorAll<HTMLElement>('button')].filter(e=>e.offsetWidth>0&&e.scrollWidth>e.clientWidth+2).map(e=>({text:e.textContent,cls:e.className,width:e.clientWidth,scroll:e.scrollWidth}));
-    return {width:innerWidth,scroll:document.documentElement.scrollWidth,clipped};
+    return {width:innerWidth,scroll:document.documentElement.scrollWidth,clipped,overflow:[...document.querySelectorAll<HTMLElement>("#main *,header *")].filter(e=>e.getBoundingClientRect().right>innerWidth+1&&!e.closest(".division-track,.district-chips,.section-tabs")).map(e=>({tag:e.tagName,cls:e.className,text:e.textContent?.slice(0,60)})).slice(0,20)};
    });
    expect(layout.scroll,route+JSON.stringify(layout)).toBeLessThanOrEqual(layout.width+1);
    expect(layout.clipped,route).toEqual([]);
