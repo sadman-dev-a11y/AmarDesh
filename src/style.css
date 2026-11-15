@@ -179,7 +179,7 @@ html {
 .brand small {
   display: block;
   color: var(--muted);
-  font: 8px Arial;
+  font: 0.8125rem "Noto Sans Bengali", Arial, sans-serif;
   letter-spacing: 1.6px;
   margin-top: 7px;
 }
@@ -396,13 +396,13 @@ html[data-theme="dark"] .primary {
   color: #fff8e6;
 }
 .hero-foot small {
-  font: 11px Arial;
+  font: 0.8125rem "Noto Sans Bengali", Arial, sans-serif;
   margin-left: 5px;
   color: #e4e9db;
 }
 .hero-foot > span:last-child {
   margin-left: auto;
-  font: 9px Arial;
+  font: 0.8125rem "Noto Sans Bengali", Arial, sans-serif;
   letter-spacing: 1.5px;
 }
 .carousel-controls {
@@ -989,7 +989,7 @@ footer button {
 }
 .brand-footer span {
   display: block;
-  font: 10px Arial;
+  font: 0.8125rem "Noto Sans Bengali", Arial, sans-serif;
   color: var(--muted);
   margin-top: 8px;
 }
@@ -1588,7 +1588,7 @@ footer button {
 }
 .emergency small {
   display: block;
-  font: 12px Arial;
+  font: 0.8125rem "Noto Sans Bengali", Arial, sans-serif;
   margin-top: 8px;
 }
 .phrase-grid {
@@ -1643,7 +1643,7 @@ footer button {
   max-width: 850px;
 }
 .backup-panel textarea {
-  font: 12px/1.7 monospace;
+  font: 0.8125rem/1.7 "Noto Sans Bengali", monospace;
 }
 .button-row {
   display: flex;
@@ -2745,3 +2745,8 @@ button, .icon-button { min-width: 3rem; }
 .map-credit { font-size:.8125rem; }
 
 .checklist {display:grid;gap:.4rem;} .checklist label {display:flex;align-items:center;gap:.75rem;min-height:3rem;} .checklist input {width:1.4rem;height:1.4rem;min-height:0;}
+@media (max-width: 760px) {
+  .section-title > :first-child { min-width: 0; flex: 1; }
+  .section-title > .text-link, .carousel-controls { flex-shrink: 0; }
+  .text-link { max-width: 100%; overflow-wrap: anywhere; }
+}
