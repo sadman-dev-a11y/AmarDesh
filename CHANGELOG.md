@@ -1,3 +1,13 @@
+# AmarDesh 3.0.1
+
+- Fixed hero button/statistics overlap by replacing fixed heights and absolute content positioning with normal document flow.
+- Fixed squeezed district and tab labels in horizontal scrolling controls.
+- Added safe-area-aware sticky header and measured navigation clearance, including footer and toast placement.
+- Adapted cards, forms, headings and tablet navigation to small screens and enlarged text.
+- Cached passport map path calculations and avoided repeating native theme calls on unrelated state edits.
+- Added responsive regression coverage for 14 screens, both languages, 320–1280px widths and text scales up to 200%, including overlap, clipped labels and footer reachability.
+- Uses the same release signing key as v3.0.0; version code 30001 supports an in-place update.
+
 # AmarDesh 3.0.0
 
 - Optimized non-debug Android release configuration, native app/back handling, status bar, splash, sharing, Preferences, Filesystem, haptics and opt-in location.

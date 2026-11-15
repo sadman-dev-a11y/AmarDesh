@@ -31,6 +31,13 @@ for(const lang of ['en','bn']) for(const size of sizes) {
    });
    expect(layout.scroll,route+JSON.stringify(layout)).toBeLessThanOrEqual(layout.width+1);
    expect(layout.clipped,route).toEqual([]);
+   await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
+   const footerClear=await page.evaluate(()=>{
+    const nav=document.querySelector('.topbar nav')!;
+    return getComputedStyle(nav).position!=='fixed'||[...document.querySelectorAll('footer button')].every(b=>b.getBoundingClientRect().bottom<=nav.getBoundingClientRect().top+1);
+   });
+   expect(footerClear,route+' footer must remain above navigation').toBe(true);
+   await page.evaluate(()=>window.scrollTo(0,0));
    if(route==='home') {
     const geometry=await page.evaluate(()=>{
      const box=(s:string)=>document.querySelector(s)!.getBoundingClientRect();
@@ -39,9 +46,9 @@ for(const lang of ['en','bn']) for(const size of sizes) {
     expect(geometry.ctaBottom).toBeLessThanOrEqual(geometry.statsTop);
     expect(geometry.statsBottom).toBeLessThanOrEqual(geometry.heroBottom);
     if(size.width===360||size.width===320&&size.scale===200) {
-     await page.screenshot({path:`release/screenshots/layout-${lang}-${size.width}-${size.scale}-hero.png`});
+     await page.screenshot({animations:'disabled',path:`release/screenshots/layout-${lang}-${size.width}-${size.scale}-hero.png`});
      await page.locator('.district-chips').scrollIntoViewIfNeeded();
-     await page.screenshot({path:`release/screenshots/layout-${lang}-${size.width}-${size.scale}-districts.png`});
+     await page.screenshot({animations:'disabled',path:`release/screenshots/layout-${lang}-${size.width}-${size.scale}-districts.png`});
     }
    }
   }

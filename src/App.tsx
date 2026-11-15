@@ -386,7 +386,7 @@ export default function App() {
       </main>
       <footer>
         <div className="brand-footer">
-          AmarDesh<span>{state.lang === 'bn' ? '৩.০' : '3.0'} · {t.journey}</span>
+          AmarDesh<span>{state.lang === 'bn' ? '৩.০.১' : '3.0.1'} · {t.journey}</span>
         </div>
         <button onClick={() => go("sources")}>
           {t.sources}
