@@ -1,0 +1,245 @@
+{
+  "version": 3,
+  "items": [
+    {
+      "id": "route-1",
+      "name": {
+        "en": "Old Dhaka and Sonargaon",
+        "bn": "পুরান ঢাকা ও সোনারগাঁ"
+      },
+      "days": 2,
+      "districts": [
+        "dhaka",
+        "narayanganj"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-2",
+      "name": {
+        "en": "Southwest heritage",
+        "bn": "দক্ষিণ-পশ্চিমের ঐতিহ্য"
+      },
+      "days": 4,
+      "districts": [
+        "bagerhat",
+        "khulna"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-3",
+      "name": {
+        "en": "Northern heritage",
+        "bn": "উত্তরের ঐতিহ্য"
+      },
+      "days": 4,
+      "districts": [
+        "bogura",
+        "naogaon",
+        "dinajpur"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-4",
+      "name": {
+        "en": "Sylhet discovery",
+        "bn": "সিলেট আবিষ্কার"
+      },
+      "days": 4,
+      "districts": [
+        "sylhet",
+        "moulvibazar",
+        "habiganj"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-5",
+      "name": {
+        "en": "Haor country",
+        "bn": "হাওরের পথে"
+      },
+      "days": 3,
+      "districts": [
+        "sunamganj",
+        "kishoreganj"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-6",
+      "name": {
+        "en": "Coastal discovery",
+        "bn": "উপকূলের পথে"
+      },
+      "days": 4,
+      "districts": [
+        "chattogram",
+        "cox-s-bazar"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-7",
+      "name": {
+        "en": "Southern waterways",
+        "bn": "দক্ষিণের জলপথ"
+      },
+      "days": 4,
+      "districts": [
+        "barishal",
+        "jhalakathi",
+        "pirojpur"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-8",
+      "name": {
+        "en": "Kuakata and the south",
+        "bn": "কুয়াকাটা ও দক্ষিণাঞ্চল"
+      },
+      "days": 3,
+      "districts": [
+        "patuakhali",
+        "barguna"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-9",
+      "name": {
+        "en": "Rangpur circuit",
+        "bn": "রংপুরের পথে"
+      },
+      "days": 4,
+      "districts": [
+        "rangpur",
+        "dinajpur",
+        "panchagarh"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-10",
+      "name": {
+        "en": "Mymensingh and Birisiri",
+        "bn": "ময়মনসিংহ ও বিরিশিরি"
+      },
+      "days": 3,
+      "districts": [
+        "mymensingh",
+        "netrokona"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-11",
+      "name": {
+        "en": "Literary southwest",
+        "bn": "সাহিত্যের দক্ষিণ-পশ্চিম"
+      },
+      "days": 3,
+      "districts": [
+        "kushtia",
+        "jashore",
+        "narail"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-12",
+      "name": {
+        "en": "Rajshahi and Natore",
+        "bn": "রাজশাহী ও নাটোর"
+      },
+      "days": 3,
+      "districts": [
+        "rajshahi",
+        "natore"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    },
+    {
+      "id": "route-13",
+      "name": {
+        "en": "Dhaka division sampler",
+        "bn": "ঢাকা বিভাগের এক ঝলক"
+      },
+      "days": 3,
+      "districts": [
+        "dhaka",
+        "gazipur",
+        "tangail"
+      ],
+      "description": {
+        "en": "An editable sequence of district highlights. Adjust the number of days to your transport, access and weather checks.",
+        "bn": "জেলার উল্লেখযোগ্য স্থান নিয়ে পরিবর্তনযোগ্য পরিকল্পনা। যাতায়াত, প্রবেশের অনুমতি ও আবহাওয়া দেখে দিনের সংখ্যা ঠিক করুন।"
+      },
+      "editorial": true,
+      "reviewed": "2026-11-15"
+    }
+  ]
+}

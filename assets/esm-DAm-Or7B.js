@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./web-BksAfAgs.js","./index-caggnbHf.js"])))=>i.map(i=>d[i]);
+import{o as e,t}from"./index-caggnbHf.js";var n=e(`SplashScreen`,{web:()=>t(()=>import(`./web-BksAfAgs.js`).then(e=>new e.SplashScreenWeb),__vite__mapDeps([0,1]),import.meta.url)});export{n as SplashScreen};
