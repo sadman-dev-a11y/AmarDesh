@@ -1915,11 +1915,9 @@ html[lang="bn"] .hero-copy h1 {
   .brand > span {
     font-size: 1.4375rem;
   }
-  .brand small {
-    font-size: 0.8125rem;
-    letter-spacing: 1.1px;
-    margin-top: 5px;
-  }
+  .brand small { display: none; }
+  .brand { min-width: 0; gap: 8px; }
+  .header-actions { flex-shrink: 0; }
   .header-actions {
     gap: 6px;
   }

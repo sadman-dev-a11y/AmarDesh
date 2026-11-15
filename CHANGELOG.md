@@ -16,7 +16,7 @@ This release does not claim that every item in the original improvement prompt i
 - Verified coordinates currently cover three attractions. Other attractions use Maps name search. District HQ coordinates remain unverified; map polygons are not HQ coordinates.
 - 15 original licensed photographs were optimized; additional unique photography has not been sourced for every attraction.
 - Some district histories, culture, foods, routes, seasons, fees and accessibility details remain unverified. The app reports gaps rather than inventing them.
-- Visit photos and shareable passport images are not implemented. Visit notes are preserved.
+- Visit photos are not implemented. Visit notes are preserved; a shareable passport image is available.
 - The correction action opens GitHub's issue form, which requires a GitHub account to submit; anonymous correction hosting is not configured.
 - No low-end physical Android timing, TalkBack, GPS hardware, Android Auto Backup or share-target testing has been performed here. Browser tests do not replace device tests.
 - Data JSON is fetched separately at startup for cross-screen search; itinerary and boundary data are lazy-loaded. Not every content category is lazy-loaded per screen.

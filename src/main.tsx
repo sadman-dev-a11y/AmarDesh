@@ -29,6 +29,7 @@ root.render(<main style={{padding:'2rem',fontFamily:'sans-serif'}}><h1>AmarDesh<
 loadContent().then(() => import('./App')).then(({default: App}) => {
   root.render(<ErrorBoundary><App /></ErrorBoundary>);
 }).catch(() => {
+  if (Capacitor.isNativePlatform()) void import("@capacitor/splash-screen").then(m => m.SplashScreen.hide()).catch(() => {});
   root.render(<main><h1>AmarDesh</h1><p>Unable to open the guide. / সহায়িকা খোলা যায়নি।</p><button onClick={() => window.location.reload()}>Retry / আবার চেষ্টা</button></main>);
 });
 if ("serviceWorker" in navigator && Capacitor.isNativePlatform()) {

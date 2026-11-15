@@ -1,3 +1,4 @@
+import { formatNumber } from "./format";
 import { TripExtras } from "./TripExtras";
 import { shareText } from "./native";
 import { useState } from "react";
@@ -189,7 +190,7 @@ export function Trips() {
               const a = attractions.find((a) => a.id === stop.id)!;
               return (
                 <article className="trip-stop" key={stop.id + "-" + i}>
-                  <span className="stop-number">{i + 1}</span>
+                  <span className="stop-number">{formatNumber(i + 1, lang)}</span>
                   <div>
                     <button
                       className="stop-name"
@@ -343,7 +344,7 @@ export function Trips() {
       <section className="section">
         <div className="section-title">
           <h2>{t.savedPlaces}</h2>
-          <span>{state.savedPlaces.length}</span>
+          <span>{formatNumber(state.savedPlaces.length, lang)}</span>
         </div>
         {state.savedPlaces.length ? (
           <div className="place-grid">

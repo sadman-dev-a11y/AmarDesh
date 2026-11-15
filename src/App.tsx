@@ -10,6 +10,7 @@ import {
   SourceList,
 } from "./components";
 import { Discovery } from "./Discovery";
+const ProgressCard = lazy(() => import('./ProgressCard').then(m => ({default:m.ProgressCard})));
 const NearMe = lazy(() => import('./NearMe').then(m => ({default:m.NearMe})));
 import { hasCoordinates } from './geo';
 const Quiz = lazy(() => import('./Quiz').then(m => ({default:m.Quiz})));
@@ -20,7 +21,7 @@ const Backup = lazy(() => import('./Backup').then(m => ({default:m.Backup})));
 import { App as NativeApp } from '@capacitor/app';
 import { StatusBar, Style } from '@capacitor/status-bar';
 import { SplashScreen } from '@capacitor/splash-screen';
-import { native, readPersistent, savePersistent, haptic } from './native';
+import { native, readPersistent, savePersistent, haptic, exportFile } from './native';
 import { formatNumber, formatDate } from './format';
 import {
   districts,
@@ -735,7 +736,7 @@ function Explore() {
         {searching ? (
           <div className="search-results" aria-live="polite">
             <span className="eyebrow">
-              {hits.length} {t.results}
+              {formatNumber(hits.length, lang)} {t.results}
             </span>
             {hits.length ? (
               hits.slice(0, 120).map((h) => (
@@ -783,7 +784,7 @@ function Explore() {
                   </span>
                   <span>
                     <strong>{h.name[lang]}</strong>
-                    <small>{h.context}</small>
+                    <small>{lang === "bn" ? h.context.split(", ").map(x => districts.find(d => d.name === x)?.bn || divisions.find(v => v.name.en === x)?.name.bn || x).join("، ") : h.context}</small>
                   </span>
                   <Icon name="arrow" size={19} />
                 </button>
@@ -1148,7 +1149,7 @@ function DishGuide({ f }: { f: Food }) {
           </div>
           <p>{f.association[lang]}</p>
           <small>
-            {t.reviewed}: {f.verified}
+            {t.reviewed}: {formatDate(f.verified, lang)}
           </small>
         </aside>
       </div>
@@ -1250,7 +1251,7 @@ function Essentials() {
             <p>{e[lang]}</p>
             {e.key === "safety" && (
               <a className="emergency" href="tel:999">
-                999 <small>{t.safety}</small>
+                {formatNumber(999, state.lang)} <small>{t.safety}</small>
               </a>
             )}
             <div className="official-links">
@@ -1280,24 +1281,16 @@ function Essentials() {
   );
 }
 function Sources() {
-  const { t } = useTravel();
+  const { t, state, notify } = useTravel();
   const [query, setQuery] = useState("");
   const list = sources.filter((s) =>
     [s.title, s.publisher, s.url].some((x) =>
       x.toLowerCase().includes(query.toLowerCase()),
     ),
   );
-  const download = () => {
-    const url = URL.createObjectURL(
-      new Blob([JSON.stringify(sources, null, 2)], {
-        type: "application/json",
-      }),
-    );
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "AmarDesh-Research-Sources.json";
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  const download = async () => {
+    try { await exportFile('AmarDesh-Research-Sources.json', JSON.stringify(sources, null, 2)); }
+    catch { notify(state.lang === 'bn' ? 'ফাইল পাঠানো হয়নি। আবার চেষ্টা করুন।' : 'File was not shared. Please try again.'); }
   };
   return (
     <>
@@ -1309,8 +1302,8 @@ function Sources() {
       <section className="panel reading">
         <h2>{t.sourceInventory}</h2>
         <p>
-          {attractions.length} {t.attractions} · {foods.length} {t.localFood} ·{" "}
-          {sources.length} {t.sources}
+          {formatNumber(attractions.length, state.lang)} {t.attractions} · {formatNumber(foods.length, state.lang)} {t.localFood} ·{" "}
+          {formatNumber(sources.length, state.lang)} {t.sources}
         </p>
         <label>
           {t.search}
@@ -1356,6 +1349,7 @@ function Passport() {
           {formatNumber(Object.keys(state.visits).length, state.lang)} / {formatNumber(64, state.lang)} {t.visited}
         </p>
       </section>
+      <Suspense fallback={null}><ProgressCard /></Suspense>
       <Suspense fallback={<div className="skeleton-page"><div/></div>}><PassportMap /></Suspense>
       <div className="badge-row">{divisions.filter(v => districts.filter(d => d.division === v.name.en).every(d => state.visits[d.id])).map(v => <span className="badge" key={v.id}>✓ {v.name[state.lang]} · {state.lang === 'bn' ? 'সম্পূর্ণ' : 'Complete'}</span>)}</div>
       {d && visit && (

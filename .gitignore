@@ -16,3 +16,5 @@ android/**/build/
 /public/data/attractions.json
 /public/data/foods.json
 /public/data/sources.json
+
+/android/.kotlin/
