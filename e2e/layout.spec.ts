@@ -31,13 +31,13 @@ for(const lang of ['en','bn']) for(const size of sizes) {
    });
    expect(layout.scroll,route+JSON.stringify(layout)).toBeLessThanOrEqual(layout.width+1);
    expect(layout.clipped,route).toEqual([]);
-   await page.evaluate(()=>window.scrollTo(0,document.documentElement.scrollHeight));
+   await page.evaluate(()=>window.scrollTo({top:document.documentElement.scrollHeight,behavior:'instant'}));
    const footerClear=await page.evaluate(()=>{
     const nav=document.querySelector('.topbar nav')!;
     return getComputedStyle(nav).position!=='fixed'||[...document.querySelectorAll('footer button')].every(b=>b.getBoundingClientRect().bottom<=nav.getBoundingClientRect().top+1);
    });
    expect(footerClear,route+' footer must remain above navigation').toBe(true);
-   await page.evaluate(()=>window.scrollTo(0,0));
+   await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));
    if(route==='home') {
     const geometry=await page.evaluate(()=>{
      const box=(s:string)=>document.querySelector(s)!.getBoundingClientRect();
