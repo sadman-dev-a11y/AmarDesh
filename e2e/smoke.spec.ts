@@ -6,7 +6,8 @@ for(const lang of ['en','bn']) for(const theme of ['light','dark']) {
   await page.addInitScript(({lang,theme})=>localStorage.getItem('amardesh-v2') || localStorage.setItem('amardesh-v2',JSON.stringify({version:2,lang,theme,district:'dhaka',savedPlaces:[],savedFoods:[],trips:[],visits:{},quiz:[],onboarded:true})),{lang,theme});
   await page.goto('/');await expect(page.locator('.welcome h1')).toBeVisible();
   await page.screenshot({path:`release/screenshots/home-${lang}-${theme}.png`,fullPage:false});
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  const overflow=await page.evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth,elements:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth&&!e.closest('.division-track')).map(e=>({tag:e.tagName,cls:e.className,right:e.getBoundingClientRect().right,text:e.textContent?.slice(0,90)}))}));
+  expect(overflow.scroll,JSON.stringify(overflow)).toBeLessThanOrEqual(overflow.width);
   await page.goto('/#district/dhaka/history');await expect(page.locator('.district-content')).toBeVisible();await page.locator('.visit-button').click();
   await page.goto('/#passport');await expect(page.locator('.passport-map svg path')).toHaveCount(64);await page.screenshot({path:`release/screenshots/passport-${lang}-${theme}.png`,fullPage:true});
   await page.goto('/#place/dhaka--lalbagh-fort');await page.locator('.detail-actions .primary').click();
