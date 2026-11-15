@@ -3,6 +3,8 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:icon="@drawable/amardesh_icon"
         android:label="@string/app_name"
         android:roundIcon="@drawable/amardesh_icon"
@@ -38,4 +40,6 @@
     <!-- Permissions -->
 
     <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>

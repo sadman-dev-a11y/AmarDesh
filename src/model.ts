@@ -1,7 +1,8 @@
-import raw from "./data/districts.json";
+import type raw from "./data/districts.json";
+import { districtContent } from "./content";
 export type Lang = "en" | "bn";
 export type District = (typeof raw)[number];
-export const districts = raw;
+export const districts = districtContent;
 export const divisions = [
   ...new Map(
     districts.map((d) => [d.division, { en: d.division, bn: d.divisionBn }]),

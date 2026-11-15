@@ -1,3 +1,5 @@
+import { fuzzyMatch } from "./search";
+import { formatNumber } from "./format";
 import { useEffect, useRef, useState } from "react";
 import { useTravel } from "./context";
 import {
@@ -7,7 +9,6 @@ import {
   divisions,
   districtById,
   type Section,
-  normalize,
 } from "./tourism";
 import { Icon, Photo } from "./components";
 export function Discovery() {
@@ -52,7 +53,7 @@ export function Discovery() {
   const matches = q.trim()
     ? districts.filter((d) =>
         [d.name, d.bn, ...d.aliases].some((x) =>
-          normalize(x).includes(normalize(q)),
+          fuzzyMatch(q, x),
         ),
       )
     : [];
@@ -131,7 +132,7 @@ export function Discovery() {
             <span className="division-shade" />
             <span className="division-copy">
               <small>
-                {districts.filter((d) => d.division === v.name.en).length}{" "}
+                {formatNumber(districts.filter((d) => d.division === v.name.en).length, lang)}{" "}
                 {t.countDistricts}
               </small>
               <strong>{v.name[lang]}</strong>

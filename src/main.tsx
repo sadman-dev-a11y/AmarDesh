@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App";
+import { loadContent } from "./content";
+import { Capacitor } from "@capacitor/core";
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
   { error: boolean }
@@ -23,12 +24,18 @@ class ErrorBoundary extends React.Component<
     );
   }
 }
-createRoot(document.getElementById("root")!).render(
-  <ErrorBoundary>
-    <App />
-  </ErrorBoundary>,
-);
-if ("serviceWorker" in navigator && import.meta.env.PROD)
+const root = createRoot(document.getElementById("root")!);
+root.render(<main style={{padding:'2rem',fontFamily:'sans-serif'}}><h1>AmarDesh</h1><p>Opening your offline guide… / ভ্রমণ সহায়িকা খুলছে…</p></main>);
+loadContent().then(() => import('./App')).then(({default: App}) => {
+  root.render(<ErrorBoundary><App /></ErrorBoundary>);
+}).catch(() => {
+  root.render(<main><h1>AmarDesh</h1><p>Unable to open the guide. / সহায়িকা খোলা যায়নি।</p><button onClick={() => window.location.reload()}>Retry / আবার চেষ্টা</button></main>);
+});
+if ("serviceWorker" in navigator && Capacitor.isNativePlatform()) {
+  void navigator.serviceWorker.getRegistrations().then(rs => Promise.all(rs.map(r => r.unregister())));
+  if ("caches" in window) void caches.keys().then(keys => Promise.all(keys.map(k => caches.delete(k))));
+}
+if ("serviceWorker" in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform())
   navigator.serviceWorker
     .register(`${import.meta.env.BASE_URL}sw.js`)
     .catch(() => {});

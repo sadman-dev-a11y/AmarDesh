@@ -54,7 +54,7 @@ describe("tourism register", () => {
   });
   it("has bilingual, sourced attraction and food records without orphan references", () => {
     expect(attractions.length).toBeGreaterThanOrEqual(100);
-    expect(foods).toHaveLength(13);
+    expect(foods.length).toBeGreaterThanOrEqual(23);
     for (const d of districts)
       expect(attractions.some((a) => a.district === d.id)).toBe(true);
     for (const item of [...attractions, ...foods]) {
@@ -96,7 +96,7 @@ describe("tourism register", () => {
     expect(r[0].matched).toContain("beaches");
     expect(new Set(r.map((x) => x.item.id)).size).toBe(r.length);
   });
-  it("ships licensed local photos and no map dependency or boundary download", () => {
+  it("ships licensed local photos and bundled district boundaries", () => {
     for (const c of credits) {
       expect(
         existsSync(
@@ -117,7 +117,7 @@ describe("tourism register", () => {
     ).not.toContain("maplibre");
     expect(
       existsSync(new URL("../public/data/districts.geojson", import.meta.url)),
-    ).toBe(false);
+    ).toBe(true);
   });
   it("keeps division quiz answers unambiguous through all districts", () => {
     for (let i = 0; i < 64; i++) {
@@ -214,7 +214,7 @@ it("browses using filters without requiring a search term", () => {
   const hits = searchAll("", "Sylhet", "district");
   expect(hits).toHaveLength(4);
   expect(hits.every((h) => h.context === "Sylhet")).toBe(true);
-  expect(searchAll("", "", "food")).toHaveLength(13);
+  expect(searchAll("", "", "food")).toHaveLength(foods.length);
 });
 it("keeps Bengali vowel signs distinct and ignores spaces around search terms", () => {
   expect(searchAll(" কুমিল্লা ").some((h) => h.id === "cumilla")).toBe(true);

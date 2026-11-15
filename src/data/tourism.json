@@ -166,9 +166,21 @@
         "bn": "স্থানীয় আবহাওয়া দেখে তারিখ বাছুন। এই সহায়িকায় স্থানটির নির্দিষ্ট মৌসুম যাচাই করা হয়নি।"
       },
       "sourceIds": [
-        "source-3"
+        "source-3",
+        "geo-dhaka--lalbagh-fort"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      },
+      "lat": 23.71879722222222,
+      "lng": 90.38823333333335,
+      "coordinateSource": "geo-dhaka--lalbagh-fort"
     },
     {
       "id": "dhaka--ahsan-manzil",
@@ -194,8 +206,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Dhaka as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ঢাকা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -211,7 +223,15 @@
         "source-3",
         "source-4"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "faridpur--mathurapur-deul",
@@ -237,8 +257,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Faridpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ফরিদপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -252,7 +272,15 @@
         "source-1",
         "source-5"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "faridpur--pathrail-shahi-mosque",
@@ -278,8 +306,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Faridpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ফরিদপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -293,7 +321,15 @@
         "source-1",
         "source-5"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "gazipur--bhawal-rajbari",
@@ -319,8 +355,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Gazipur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "গাজীপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -334,7 +370,15 @@
         "source-1",
         "source-6"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "gazipur--toke-fort",
@@ -360,8 +404,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Gazipur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "গাজীপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -375,7 +419,15 @@
         "source-1",
         "source-6"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "gopalganj--tungipara-memorial-complex",
@@ -401,8 +453,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Gopalganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "গোপালগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -416,7 +468,15 @@
         "source-1",
         "source-7"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "kishoreganj--sholakia-eidgah",
@@ -442,8 +502,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Kishoreganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কিশোরগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -457,7 +517,15 @@
         "source-1",
         "source-8"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "madaripur--shakuni-lake",
@@ -483,8 +551,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Madaripur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মাদারীপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -498,7 +566,15 @@
         "source-1",
         "source-9"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "madaripur--raja-ram-temple",
@@ -524,8 +600,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Madaripur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মাদারীপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -539,7 +615,15 @@
         "source-1",
         "source-9"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "manikganj--baliati-palace",
@@ -565,8 +649,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Manikganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মানিকগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -581,7 +665,15 @@
         "source-10",
         "source-11"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "munshiganj--idrakpur-fort",
@@ -607,8 +699,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Munshiganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মুন্সীগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -622,7 +714,15 @@
         "source-1",
         "source-12"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "munshiganj--baba-adam-mosque",
@@ -648,8 +748,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Munshiganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মুন্সীগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -663,7 +763,15 @@
         "source-1",
         "source-12"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "narayanganj--panam-nagar",
@@ -703,7 +811,15 @@
       "sourceIds": [
         "source-90"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "narayanganj--sonakanda-fort",
@@ -729,8 +845,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Narayanganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নারায়ণগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -744,7 +860,15 @@
         "source-1",
         "source-13"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "narsingdi--wari-bateshwar",
@@ -770,8 +894,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Narsingdi as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নরসিংদী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -786,7 +910,15 @@
         "source-14",
         "source-15"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rajbari--mir-mosharraf-hossain-s-tomb",
@@ -812,8 +944,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Rajbari as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "রাজবাড়ী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -827,7 +959,15 @@
         "source-1",
         "source-16"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rajbari--goalanda-ferry-ghat",
@@ -853,8 +993,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Rajbari as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "রাজবাড়ী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -868,7 +1008,15 @@
         "source-1",
         "source-16"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "shariatpur--fateh-jangapur-fort",
@@ -894,8 +1042,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Shariatpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "শরীয়তপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -909,7 +1057,15 @@
         "source-1",
         "source-17"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "tangail--madhupur-national-park",
@@ -935,8 +1091,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Tangail as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "টাঙ্গাইল জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -951,7 +1107,15 @@
         "source-18",
         "source-19"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bagerhat--sixty-dome-mosque",
@@ -989,9 +1153,21 @@
         "bn": "স্থানীয় আবহাওয়া দেখে তারিখ বাছুন। এই সহায়িকায় স্থানটির নির্দিষ্ট মৌসুম যাচাই করা হয়নি।"
       },
       "sourceIds": [
-        "source-21"
+        "source-21",
+        "geo-bagerhat--sixty-dome-mosque"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      },
+      "lat": 22.67444,
+      "lng": 89.74194,
+      "coordinateSource": "geo-bagerhat--sixty-dome-mosque"
     },
     {
       "id": "bagerhat--khan-jahan-ali-s-tomb",
@@ -1017,8 +1193,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bagerhat as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বাগেরহাট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1034,7 +1210,15 @@
         "source-21",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chuadanga--gholdari-jami-mosque",
@@ -1060,8 +1244,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chuadanga as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চুয়াডাঙ্গা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1075,7 +1259,15 @@
         "source-1",
         "source-23"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chuadanga--karpasdanga-nilkuthi",
@@ -1101,8 +1293,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chuadanga as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চুয়াডাঙ্গা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1116,7 +1308,15 @@
         "source-1",
         "source-23"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "jashore--sagardari-madhu-palli",
@@ -1142,8 +1342,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Jashore as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "যশোর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1157,7 +1357,15 @@
         "source-1",
         "source-24"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "jashore--deul-bharat",
@@ -1183,8 +1391,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Jashore as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "যশোর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1198,7 +1406,15 @@
         "source-1",
         "source-24"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "jhenaidah--naldanga-temple",
@@ -1224,8 +1440,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Jhenaidah as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ঝিনাইদহ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1240,7 +1456,15 @@
         "source-25",
         "source-26"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "khulna--the-sundarbans",
@@ -1267,8 +1491,8 @@
         "bn": "গাইডসহ নৌভ্রমণ;পাখি দেখা;ম্যানগ্রোভ পরিবেশ জানা"
       },
       "transport": {
-        "en": "Use an authorized forest operator from the Khulna or Mongla gateway; arrange the route before departure.",
-        "bn": "খুলনা বা মোংলা থেকে অনুমোদিত বন অপারেটরের সঙ্গে আগে রুট ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Forest permission and an appropriate guide are essential. Keep to authorized routes and use a life jacket aboard boats.",
@@ -1281,7 +1505,15 @@
       "sourceIds": [
         "source-28"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "khulna--khan-jahan-ali-bridge",
@@ -1308,8 +1540,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Khulna as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "খুলনা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1325,7 +1557,15 @@
         "source-28",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "kushtia--shilaidaha-kuthibari",
@@ -1351,8 +1591,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Kushtia as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুষ্টিয়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1366,7 +1606,15 @@
         "source-1",
         "source-29"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "kushtia--lalon-shah-s-tomb",
@@ -1392,8 +1640,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Kushtia as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুষ্টিয়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1407,7 +1655,15 @@
         "source-1",
         "source-29"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "magura--raja-sitaram-s-palace-fort",
@@ -1433,8 +1689,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Magura as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মাগুরা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1449,7 +1705,15 @@
         "source-30",
         "source-31"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "meherpur--mujibnagar-memorial",
@@ -1475,8 +1739,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Meherpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মেহেরপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1490,7 +1754,15 @@
         "source-1",
         "source-32"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "narail--goal-bathan-mosque",
@@ -1516,8 +1788,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Narail as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নড়াইল জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1532,7 +1804,15 @@
         "source-33",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "narail--baradia-math",
@@ -1558,8 +1838,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Narail as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নড়াইল জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1574,7 +1854,15 @@
         "source-33",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "satkhira--sonabaria-math",
@@ -1600,8 +1888,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Satkhira as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "সাতক্ষীরা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1616,7 +1904,15 @@
         "source-34",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "satkhira--jahajghata-naval-fort",
@@ -1642,8 +1938,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Satkhira as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "সাতক্ষীরা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1658,7 +1954,15 @@
         "source-34",
         "source-22"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bandarban--nilgiri",
@@ -1699,7 +2003,15 @@
       "sourceIds": [
         "source-36"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bandarban--keokradong",
@@ -1726,8 +2038,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bandarban as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বান্দরবান জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1742,7 +2054,15 @@
         "source-35",
         "source-36"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "brahmanbaria--kal-bhairab-temple",
@@ -1768,8 +2088,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Brahmanbaria as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ব্রাহ্মণবাড়িয়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1783,7 +2103,15 @@
         "source-1",
         "source-37"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "brahmanbaria--gangasagar-dighi",
@@ -1809,8 +2137,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Brahmanbaria as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ব্রাহ্মণবাড়িয়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1824,7 +2152,15 @@
         "source-1",
         "source-37"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chandpur--rupsha-zamindar-bari",
@@ -1850,8 +2186,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chandpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চাঁদপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1865,7 +2201,15 @@
         "source-1",
         "source-38"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chandpur--shaharpar-dighi",
@@ -1891,8 +2235,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chandpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চাঁদপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1906,7 +2250,15 @@
         "source-1",
         "source-38"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chattogram--patenga-sea-beach",
@@ -1932,8 +2284,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chattogram as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চট্টগ্রাম জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1948,7 +2300,15 @@
         "source-39",
         "source-40"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chattogram--chandranath-hill",
@@ -1974,8 +2334,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chattogram as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চট্টগ্রাম জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -1990,7 +2350,15 @@
         "source-39",
         "source-40"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "cumilla--shalban-vihara",
@@ -2016,8 +2384,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Cumilla as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুমিল্লা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2032,7 +2400,15 @@
         "source-41",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "cumilla--mainamati-museum",
@@ -2058,8 +2434,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Cumilla as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুমিল্লা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2074,7 +2450,15 @@
         "source-41",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "cox-s-bazar--cox-s-bazar-sea-beach",
@@ -2114,7 +2498,15 @@
       "sourceIds": [
         "source-91"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "feni--bijoy-singh-dighi",
@@ -2140,8 +2532,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Feni as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ফেনী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2156,7 +2548,15 @@
         "source-44",
         "source-45"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "khagrachhari--alutila",
@@ -2183,8 +2583,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Khagrachhari as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "খাগড়াছড়ি জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2198,7 +2598,15 @@
         "source-1",
         "source-46"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "khagrachhari--ramgarh-lake",
@@ -2225,8 +2633,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Khagrachhari as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "খাগড়াছড়ি জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2240,7 +2648,15 @@
         "source-1",
         "source-46"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "lakshmipur--sreerampur-rajbari",
@@ -2266,8 +2682,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Lakshmipur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "লক্ষ্মীপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2281,7 +2697,15 @@
         "source-1",
         "source-47"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "noakhali--nijhum-dwip",
@@ -2307,8 +2731,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Noakhali as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নোয়াখালী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2323,7 +2747,15 @@
         "source-48",
         "source-49"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rangamati--kaptai-lake",
@@ -2364,7 +2796,15 @@
       "sourceIds": [
         "source-50"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bogura--mahasthangarh",
@@ -2390,8 +2830,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bogura as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বগুড়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2406,7 +2846,15 @@
         "source-51",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bogura--gokul-medh",
@@ -2432,8 +2880,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bogura as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বগুড়া জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2448,7 +2896,15 @@
         "source-51",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "chapai-nawabganj--chhota-sona-mosque",
@@ -2474,8 +2930,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Chapai Nawabganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "চাঁপাইনবাবগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2489,7 +2945,15 @@
         "source-1",
         "source-52"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "joypurhat--achhranga-beel",
@@ -2515,8 +2979,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Joypurhat as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "জয়পুরহাট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2530,7 +2994,15 @@
         "source-1",
         "source-53"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "joypurhat--patharghata-panchbibi",
@@ -2556,8 +3028,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Joypurhat as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "জয়পুরহাট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2571,7 +3043,15 @@
         "source-1",
         "source-53"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "naogaon--paharpur-buddhist-vihara",
@@ -2609,9 +3089,21 @@
         "bn": "স্থানীয় আবহাওয়া দেখে তারিখ বাছুন। এই সহায়িকায় স্থানটির নির্দিষ্ট মৌসুম যাচাই করা হয়নি।"
       },
       "sourceIds": [
-        "source-55"
+        "source-55",
+        "geo-naogaon--paharpur-buddhist-vihara"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      },
+      "lat": 25.03111,
+      "lng": 88.97694,
+      "coordinateSource": "geo-naogaon--paharpur-buddhist-vihara"
     },
     {
       "id": "naogaon--kusumba-mosque",
@@ -2637,8 +3129,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Naogaon as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নওগাঁ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2653,7 +3145,15 @@
         "source-54",
         "source-55"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "natore--rani-bhabani-rajbari",
@@ -2679,8 +3179,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Natore as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নাটোর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2695,7 +3195,15 @@
         "source-56",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "natore--uttara-ganabhaban",
@@ -2721,8 +3229,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Natore as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নাটোর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2737,7 +3245,15 @@
         "source-56",
         "source-42"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "pabna--jor-bangla-temple",
@@ -2763,8 +3279,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Pabna as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পাবনা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2779,7 +3295,15 @@
         "source-57",
         "source-58"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rajshahi--varendra-research-museum",
@@ -2805,8 +3329,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Rajshahi as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "রাজশাহী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2820,7 +3344,15 @@
         "source-1",
         "source-59"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "sirajganj--rabindra-kachharibari",
@@ -2846,8 +3378,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Sirajganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "সিরাজগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2862,7 +3394,15 @@
         "source-60",
         "source-61"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "habiganj--baniachong-sagardighi",
@@ -2888,8 +3428,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Habiganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "হবিগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2903,7 +3443,15 @@
         "source-1",
         "source-62"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "habiganj--baniachong-rajbari",
@@ -2929,8 +3477,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Habiganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "হবিগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2944,7 +3492,15 @@
         "source-1",
         "source-62"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "moulvibazar--madhabkunda-waterfall",
@@ -2970,8 +3526,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Moulvibazar as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মৌলভীবাজার জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -2985,7 +3541,15 @@
         "source-1",
         "source-63"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "moulvibazar--madhabpur-lake",
@@ -3011,8 +3575,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Moulvibazar as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "মৌলভীবাজার জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3026,7 +3590,15 @@
         "source-1",
         "source-63"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "sunamganj--tanguar-haor",
@@ -3052,8 +3624,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Sunamganj as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "সুনামগঞ্জ জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3068,7 +3640,15 @@
         "source-64",
         "source-65"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "sylhet--shah-jalal-s-shrine",
@@ -3094,8 +3674,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Sylhet as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "সিলেট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3111,7 +3691,15 @@
         "source-67",
         "source-68"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "dinajpur--kantajew-temple",
@@ -3137,8 +3725,8 @@
         "bn": "মন্দির স্থাপত্য;পোড়ামাটির কারুকাজ;ঐতিহ্যের ছবি"
       },
       "transport": {
-        "en": "Use Dinajpur as a road or rail gateway, then arrange local transport to Kaharole.",
-        "bn": "সড়ক বা রেলে দিনাজপুর পৌঁছে কাহারোলের স্থানীয় যানবাহন নিন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Respect worshippers and conservation rules. Do not touch carvings or climb the structure.",
@@ -3151,7 +3739,15 @@
       "sourceIds": [
         "source-69"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "dinajpur--ramsagar-dighi",
@@ -3177,8 +3773,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Dinajpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "দিনাজপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3192,7 +3788,15 @@
         "source-1",
         "source-69"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "gaibandha--vardhan-kuthi",
@@ -3218,8 +3822,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Gaibandha as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "গাইবান্ধা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3233,7 +3837,15 @@
         "source-1",
         "source-70"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "gaibandha--naldanga-zamindar-house",
@@ -3259,8 +3871,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Gaibandha as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "গাইবান্ধা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3274,7 +3886,15 @@
         "source-1",
         "source-70"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "kurigram--naodanga-zamindar-bari",
@@ -3300,8 +3920,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Kurigram as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুড়িগ্রাম জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3315,7 +3935,15 @@
         "source-1",
         "source-71"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "kurigram--bhitarmand-zamindar-bari",
@@ -3341,8 +3969,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Kurigram as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "কুড়িগ্রাম জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3356,7 +3984,15 @@
         "source-1",
         "source-71"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "lalmonirhat--kakina-zamindar-bari",
@@ -3382,8 +4018,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Lalmonirhat as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "লালমনিরহাট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3397,7 +4033,15 @@
         "source-1",
         "source-72"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "lalmonirhat--tushbhandar-zamindar-bari",
@@ -3423,8 +4067,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Lalmonirhat as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "লালমনিরহাট জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3438,7 +4082,15 @@
         "source-1",
         "source-72"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "nilphamari--nilsagar",
@@ -3464,8 +4116,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Nilphamari as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নীলফামারী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3480,7 +4132,15 @@
         "source-73",
         "source-74"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "panchagarh--mirzapur-shahi-mosque",
@@ -3506,8 +4166,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Panchagarh as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পঞ্চগড় জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3521,7 +4181,15 @@
         "source-1",
         "source-75"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "panchagarh--tentulia-dak-bungalow",
@@ -3547,8 +4215,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Panchagarh as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পঞ্চগড় জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3562,7 +4230,15 @@
         "source-1",
         "source-75"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rangpur--tajhat-palace",
@@ -3602,7 +4278,15 @@
       "sourceIds": [
         "source-76"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "rangpur--begum-rokeya-memorial-centre",
@@ -3628,8 +4312,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Rangpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "রংপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3643,7 +4327,15 @@
         "source-1",
         "source-76"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "thakurgaon--raja-tonkanath-s-palace",
@@ -3669,8 +4361,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Thakurgaon as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ঠাকুরগাঁও জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3684,7 +4376,15 @@
         "source-1",
         "source-77"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "jamalpur--narapara-fort",
@@ -3710,8 +4410,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Jamalpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "জামালপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3725,7 +4425,15 @@
         "source-1",
         "source-78"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "mymensingh--zainul-abedin-museum",
@@ -3765,7 +4473,15 @@
       "sourceIds": [
         "source-67"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "netrokona--birisiri-cultural-academy",
@@ -3791,8 +4507,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Netrokona as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নেত্রকোণা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3806,7 +4522,15 @@
         "source-1",
         "source-80"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "netrokona--ranikhong-catholic-church",
@@ -3832,8 +4556,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Netrokona as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "নেত্রকোণা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3847,7 +4571,15 @@
         "source-1",
         "source-80"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "sherpur--madhutila-ecopark",
@@ -3873,8 +4605,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Sherpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "শেরপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3888,7 +4620,15 @@
         "source-1",
         "source-81"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "sherpur--gazni-recreation-centre",
@@ -3914,8 +4654,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Sherpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "শেরপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3929,7 +4669,15 @@
         "source-1",
         "source-81"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "barguna--bibichini-shahi-mosque",
@@ -3955,8 +4703,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Barguna as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বরগুনা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -3970,7 +4718,15 @@
         "source-1",
         "source-82"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "barishal--durgasagar",
@@ -3996,8 +4752,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Barishal as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বরিশাল জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4011,7 +4767,15 @@
         "source-1",
         "source-83"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "barishal--chakhar-archaeological-museum",
@@ -4037,8 +4801,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Barishal as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "বরিশাল জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4052,7 +4816,15 @@
         "source-1",
         "source-83"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bhola--char-kukri-mukri",
@@ -4078,8 +4850,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bhola as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ভোলা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4093,7 +4865,15 @@
         "source-1",
         "source-84"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "bhola--monpura-island",
@@ -4119,8 +4899,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Bhola as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ভোলা জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4134,7 +4914,15 @@
         "source-1",
         "source-84"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "jhalakathi--gabkhan-bridge",
@@ -4160,8 +4948,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Jhalakathi as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "ঝালকাঠি জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4176,7 +4964,15 @@
         "source-85",
         "source-86"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "patuakhali--kuakata-sea-beach",
@@ -4216,7 +5012,15 @@
       "sourceIds": [
         "source-87"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "patuakhali--shutki-palli-kuakata",
@@ -4242,8 +5046,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Patuakhali as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পটুয়াখালী জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4257,7 +5061,15 @@
         "source-1",
         "source-87"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "pirojpur--rayerkathi-palace",
@@ -4283,8 +5095,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Pirojpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পিরোজপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4299,7 +5111,15 @@
         "source-88",
         "source-89"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "pirojpur--momin-mosque",
@@ -4325,8 +5145,8 @@
         "bn": "স্থানীয় নির্দেশনায় ঘুরুন;স্থান ও সম্প্রদায়কে সম্মান করুন"
       },
       "transport": {
-        "en": "Use Pirojpur as your district gateway and confirm the final local transfer with your host or the district tourism office.",
-        "bn": "পিরোজপুর জেলায় পৌঁছে থাকার জায়গা বা জেলা পর্যটন কার্যালয়ের সঙ্গে শেষ অংশের যাতায়াত ঠিক করুন।"
+        "en": "A site-specific route has not yet been verified. Confirm the exact location, access and last local transfer with your accommodation or a local guide before setting out.",
+        "bn": "এই স্থানে পৌঁছানোর নির্দিষ্ট পথ এখনো যাচাই করা হয়নি। রওনা হওয়ার আগে হোটেল বা স্থানীয় গাইডের কাছে সঠিক অবস্থান, প্রবেশের ব্যবস্থা ও শেষ অংশের যাতায়াত জেনে নিন।"
       },
       "advice": {
         "en": "Opening times, fees and accessibility are not independently confirmed. Contact the site or district office; do not rely on an assumed schedule.",
@@ -4341,7 +5161,15 @@
         "source-88",
         "source-89"
       ],
-      "verified": "2026-11-12"
+      "verified": "2026-11-12",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     },
     {
       "id": "moulvibazar--lawachara-national-park",
@@ -4381,7 +5209,15 @@
       "sourceIds": [
         "source-92"
       ],
-      "verified": "2026-11-14"
+      "verified": "2026-11-14",
+      "entryFee": {
+        "en": "Check locally before visiting",
+        "bn": "যাওয়ার আগে স্থানীয়ভাবে জেনে নিন"
+      },
+      "accessibility": {
+        "en": "Step-free access and accessible toilets have not been verified. Contact the site before travelling.",
+        "bn": "ধাপবিহীন প্রবেশপথ ও উপযোগী শৌচাগারের তথ্য যাচাই করা হয়নি। যাওয়ার আগে কর্তৃপক্ষের সঙ্গে যোগাযোগ করুন।"
+      }
     }
   ],
   "foods": [
@@ -4964,6 +5800,446 @@
         "source-19"
       ],
       "verified": "2026-11-14"
+    },
+    {
+      "id": "tiler-khaja",
+      "name": {
+        "en": "Kushtia tiler khaja",
+        "bn": "কুষ্টিয়ার তিলের খাজা"
+      },
+      "transliteration": "Kushtia tiler khaja",
+      "regions": [
+        "kushtia"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Kushtia tiler khaja is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে কুষ্টিয়ার তিলের খাজা-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "date-molasses",
+      "name": {
+        "en": "Jashore date molasses",
+        "bn": "যশোরের খেজুরের গুড়"
+      },
+      "transliteration": "Jashore date molasses",
+      "regions": [
+        "jashore"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Jashore date molasses is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে যশোরের খেজুরের গুড়-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "amritsagar",
+      "name": {
+        "en": "Amritsagar banana",
+        "bn": "অমৃত সাগর কলা"
+      },
+      "transliteration": "Amritsagar banana",
+      "regions": [
+        "narsingdi"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Amritsagar banana is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে অমৃত সাগর কলা-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "gopalganj-rasgolla",
+      "name": {
+        "en": "Gopalganj rasgolla",
+        "bn": "গোপালগঞ্জের রসগোল্লা"
+      },
+      "transliteration": "Gopalganj rasgolla",
+      "regions": [
+        "gopalganj"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Gopalganj rasgolla is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে গোপালগঞ্জের রসগোল্লা-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "bhola-curd",
+      "name": {
+        "en": "Bhola buffalo-milk curd",
+        "bn": "ভোলার মহিষের দুধের দই"
+      },
+      "transliteration": "Bhola buffalo-milk curd",
+      "regions": [
+        "bhola"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Bhola buffalo-milk curd is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে ভোলার মহিষের দুধের দই-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "chanamukhi",
+      "name": {
+        "en": "Brahmanbaria chanamukhi",
+        "bn": "ব্রাহ্মণবাড়িয়ার ছানামুখী"
+      },
+      "transliteration": "Brahmanbaria chanamukhi",
+      "regions": [
+        "brahmanbaria"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Brahmanbaria chanamukhi is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে ব্রাহ্মণবাড়িয়ার ছানামুখী-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "chhanar-payesh",
+      "name": {
+        "en": "Sherpur chhanar payesh",
+        "bn": "শেরপুরের ছানার পায়েস"
+      },
+      "transliteration": "Sherpur chhanar payesh",
+      "regions": [
+        "sherpur"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Sherpur chhanar payesh is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে শেরপুরের ছানার পায়েস-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "ashtagram-cheese",
+      "name": {
+        "en": "Ashtagram cheese",
+        "bn": "অষ্টগ্রামের পনির"
+      },
+      "transliteration": "Ashtagram cheese",
+      "regions": [
+        "kishoreganj"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Ashtagram cheese is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে অষ্টগ্রামের পনির-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "patkshir",
+      "name": {
+        "en": "Munshiganj patkshir",
+        "bn": "মুন্সিগঞ্জের পাতক্ষীর"
+      },
+      "transliteration": "Munshiganj patkshir",
+      "regions": [
+        "munshiganj"
+      ],
+      "ingredients": {
+        "en": "Ask the maker for the current ingredients and allergens.",
+        "bn": "বর্তমান উপকরণ ও অ্যালার্জেন সম্পর্কে প্রস্তুতকারকের কাছে জানুন।"
+      },
+      "overview": {
+        "en": "Munshiganj patkshir is documented as a regional food in BSS reporting on Bangladesh’s GI products.",
+        "bn": "বাংলাদেশের জিআই পণ্য নিয়ে বাসসের প্রতিবেদনে মুন্সিগঞ্জের পাতক্ষীর-এর আঞ্চলিক পরিচয় নথিভুক্ত আছে।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-gi-regional-foods"
+      ],
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "balish",
+      "name": {
+        "en": "Netrokona balish mishti",
+        "bn": "নেত্রকোণার বালিশ মিষ্টি"
+      },
+      "transliteration": "Balish misti",
+      "regions": [
+        "netrokona"
+      ],
+      "ingredients": {
+        "en": "Milk cottage cheese;Flour;Sugar;Thickened milk",
+        "bn": "দুধের ছানা;ময়দা;চিনি;ক্ষীর"
+      },
+      "overview": {
+        "en": "A pillow-shaped sweet from Netrokona, finished with thickened milk. It is served at weddings and other celebrations.",
+        "bn": "নেত্রকোণার বালিশের মতো দেখতে মিষ্টি, যার ওপর ক্ষীরের প্রলেপ থাকে। বিয়েসহ নানা উৎসবে এটি পরিবেশন করা হয়।"
+      },
+      "flavor": {
+        "en": "Preparation varies; ask locally.",
+        "bn": "প্রস্তুতপ্রণালী ভিন্ন হতে পারে; স্থানীয়ভাবে জেনে নিন।"
+      },
+      "culture": {
+        "en": "A documented regional food association, not an endorsement of a particular shop.",
+        "bn": "নথিভুক্ত আঞ্চলিক খাদ্যপরিচয়; নির্দিষ্ট কোনো দোকানের সুপারিশ নয়।"
+      },
+      "occasion": {
+        "en": "Ask local hosts how they usually serve it; recipes and occasions vary.",
+        "bn": "স্থানীয়দের কাছে পরিবেশনের রীতি জানুন; রেসিপি ও উপলক্ষভেদে ভিন্নতা থাকে।"
+      },
+      "diet": {
+        "en": "Ingredients vary by cook. Ask about allergens, cooking fats and shared utensils; no allergen-free or halal certification is implied.",
+        "bn": "রাঁধুনিভেদে উপকরণ বদলায়। অ্যালার্জেন, রান্নার চর্বি ও একই পাত্রের ব্যবহার সম্পর্কে জিজ্ঞাসা করুন; অ্যালার্জেনমুক্ত বা হালাল সনদের দাবি করা হচ্ছে না।"
+      },
+      "association": {
+        "en": "Documented regional association; not a claim of exclusive origin.",
+        "bn": "নথিভুক্ত আঞ্চলিক সম্পর্ক; একক উৎপত্তিস্থলের দাবি নয়।"
+      },
+      "image": null,
+      "sourceIds": [
+        "bss-balish"
+      ],
+      "verified": "2026-11-15"
     }
   ],
   "sources": [
@@ -4981,7 +6257,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Dhaka_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-3",
@@ -5005,7 +6281,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Faridpur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-6",
@@ -5013,7 +6289,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Gazipur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-7",
@@ -5037,7 +6313,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Madaripur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-10",
@@ -5061,7 +6337,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Munshiganj_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-13",
@@ -5069,7 +6345,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Narayanganj_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-14",
@@ -5093,7 +6369,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Rajbari_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-17",
@@ -5101,7 +6377,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Shariatpur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-18",
@@ -5109,7 +6385,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Tangail_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-19",
@@ -5125,7 +6401,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Bagerhat_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-21",
@@ -5149,7 +6425,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Chuadanga_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-24",
@@ -5157,7 +6433,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Jessore_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-25",
@@ -5181,7 +6457,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Khulna_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-28",
@@ -5205,7 +6481,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Magura_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-31",
@@ -5229,7 +6505,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Narail_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-34",
@@ -5261,7 +6537,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Brahmanbaria_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-38",
@@ -5277,7 +6553,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Chittagong_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-40",
@@ -5293,7 +6569,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Comilla_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-42",
@@ -5365,7 +6641,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Rangamati_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-51",
@@ -5373,7 +6649,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Bogra_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-52",
@@ -5389,7 +6665,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Joypurhat_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-54",
@@ -5397,7 +6673,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Naogaon_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-55",
@@ -5413,7 +6689,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Natore_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-57",
@@ -5445,7 +6721,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Sirajganj_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-61",
@@ -5461,7 +6737,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Habiganj_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-63",
@@ -5469,7 +6745,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Maulvibazar_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-64",
@@ -5493,7 +6769,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Sylhet_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-67",
@@ -5517,7 +6793,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Dinajpur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-70",
@@ -5525,7 +6801,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Gaibandha_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-71",
@@ -5533,7 +6809,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Kurigram_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-72",
@@ -5541,7 +6817,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Lalmonirhat_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-73",
@@ -5565,7 +6841,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Panchagarh_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-76",
@@ -5581,7 +6857,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Thakurgaon_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-78",
@@ -5589,7 +6865,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Jamalpur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-79",
@@ -5597,7 +6873,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Mymensingh_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-80",
@@ -5605,7 +6881,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Netrokona_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-81",
@@ -5621,7 +6897,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Barguna_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-83",
@@ -5629,7 +6905,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Barisal_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-84",
@@ -5669,7 +6945,7 @@
       "publisher": "Banglapedia / Asiatic Society of Bangladesh",
       "url": "https://en.banglapedia.org/index.php?title=Pirojpur_District",
       "published": null,
-      "verified": "2026-11-12"
+      "verified": "2026-11-15"
     },
     {
       "id": "source-89",
@@ -5838,6 +7114,46 @@
       "url": "https://www.bb.org.bd/",
       "published": null,
       "verified": "2026-11-14"
+    },
+    {
+      "id": "bss-gi-regional-foods",
+      "title": "Regional products in the GI register",
+      "publisher": "Bangladesh Sangbad Sangstha",
+      "url": "https://www.bssnews.net/js-session/398560",
+      "published": null,
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "bss-balish",
+      "title": "Netrokona Balish Mishti",
+      "publisher": "Bangladesh Sangbad Sangstha",
+      "url": "https://www.bssnews.net/district/316846",
+      "published": "2025-09-27",
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "geo-dhaka--lalbagh-fort",
+      "title": "Coordinates: Lalbagh Fort",
+      "publisher": "IRCICA",
+      "url": "https://www.islamicarchitecturalheritage.com/listings/lalbagh-fort-complex-fort-aurangabad",
+      "published": null,
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "geo-bagerhat--sixty-dome-mosque",
+      "title": "Coordinates: Sixty Dome Mosque",
+      "publisher": "Wikipedia coordinate reference",
+      "url": "https://en.wikipedia.org/wiki/Sixty_Dome_Mosque",
+      "published": null,
+      "verified": "2026-11-15"
+    },
+    {
+      "id": "geo-naogaon--paharpur-buddhist-vihara",
+      "title": "Coordinates: Paharpur Buddhist Vihara",
+      "publisher": "Wikipedia coordinate reference",
+      "url": "https://en.wikipedia.org/wiki/Somapura_Mahavihara",
+      "published": null,
+      "verified": "2026-11-15"
     }
   ]
 }

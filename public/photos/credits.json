@@ -6,7 +6,7 @@
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "reviewed": "2026-11-12",
-    "modifications": "Resized and compressed; displayed with CSS crop"
+    "modifications": "Resized and compressed; displayed with CSS crop; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "beach",
@@ -15,7 +15,7 @@
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "reviewed": "2026-11-12",
-    "modifications": "Resized and compressed; displayed with CSS crop"
+    "modifications": "Resized and compressed; displayed with CSS crop; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "forest",
@@ -24,7 +24,7 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
     "reviewed": "2026-11-12",
-    "modifications": "Resized and compressed; displayed with CSS crop"
+    "modifications": "Resized and compressed; displayed with CSS crop; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "fort",
@@ -33,7 +33,7 @@
     "license": "CC0 1.0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "reviewed": "2026-11-12",
-    "modifications": "Resized and compressed; displayed with CSS crop"
+    "modifications": "Resized and compressed; displayed with CSS crop; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "bakarkhani",
@@ -43,7 +43,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "mezban",
@@ -53,7 +53,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "doi",
@@ -63,7 +63,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "paharpur",
@@ -73,7 +73,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "temple",
@@ -83,7 +83,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "rasmalai",
@@ -93,7 +93,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "mosque",
@@ -103,7 +103,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "palace",
@@ -113,7 +113,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "kuakata",
@@ -123,7 +123,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "lake",
@@ -133,7 +133,7 @@
     "license": "BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; CSS crop, original license retained"
+    "modifications": "Resized and compressed; CSS crop, original license retained; resized to maximum widths 400/1200 and converted to WebP for v3"
   },
   {
     "id": "museum",
@@ -142,6 +142,6 @@
     "license": "Public domain (PD-self)",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
     "reviewed": "2026-11-14",
-    "modifications": "Resized and compressed; displayed with CSS crop"
+    "modifications": "Resized and compressed; displayed with CSS crop; resized to maximum widths 400/1200 and converted to WebP for v3"
   }
 ]

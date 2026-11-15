@@ -1,3 +1,5 @@
+import { TripExtras } from "./TripExtras";
+import { shareText } from "./native";
 import { useState } from "react";
 import { useTravel } from "./context";
 import { attractions, foods, itinerarySummary, type Trip } from "./tourism";
@@ -42,8 +44,7 @@ export function Trips() {
     const text = itinerarySummary(current, lang);
     setSummaryTrip(current.id);
     try {
-      if (navigator.share) await navigator.share({ title: current.name, text });
-      else if (navigator.clipboard) await navigator.clipboard.writeText(text);
+      await shareText(current.name, text);
     } catch {
       /* The selectable summary remains available if sharing is cancelled. */
     }
@@ -62,6 +63,7 @@ export function Trips() {
         <h1>{t.tripsTitle}</h1>
         <p>{t.tripsIntro}</p>
       </section>
+      {current && <TripExtras trip={current} update={update} />}
       <section className="new-trip panel">
         <label>
           {t.tripName}

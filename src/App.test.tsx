@@ -154,22 +154,22 @@ it("records a passport visit and retains it through navigation", async () => {
   );
   expect(screen.getByText("1 / 64 Visited")).toBeTruthy();
 });
-it("records a correct quiz answer and advances", () => {
+it("records a correct quiz answer and advances", async () => {
   window.location.hash = "quiz";
   render(<App />);
-  nav("Dhaka");
+  fireEvent.click(await screen.findByRole("button", {name: "Dhaka"}));
   expect(screen.getByText(en.correct)).toBeTruthy();
   expect(JSON.parse(localStorage.getItem("amardesh-v2")!).quiz).toHaveLength(1);
   nav(en.nextQuestion);
   expect(screen.queryByText(en.correct)).toBeNull();
 });
-it("rejects an invalid restore while keeping saved progress", () => {
+it("rejects an invalid restore while keeping saved progress", async () => {
   window.location.hash = "backup";
   render(<App />);
-  fireEvent.change(screen.getByLabelText(en.backupLabel), {
+  fireEvent.change(await screen.findByLabelText(en.backupLabel), {
     target: { value: "not JSON" },
   });
-  nav(en.restore);
+  nav("Preview backup");
   expect(screen.getByText(en.backupBad)).toBeTruthy();
   expect(JSON.parse(localStorage.getItem("amardesh-v2")!).version).toBe(2);
 });

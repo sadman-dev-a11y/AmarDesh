@@ -1,4 +1,6 @@
-import data from "./data/tourism.json";
+import { tourismContent as data } from "./content";
+import { fuzzyMatch } from "./search";
+import { formatNumber } from "./format";
 import {
   districts,
   loadProgress,
@@ -29,6 +31,7 @@ export const interestIds = [
 ] as const;
 export type Interest = (typeof interestIds)[number];
 export type Trip = {
+  checklist?: string[];
   id: string;
   name: string;
   start: string;
@@ -39,6 +42,8 @@ export type Trip = {
 };
 export type State = {
   version: 2;
+  onboarded?: boolean;
+  learning?: { date: string; streak: number };
   lang: Lang;
   theme: "light" | "dark" | "system";
   division: string;
@@ -54,7 +59,7 @@ export type State = {
 export function initialState(): State {
   return {
     version: 2,
-    lang: "en",
+    lang: typeof navigator !== "undefined" && navigator.language.startsWith("bn") ? "bn" : "en",
     theme: "system",
     division: "Chattogram",
     district: "cox-s-bazar",
@@ -106,6 +111,8 @@ export function parseState(value: unknown): State {
   if (v.version === 1) return migrate(parseProgress(v));
   if (v.version !== 2) throw Error("Unsupported backup");
   const s = initialState();
+  if (typeof v.onboarded === "boolean") s.onboarded = v.onboarded;
+  if (v.learning && typeof v.learning === "object") { const l = v.learning as Record<string, unknown>; if (validDate(l.date)) s.learning = {date:l.date, streak:Math.floor(num(l.streak,100000))}; }
   const d = districtById(text(v.district));
   s.division = d?.division || s.division;
   s.district = d?.id || s.district;
@@ -169,6 +176,7 @@ export function parseState(value: unknown): State {
           stops,
           notes: text(t.notes),
           budget: num(t.budget, 1e8),
+          ...(Array.isArray(t.checklist) ? { checklist: ids(t.checklist, new Set(["documents","tickets","water","charger","weather"])) } : {}),
         };
       });
   }
@@ -230,7 +238,7 @@ export function searchAll(
   const q = normalize(query);
   if (!q && !division && kind === "all") return [];
   const matches = (...parts: (string | undefined)[]) =>
-    !q || parts.some((s) => s && normalize(s).includes(q));
+    !q || parts.some((s) => s && fuzzyMatch(q, s));
   const out: SearchHit[] = [];
   for (const div of divisions)
     if (
@@ -304,7 +312,7 @@ export function itinerarySummary(trip: Trip, lang: Lang) {
     trip.start,
     ...trip.stops.map(
       (s, i) =>
-        `${i + 1}. ${lang === "bn" ? "দিন" : "Day"} ${s.day}: ${attractions.find((a) => a.id === s.id)?.name[lang]}${s.notes ? " — " + s.notes : ""}`,
+        `${formatNumber(i + 1, lang)}. ${lang === "bn" ? "দিন" : "Day"} ${formatNumber(s.day, lang)}: ${attractions.find((a) => a.id === s.id)?.name[lang]}${s.notes ? " — " + s.notes : ""}`,
     ),
     trip.notes,
     lang === "bn"

@@ -6,3 +6,13 @@ android/**/build/
 *.keystore
 *.jks
 .env*
+
+/release/
+/playwright-report/
+/test-results/
+/android/local.properties
+/public/data/districts.json
+/public/data/divisions.json
+/public/data/attractions.json
+/public/data/foods.json
+/public/data/sources.json

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Context, useTravel } from "./context";
 import { en, bn } from "./i18n";
 import {
@@ -10,7 +10,18 @@ import {
   SourceList,
 } from "./components";
 import { Discovery } from "./Discovery";
-import { Trips } from "./Trips";
+const NearMe = lazy(() => import('./NearMe').then(m => ({default:m.NearMe})));
+import { hasCoordinates } from './geo';
+const Quiz = lazy(() => import('./Quiz').then(m => ({default:m.Quiz})));
+const PassportMap = lazy(() => import('./PassportMap').then(m => ({default:m.PassportMap})));
+import { Onboarding } from './Onboarding';
+const Trips = lazy(() => import('./Trips').then(m => ({default:m.Trips})));
+const Backup = lazy(() => import('./Backup').then(m => ({default:m.Backup})));
+import { App as NativeApp } from '@capacitor/app';
+import { StatusBar, Style } from '@capacitor/status-bar';
+import { SplashScreen } from '@capacitor/splash-screen';
+import { native, readPersistent, savePersistent, haptic } from './native';
+import { formatNumber, formatDate } from './format';
 import {
   districts,
   divisions,
@@ -21,7 +32,6 @@ import {
   districtById,
   primaryAttraction,
   loadState,
-  parseState,
   chooseDistrict,
   searchAll,
   normalize,
@@ -33,20 +43,44 @@ import {
   type Food,
   type Interest,
 } from "./tourism";
-import { quizFor, today } from "./model";
+import { today } from "./model";
 import { essentials, phrases } from "./essentials";
 import credits from "../public/photos/credits.json";
-import "@fontsource/noto-sans-bengali/400.css";
-import "@fontsource/noto-sans-bengali/600.css";
+import "./fonts.css";
+
 import "./style.css";
 const tabs = ["home", "explore", "food", "trips", "more"] as const;
 export default function App() {
+  const [ready, setReady] = useState(!native);
+  const exitAt = useRef(0);
   const [state, setState] = useState(loadState),
     [route, setRoute] = useState(window.location.hash.slice(1) || "home"),
     [online, setOnline] = useState(navigator.onLine),
     [message, setMessage] = useState(""),
     [storageError, setStorageError] = useState(false);
   const depth = useRef(0);
+  useEffect(() => {
+    if (!native) return;
+    let active = true;
+    readPersistent().then(s => { if (active) { setState(s); setReady(true); } }).catch(() => { if (active) setStorageError(true); }).finally(() => SplashScreen.hide().catch(() => {}));
+    return () => { active = false; };
+  }, []);
+  useEffect(() => {
+    if (!native) return;
+    const handle = NativeApp.addListener('backButton', () => {
+      const dismiss = document.querySelector<HTMLButtonElement>('[data-dismiss-dialog]');
+      if (dismiss) { dismiss.click(); return; }
+      if (window.location.hash && window.location.hash !== '#home') {
+        if (depth.current > 0) { depth.current--; window.history.back(); }
+        else window.location.hash = 'home';
+        return;
+      }
+      if (Date.now() - exitAt.current < 2000) { void NativeApp.exitApp(); return; }
+      exitAt.current = Date.now();
+      setMessage(state.lang === 'bn' ? 'বের হতে আবার পেছনে চাপুন' : 'Press back again to exit');
+    });
+    return () => { void handle.then(h => h.remove()); };
+  }, [state.lang]);
   const t = state.lang === "bn" ? bn : en;
   const go = (path: string) => {
     if (path === window.location.hash.slice(1)) {
@@ -80,7 +114,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.lang = state.lang;
     const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    const apply = () =>
+    const apply = () => {
       document.documentElement.setAttribute(
         "data-theme",
         state.theme === "system"
@@ -89,28 +123,37 @@ export default function App() {
             : "light"
           : state.theme,
       );
+      if (native) {
+        const dark = document.documentElement.dataset.theme === 'dark';
+        void StatusBar.setStyle({style: dark ? Style.Dark : Style.Light}).catch(() => {});
+        void StatusBar.setBackgroundColor({color: dark ? '#103f38' : '#f6f3e9'}).catch(() => {});
+      }
+    };
     apply();
     mq.addEventListener?.("change", apply);
     try {
-      localStorage.setItem("amardesh-v2", JSON.stringify(state));
+      if (native) {
+        if (ready) void savePersistent(state).then(() => setStorageError(false)).catch(() => setStorageError(true));
+      } else localStorage.setItem("amardesh-v2", JSON.stringify(state));
       setStorageError(false);
     } catch {
       setStorageError(true);
     }
     return () => mq.removeEventListener?.("change", apply);
-  }, [state]);
+  }, [state, ready]);
   useEffect(() => {
     if (!message) return;
     const timer = setTimeout(() => setMessage(""), 4500);
     return () => clearTimeout(timer);
   }, [message]);
-  const togglePlace = (id: string) =>
+  const togglePlace = (id: string) => { void haptic();
     setState((p) => ({
       ...p,
       savedPlaces: p.savedPlaces.includes(id)
         ? p.savedPlaces.filter((x) => x !== id)
         : [...p.savedPlaces, id],
     }));
+  };
   const toggleFood = (id: string) =>
     setState((p) => ({
       ...p,
@@ -157,6 +200,7 @@ export default function App() {
         ),
       };
     });
+    void haptic();
     setMessage(t.added);
   };
   const pieces = route.split("/");
@@ -192,6 +236,8 @@ export default function App() {
         p.district === district.id ? p : chooseDistrict(p, district.id),
       );
   }, [district]);
+  if (!ready && !storageError) return <div className="skeleton-page" aria-label="Loading / লোড হচ্ছে"><div/><div/><div/></div>;
+  if (!ready && storageError) return <main className="panel"><h1>AmarDesh</h1><p>Saved data could not be read. Your old data is unchanged. / সংরক্ষিত তথ্য পড়া যায়নি। আগের তথ্য অক্ষত আছে।</p><button onClick={() => window.location.reload()}>Retry / আবার চেষ্টা</button></main>;
   return (
     <Context.Provider
       value={{
@@ -205,6 +251,7 @@ export default function App() {
         notify: setMessage,
       }}
     >
+      {native && !state.onboarded && <Onboarding />}
       <a
         className="skip-link"
         href="#main"
@@ -297,7 +344,7 @@ export default function App() {
         ) : route === "food" ? (
           <FoodIndex />
         ) : route === "trips" ? (
-          <Trips />
+          <Suspense fallback={<div className="skeleton-page"><div/><div/></div>}><Trips /></Suspense>
         ) : route === "more" ? (
           <More />
         ) : route === "essentials" ? (
@@ -305,11 +352,11 @@ export default function App() {
         ) : route === "sources" ? (
           <Sources />
         ) : route === "backup" ? (
-          <Backup />
+          <Suspense fallback={<div className="skeleton-page"><div/><div/></div>}><Backup /></Suspense>
         ) : route === "passport" ? (
           <Passport />
         ) : route === "quiz" ? (
-          <Quiz />
+          <Suspense fallback={<div className="skeleton-page"><div/></div>}><Quiz /></Suspense>
         ) : (
           <div className="empty-state">
             <h1>{t.notFound}</h1>
@@ -333,7 +380,7 @@ export default function App() {
       </main>
       <footer>
         <div className="brand-footer">
-          AmarDesh<span>2.0 · {t.journey}</span>
+          AmarDesh<span>{state.lang === 'bn' ? '৩.০' : '3.0'} · {t.journey}</span>
         </div>
         <button onClick={() => go("sources")}>
           {t.sources}
@@ -416,41 +463,12 @@ function Dishes({ items }: { items: Food[] }) {
     </div>
   );
 }
+type Suggestion = { id:string; name:{en:string;bn:string}; days:number; districts:string[]; description:{en:string;bn:string}; };
 function Home() {
   const { state, setState, t, go, notify } = useTravel();
   const lang = state.lang;
-  const suggestions = [
-    {
-      name: {
-        en: "Mughal streets & merchant stories",
-        bn: "মুঘল পথ ও বণিকের গল্প",
-      },
-      days: 2,
-      districts: ["dhaka", "narayanganj"],
-      description: {
-        en: "Begin in Old Dhaka, then discover Sonargaon’s historic street.",
-        bn: "পুরান ঢাকা থেকে শুরু করে সোনারগাঁয়ের ঐতিহাসিক পথ আবিষ্কার করুন।",
-      },
-    },
-    {
-      name: { en: "The southwest, slowly", bn: "ধীরে ধীরে দক্ষিণ-পশ্চিম" },
-      days: 4,
-      districts: ["bagerhat", "khulna"],
-      description: {
-        en: "Brick-built heritage, followed by a pre-arranged forest journey.",
-        bn: "ইটের ঐতিহ্যের পরে আগে থেকে ব্যবস্থা করা বনভ্রমণ।",
-      },
-    },
-    {
-      name: { en: "A northern heritage trail", bn: "উত্তরের ঐতিহ্যের পথ" },
-      days: 4,
-      districts: ["bogura", "naogaon", "dinajpur"],
-      description: {
-        en: "Link archaeological sites with terracotta craftsmanship.",
-        bn: "প্রত্নস্থানের সঙ্গে পোড়ামাটির কারুকাজের যোগসূত্র খুঁজুন।",
-      },
-    },
-  ];
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  useEffect(() => { void fetch(`${import.meta.env.BASE_URL}data/itineraries.json`).then(r => {if (!r.ok) throw Error(); return r.json();}).then(d => setSuggestions(d.items)).catch(() => {}); }, []);
   const useSuggested = (s: (typeof suggestions)[number]) => {
     const trip = {
       id: "trip-" + Date.now(),
@@ -508,10 +526,10 @@ function Home() {
         </div>
         <div className="hero-foot">
           <span>
-            08 <small>{t.division}</small>
+            {formatNumber(8, lang)} <small>{t.division}</small>
           </span>
           <span>
-            64 <small>{t.district}</small>
+            {formatNumber(64, lang)} <small>{t.district}</small>
           </span>
           <span>
             {lang === "bn"
@@ -604,9 +622,9 @@ function Home() {
         <div className="itinerary-grid">
           {suggestions.map((s, i) => (
             <article className="itinerary-card" key={s.name.en}>
-              <span className="itinerary-number">0{i + 1}</span>
+              <span className="itinerary-number">{formatNumber(i + 1, lang)}</span>
               <span className="eyebrow">
-                {s.days} {t.days}
+                {formatNumber(s.days, lang)} {t.days}
               </span>
               <h3>{s.name[lang]}</h3>
               <p>{s.description[lang]}</p>
@@ -778,6 +796,7 @@ function Explore() {
           <p className="search-suggestions">{t.searchStart}</p>
         )}
       </section>
+      <Suspense fallback={null}><NearMe /></Suspense>
       {!searching && (
         <>
           <Discovery />
@@ -870,7 +889,7 @@ function DistrictGuide({ id, section }: { id: string; section: Section }) {
               setState((p) => {
                 const visits = { ...p.visits };
                 if (visits[id]) delete visits[id];
-                else visits[id] = { date: today(), note: "" };
+                else { visits[id] = { date: today(), note: "" }; void haptic(); }
                 return { ...p, visits };
               })
             }
@@ -920,7 +939,7 @@ function DistrictGuide({ id, section }: { id: string; section: Section }) {
             <section className="reading panel">
               <span className="eyebrow">{t.history}</span>
               <h2>{lang === "bn" ? d.bn : d.name}</h2>
-              <p>{d.history[lang]}</p>
+              <p>{d.history[lang]}</p>{d.formedYear && <p>{lang === "bn" ? "জেলা গঠনের বছর" : "District formation year"}: {formatNumber(d.formedYear, lang)}</p>}
               <h3>{t.culture}</h3>
               <p>{d.culture?.[lang] || d.description[lang]}</p>
               <p>
@@ -953,7 +972,7 @@ function DistrictGuide({ id, section }: { id: string; section: Section }) {
               <h3>{t.accessibility}</h3>
               <p>{essentials.find((e) => e.key === "accessibility")![lang]}</p>
               <p className="review-date">
-                {t.reviewed}: {list[0]?.verified}
+                {t.reviewed}: {list[0]?.verified ? formatDate(list[0].verified, lang) : ""}
               </p>
               <SourceList ids={d.sourceIds} t={t} />
             </section>
@@ -1022,9 +1041,9 @@ function AttractionGuide({ a }: { a: Attraction }) {
           <h3>{t.season}</h3>
           <p>{a.season[lang]}</p>
           <h3>{t.advice}</h3>
-          <p>{a.advice[lang]}</p>
+          <p>{a.advice[lang]}</p><h3>{lang === "bn" ? "প্রবেশমূল্য" : "Entry fee"}</h3><p>{a.entryFee[lang]}</p><h3>{lang === "bn" ? "প্রবেশের সুবিধা" : "Accessibility"}</h3><p>{a.accessibility[lang]}</p>
           <p className="review-date">
-            {t.reviewed}: {a.verified}
+            {t.reviewed}: {formatDate(a.verified, lang)}
           </p>
           <SourceList ids={a.sourceIds} t={t} />
         </article>
@@ -1036,6 +1055,10 @@ function AttractionGuide({ a }: { a: Attraction }) {
               : `${d.name} · ${d.division}`}
           </p>
           <p>{t.noSchedule}</p>
+          <a className="primary" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(hasCoordinates(a) ? `${a.lat},${a.lng}` : `${a.name.en}, ${d.name}, Bangladesh`)}`} target="_blank" rel="noreferrer">{lang === 'bn' ? 'ম্যাপে খুলুন' : 'Open in Maps'}</a>
+          <p>{hasCoordinates(a) ? (lang === 'bn' ? 'যাচাই করা স্থানাঙ্ক; প্রবেশপথ স্থানীয়ভাবে নিশ্চিত করুন।' : 'Referenced coordinates; confirm the entrance locally.') : (lang === 'bn' ? 'নামের ভিত্তিতে খোঁজা হবে; স্থানাঙ্ক যাচাই করা হয়নি।' : 'Search by name; coordinates are not yet verified.')}</p>
+          <a className="text-link" href={`https://github.com/sadman-dev-a11y/AmarDesh/issues/new?title=${encodeURIComponent('Correction: '+a.name.en)}&body=${encodeURIComponent('Place: '+a.id+'\nSuggested correction:\nSource URL:\n')}`} target="_blank" rel="noreferrer">{lang === 'bn' ? 'সংশোধন জানান (GitHub)' : 'Report a correction (GitHub)'}</a>
+
           <button
             className="text-link"
             onClick={() => go(`district/${d.id}/guide`)}
@@ -1319,56 +1342,6 @@ function Sources() {
     </>
   );
 }
-function Backup() {
-  const { state, setState, t, notify } = useTravel();
-  const [value, setValue] = useState(JSON.stringify(state, null, 2));
-  const download = () => {
-    const url = URL.createObjectURL(
-      new Blob([JSON.stringify(state, null, 2)], { type: "application/json" }),
-    );
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "AmarDesh-2-backup.json";
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-  };
-  return (
-    <>
-      <section className="page-heading">
-        <h1>{t.backup}</h1>
-        <p>{t.backupNote}</p>
-      </section>
-      <section className="panel backup-panel">
-        <label>
-          {t.backupLabel}
-          <textarea
-            rows={15}
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          />
-        </label>
-        <div className="button-row">
-          <button className="primary" onClick={download}>
-            {t.download}
-          </button>
-          <button
-            className="secondary"
-            onClick={() => {
-              try {
-                setState(parseState(JSON.parse(value)));
-                notify(t.backupGood);
-              } catch {
-                notify(t.backupBad);
-              }
-            }}
-          >
-            {t.restore}
-          </button>
-        </div>
-      </section>
-    </>
-  );
-}
 function Passport() {
   const { state, setState, t, go } = useTravel();
   const [selected, setSelected] = useState("");
@@ -1380,9 +1353,11 @@ function Passport() {
         <span className="eyebrow">{t.passport}</span>
         <h1>{t.passportIntro}</h1>
         <p>
-          {Object.keys(state.visits).length} / 64 {t.visited}
+          {formatNumber(Object.keys(state.visits).length, state.lang)} / {formatNumber(64, state.lang)} {t.visited}
         </p>
       </section>
+      <Suspense fallback={<div className="skeleton-page"><div/></div>}><PassportMap /></Suspense>
+      <div className="badge-row">{divisions.filter(v => districts.filter(d => d.division === v.name.en).every(d => state.visits[d.id])).map(v => <span className="badge" key={v.id}>✓ {v.name[state.lang]} · {state.lang === 'bn' ? 'সম্পূর্ণ' : 'Complete'}</span>)}</div>
       {d && visit && (
         <section className="panel form-grid">
           <h2>{state.lang === "bn" ? d.bn : d.name}</h2>
@@ -1442,72 +1417,12 @@ function Passport() {
                     size={24}
                   />
                   <strong>{state.lang === "bn" ? d.bn : d.name}</strong>
-                  <small>{state.visits[d.id]?.date || "—"}</small>
+                  <small>{state.visits[d.id]?.date ? formatDate(state.visits[d.id].date, state.lang) : "—"}</small>
                 </button>
               ))}
           </div>
         </section>
       ))}
-    </>
-  );
-}
-function Quiz() {
-  const { state, setState, t } = useTravel();
-  const [index, setIndex] = useState(0),
-    [answer, setAnswer] = useState("");
-  const d = districts[(index * 17 + 7) % 64];
-  const q = quizFor(d, (index % 32) * 2);
-  return (
-    <>
-      <section className="page-heading">
-        <span className="eyebrow">{t.quiz}</span>
-        <h1>{t.quizQuestion}</h1>
-        <p>
-          {state.quiz.length} / 64 {t.learned}
-        </p>
-      </section>
-      <section className="panel quiz-panel">
-        <h2>{state.lang === "bn" ? d.bn : d.name}</h2>
-        <div className="quiz-options">
-          {q.options.map((v) => (
-            <button
-              key={v}
-              disabled={!!answer}
-              className={answer && v === q.answer ? "correct" : ""}
-              onClick={() => {
-                setAnswer(v);
-                if (v === q.answer)
-                  setState((p) => ({
-                    ...p,
-                    quiz: [...new Set([...p.quiz, d.id])],
-                  }));
-              }}
-            >
-              {state.lang === "bn"
-                ? divisions.find((d) => d.name.en === v)?.name.bn
-                : v}
-            </button>
-          ))}
-        </div>
-        {answer && (
-          <div role="status">
-            <h3>{answer === q.answer ? t.correct : t.incorrect}</h3>
-            <p>
-              {t.answer}: {state.lang === "bn" ? d.divisionBn : d.division}
-            </p>
-            <button
-              className="primary"
-              onClick={() => {
-                setIndex((i) => i + 1);
-                setAnswer("");
-              }}
-            >
-              {t.nextQuestion}
-              <Icon name="arrow" size={18} />
-            </button>
-          </div>
-        )}
-      </section>
     </>
   );
 }

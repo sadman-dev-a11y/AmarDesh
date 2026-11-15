@@ -1,3 +1,3 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
-export default defineConfig({base:'./',plugins:[react()],build:{chunkSizeWarningLimit:1200}});
+export default defineConfig({ base: './', plugins: [react()], build: { chunkSizeWarningLimit: 300 }, test: { setupFiles: ['./src/test-setup.ts'], exclude: ['e2e/**','node_modules/**'] } });

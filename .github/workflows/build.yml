@@ -1,97 +1,68 @@
-name: Verify, build Android and publish
+name: Verify and build AmarDesh
 on:
   push:
     branches: [main, CineDesk]
-    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 permissions:
-  contents: write
-  pages: write
+  contents: read
 concurrency:
   group: amardesh-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   android:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: '22'
           cache: npm
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "21"
+          java-version: '21'
       - uses: android-actions/setup-android@v3
         with:
           packages: platform-tools platforms;android-36 build-tools;36.0.0
           log-accepted-android-sdk-licenses: false
       - run: npm ci
-      - run: npm run typecheck && npm run lint && npm test
-      - run: npm run build
+      - run: npm run typecheck && npm run lint && npm test && npm run build
+      - name: Browser smoke tests and accessibility
+        env:
+          CHROMIUM_PATH: /usr/bin/google-chrome
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AmarDesh-v3-QA
+          path: |
+            release/screenshots
+            test-results
+          if-no-files-found: ignore
       - run: npx cap sync android
-      - name: Build installable debug APK
+      - name: Build optimized release APK and AAB
         run: |
           chmod +x android/gradlew
           cd android
-          ./gradlew assembleDebug --no-daemon
-      - name: Verify APK identity and signature
+          ./gradlew assembleRelease bundleRelease --no-daemon
+      - name: Verify bundled content and release flags
         run: |
-          APK=android/app/build/outputs/apk/debug/app-debug.apk
-          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose "$APK"
-          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$APK" > /tmp/apk-identity.txt
-          head -20 /tmp/apk-identity.txt
+          APK=android/app/build/outputs/apk/release/app-release-unsigned.apk
           python3 scripts/verify-apk.py "$APK"
-      - name: Name the APK
-        run: cp android/app/build/outputs/apk/debug/app-debug.apk AmarDesh-v2.0.1-debug.apk
+          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$APK" > /tmp/identity.txt
+          cat /tmp/identity.txt
+          if grep -q application-debuggable /tmp/identity.txt; then exit 1; fi
       - uses: actions/upload-artifact@v4
         with:
-          name: AmarDesh-v2.0.1-debug-apk
-          path: AmarDesh-v2.0.1-debug.apk
+          name: AmarDesh-v3-release-unsigned
+          path: |
+            android/app/build/outputs/apk/release/app-release-unsigned.apk
+            android/app/build/outputs/bundle/release/app-release.aab
           if-no-files-found: error
           retention-days: 90
-      - name: Publish downloadable prerelease
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          TAG="v2.0.1-build.${GITHUB_RUN_NUMBER}"
-          gh release create "$TAG" AmarDesh-v2.0.1-debug.apk --target "$GITHUB_SHA" --prerelease --title "AmarDesh 2.0.1 · build ${GITHUB_RUN_NUMBER}" --notes "Installable Android debug build. Android 7.0+ (API 24). Debug signing is for testing; uninstall an older differently signed build before installation. Redesigned tourist guide with division discovery, 103 attractions, 13 food stories and offline trips. See README for coverage and verification limits."
-      - name: Publish tagged version
-        if: startsWith(github.ref, 'refs/tags/v')
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh release create "${GITHUB_REF_NAME}" AmarDesh-v2.0.1-debug.apk --title "AmarDesh ${GITHUB_REF_NAME}" --notes "Debug-signed APK for testing. See README for production signing."
       - uses: actions/upload-artifact@v4
         with:
           name: AmarDesh-web
           path: dist
-          if-no-files-found: error
-      - name: Publish web build on gh-pages branch
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          cp -r dist /tmp/amardesh-web
-          cd /tmp/amardesh-web
-          touch .nojekyll
-          git init
-          git checkout -b gh-pages
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add .
-          git commit -m "Publish AmarDesh web build ${GITHUB_SHA}"
-          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push --force "https://github.com/${GITHUB_REPOSITORY}.git" gh-pages
-      - name: Request Pages rebuild after publishing
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          if gh api "repos/${GITHUB_REPOSITORY}/pages" >/dev/null 2>&1; then
-            gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
-          else
-            echo "Enable GitHub Pages from gh-pages / root in repository settings."
-          fi
