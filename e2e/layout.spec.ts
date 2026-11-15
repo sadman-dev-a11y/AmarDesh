@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
-import tourism from '../src/data/tourism.json';
+import {readFileSync} from 'node:fs';
+const tourism = JSON.parse(readFileSync(new URL('../src/data/tourism.json',import.meta.url),'utf8'));
 const sizes = [
  {width:320,height:640,scale:100}, {width:360,height:800,scale:160},
  {width:390,height:844,scale:130}, {width:412,height:915,scale:100},
